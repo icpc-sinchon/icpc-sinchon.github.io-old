@@ -16,7 +16,7 @@ jobs:
           node-version: '12.x'
       - name: build
         run: |
-          npm run build -- --prefix-paths
+          yarn build -- --prefix-paths
       - uses: peaceiris/actions-gh-pages@v2
         env:
           GITHUB_TOKEN: ${{ secrets.ICPC_SINCHON_API_KEY }}
