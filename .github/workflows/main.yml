@@ -16,6 +16,7 @@ jobs:
           node-version: '12.x'
       - name: build
         run: |
+          yarn
           yarn build -- --prefix-paths
       - uses: peaceiris/actions-gh-pages@v2
         env:
