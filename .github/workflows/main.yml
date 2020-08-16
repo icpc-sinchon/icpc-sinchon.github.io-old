@@ -1,26 +1,25 @@
+name: Gatsby Publish
+
 on:
   push:
     branches:
-      - gh-pages
-name: build gatsby
+      - master
+
 jobs:
-  build_gatsby:
-    name: build
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-
-      - name: yarn install
-        run: yarn install
-
-      - name: gatsby build
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: build
+        run: |
+          npm ci
+          npm run build -- --prefix-paths
+      - uses: peaceiris/actions-gh-pages@v2
         env:
-          GH_API_KEY: ${{ secrets.ICPC_SINCHON_API_KEY }}
-        run: yarn build
-
-      - name: deploy
-        uses: maxheld83/ghpages@v0.2.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_PAT: ${{ secrets.ICPC_SINCHON_API_KEY }}
-          BUILD_DIR: 'public/'
+          GITHUB_TOKEN: ${{ secrets.ICPC_SINCHON_API_KEY }}
+          PUBLISH_BRANCH: gh-pages
+          PUBLISH_DIR: ./public
