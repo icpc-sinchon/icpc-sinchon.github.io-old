@@ -1,0 +1,29 @@
+
+{
+    "recommendations": [
+        // Coding Style
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint",
+        "drknoxy.eslint-disable-snippets",
+
+        // For Convenience
+        "naumovs.color-highlight",
+        "lihui.vs-color-picker",
+        "alefragnani.project-manager",
+        "visualstudioexptteam.vscodeintellicode",
+        "coenraads.bracket-pair-colorizer-2",
+        "wmaurer.change-case",
+        "sleistner.vscode-fileutils",
+        "oderwat.indent-rainbow",
+        "christian-kohler.path-intellisense",
+        "wix.glean",
+        "christian-kohler.npm-intellisense",
+        "planbcoding.vscode-react-refactor",
+        "cmstead.jsrefactor",
+        "pflannery.vscode-versionlens",
+        "mgmcdermott.vscode-language-babel",
+
+        // For Cooperation
+        "eamodio.gitlens"
+    ]
+}
