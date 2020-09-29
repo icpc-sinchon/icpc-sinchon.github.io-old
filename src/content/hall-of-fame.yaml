@@ -6,17 +6,78 @@ content:
     studies:
       - topic: 고급 알고리즘 스터디
         lecturer: 박수현(서강대), 이상원(서강대)
+
       - topic: 중급 알고리즘 스터디
         lecturer: 임지환(서강대), 이기현(서강대)
-        awards:
-          - prize: 1st prize
-            member: asdasd
-          - prize: 2nd prize
-            member: asdasd
+        contests:
+          - contest: 1차 모의고사
+            awards:
+              - prize: 1st
+                member: 백성익(홍익대)
+              - prize: 2nd
+                member: 정재현(홍익대)
+              - prize: 3rd
+                member: 강승구(서강대)
+
+          - contest: 2차 모의고사
+            awards:
+              - prize: 1st
+                member: 장주호(서강대)
+              - prize: 2nd
+                member: 백성익(홍익대)
+              - prize: 3rd
+                member: 정재현(홍익대)
+
       - topic: 초급 알고리즘 스터디
         lecturer: 이태한(서강대), 이재열(홍익대), 김성민(홍익대)
-        awards:
-          - prize: 1st prize
-            member: asdasd
-          - prize: 2nd prize
-            member: asdasd
+        contests:
+          - contest: 1차 모의고사
+            awards:
+              - prize: 1st
+                member: 강상원(서강대)
+              - prize: 2nd
+                member: 주상민(서강대)
+              - prize: 3rd
+                member: 윤상현(서강대)
+
+          - contest: 2차 모의고사
+            awards:
+              - prize: 1st
+                member: 강상원(서강대)
+              - prize: 2nd
+                member: 주상민(서강대)
+              - prize: 3rd
+                member: 민세홍(서강대)
+
+
+  - year: 2020
+    semester: summer
+    activity_type: study
+    studies:
+      - topic: 고급 알고리즘 스터디
+        lecturer: 강사는 없었으나, 전해성(서강대)님이 하드캐리
+
+      - topic: 중급 알고리즘 스터디
+        lecturer: 윤인섭(연세대), 이준석(서강대)
+        contests:
+          - contest: 1차 모의고사
+            awards:
+              - prize: 1st
+                member: 박재형(서강대)
+              - prize: 2nd
+                member: 남유진(연세대)
+              - prize: 3rd
+                member: 박준성(서강대)
+
+      - topic: 초급 알고리즘 스터디
+        lecturer: 배철환(서강대), 백성익(홍익대)
+        contests:
+          - contest: 1차 모의고사
+            awards:
+              - prize: 1st
+                member: 김태윤(연세대)
+              - prize: 2nd
+                member: 김도현(홍익대)
+              - prize: 3rd
+                member: 윤이빈(숙명여대)
+
