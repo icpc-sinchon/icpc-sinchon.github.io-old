@@ -34,6 +34,8 @@ module.exports = {
         root: './src', // <- will be used as a root dir
         aliases: {
           '@components': './components', // <- will become ./src/components
+          '@content': './content', // <- will become ./src/content
+          '@models': './models', // <- will become ./src/models
         }
       }
     },

@@ -1,0 +1,22 @@
+title: Hall Of Fame
+content:
+  - year: 2020
+    semester: winter
+    activity_type: study
+    studies:
+      - topic: 고급 알고리즘 스터디
+        lecturer: 박수현(서강대), 이상원(서강대)
+      - topic: 중급 알고리즘 스터디
+        lecturer: 임지환(서강대), 이기현(서강대)
+        awards:
+          - prize: 1st prize
+            member: asdasd
+          - prize: 2nd prize
+            member: asdasd
+      - topic: 초급 알고리즘 스터디
+        lecturer: 이태한(서강대), 이재열(홍익대), 김성민(홍익대)
+        awards:
+          - prize: 1st prize
+            member: asdasd
+          - prize: 2nd prize
+            member: asdasd
