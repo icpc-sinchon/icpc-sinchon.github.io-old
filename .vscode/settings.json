@@ -41,5 +41,11 @@
     "files.associations": {
         "*.jsx": "JavaScript React",
         "*.js": "javascriptreact"
-    }
+    },
+    "eslint.workingDirectories": [
+        {
+            "directory": "./src",
+            "changeProcessCWD": true
+        }
+    ],
 }
