@@ -2,6 +2,7 @@ import React from "react"
 import { IStudy } from "@models/study"
 
 import styled from "@emotion/styled"
+import ScoreBoard from "./ScoreBoard";
 
 const ContestsWrapper = styled.div`
   display: flex;
@@ -10,22 +11,11 @@ const ContestsWrapper = styled.div`
 
 
 const StudyRow: React.FC<{ study: IStudy }> = ({ study }) => {
-  const renderScoreBoard = (contest) => {
-    const contestKey = study.topic + " " + contest.contest 
-    return (<div key={contestKey}>
-      <p>{contest.contest}</p>
-      <ul>
-        { contest.awards.map(award => 
-            <li key={contestKey + " " + award.prize}>{ award.prize} : { award.member }</li>) }
-      </ul>
-    </div>)
-  }
-
   const renderContests = (study) => {
     if (study?.contests?.length >= 1) {
       return (
       <ContestsWrapper>
-        { study.contests.map(contest => renderScoreBoard(contest)) }
+        { study.contests.map(contest => <ScoreBoard key={study.topic +  " " + contest.contest_name} contest={contest} />) }
       </ContestsWrapper>)
     } else {
       return null;
@@ -38,7 +28,7 @@ const StudyRow: React.FC<{ study: IStudy }> = ({ study }) => {
             스터디 주제 : { study.topic }
         </li>
         <li>
-            강사 : { study.lecturer }
+            강사 : <span dangerouslySetInnerHTML={ {__html: study.lecturer} }></span>
         </li>
     </ul>
     <div>
