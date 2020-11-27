@@ -8,11 +8,13 @@ import SEO from "@components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
+    <SEO title="ICPC Sinchon" />
+    <div style={{
+      margin: `8rem 0rem`}}>
+      <h1 style={{fontSize: `4rem`}}>ICPC Sinchon</h1>
+      <p style={{fontSize: `0.8rem`}}>ICPC Sinchon은 신촌 인근 지역 대학교 프로그래밍 대회 동아리의 연합입니다.</p>
+    </div>
+    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem`}}>
       <Image />
     </div>
     <Link to="/page-2/">Go to page 2</Link><br />
