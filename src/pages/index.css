@@ -1,0 +1,42 @@
+.main--title{
+    font-size:4.5rem;
+}
+p{
+    font-size:0.8rem;
+}
+.clubs--wrapper{
+    width: 100%;
+    margin: 4rem 0rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.clubs--row{
+    display:flex;
+    justify-content:center;
+    width:90%;
+}
+.clubs--row:first-child{
+    flex-wrap:wrap;
+}
+.club--row:nth-child(2){
+    flex-wrap:nowrap;
+}
+.club{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width: 120px;
+    margin:0rem 3%;
+}
+.club img{
+    width: 90%;
+    border-radius:50%;
+    height:auto;
+    flex-grow:0;
+}
+.club div,
+.club p{
+    text-align:center;
+    width: 105px;
+}
