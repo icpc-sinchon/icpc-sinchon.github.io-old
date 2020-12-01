@@ -5,8 +5,12 @@ import { Link } from "gatsby"
 import Layout from "@components/layout"
 // import Image from "@components/image"
 import SEO from "@components/seo"
+import ActivitiesSlider from "@components/organisms/slider.tsx"
 import './index.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
+// images
 import sogang from '../images/sogang.jpg'
 import sookmyung from '../images/sookmyung.gif' 
 import hongik from '../images/hongik.jpg'
@@ -48,6 +52,7 @@ const IndexPage = () => (
         <Club image={sookmyung} name="Algos" content="숙명여대 Algos" />
       </div>
     </div>
+    <ActivitiesSlider/>
     <Link to="/page-2/">Go to page 2</Link><br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link><br />
     <Link to="/hall-of-fame/">Go to "Hall Of Fame"</Link>
