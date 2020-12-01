@@ -16,11 +16,40 @@ import study from '../../images/study-board_filtered__edit.jpg'
 
 const wrapperStyle=css`
 overflow:hidden;
-padding: 1.5rem 0rem;
+padding: 1.5rem 2rem;
 width: 100%;
 position:relative;
 margin: 0 0 8rem 0;
-
+.slick-prev:before,
+.slick-next:before{
+    color:black;
+    margin: 0 0.5rem;
+}
+.slick-prev{
+    position:absolute;
+    left:-2.5rem;
+}
+.slick-next{
+    position:absolute;
+    right:-1.5rem;
+}
+.slick-dots{
+    display:flex;
+    justify-content:center;
+    width:100%;
+}
+.slick-dots li{
+    margin: 0.01rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.slick-dots li div{
+    background-color:#a0a0a0;
+}
+.slick-dots .slick-active div{
+    background-color:#000;
+}
 `
 const sliderStyle=css`
 .slick-slide div{
@@ -31,16 +60,26 @@ export default class ActivitiesSlider extends Component{
     render(){
         const settings={
             dots: true,
-            arrows:false,
+            arrows:true,
             infinite: true,
             speed: 1000,
-            autoplay: true,
+            autoplay: false,
             autoplaySpeed: 5000,
             initialSlide:0,
             slidesToShow:3,
             slidesToScroll:1,
-            centerMode:true,
+            centerMode:false,
             focusOnSelect:true,
+            appendDots: (dots:any) => (<div style={{
+            }}>{dots}</div>),
+            customPaging: ()=>(
+                <div style={{
+                    width: "8px",
+                    height:"8px",
+                    borderRadius:50,
+                    margin: "0rem 0rem"
+                }}></div>
+            ),
             responsive:[
                 {
                     breakpoint:1000,
@@ -51,7 +90,8 @@ export default class ActivitiesSlider extends Component{
                 {
                     breakpoint: 650,
                     settings:{
-                        slidesToShow:1
+                        slidesToShow:1,
+                        arrows:false
                     }
                 }
             ]

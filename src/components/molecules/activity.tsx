@@ -9,8 +9,7 @@ type ActivityProps={
 };
 
 const activityStyle=css`
-margin: 0 0.3rem;
-padding: 0 0.5rem;
+padding: 0rem 0.2rem;
 display:flex;
 width:100%;
 flex-direction:column;
@@ -22,10 +21,13 @@ const nameStyle = css`
 font-size:0.9rem;
 padding: 0.5rem 0.5rem;
 font-weight:bold;
+width:100%;
+text-align:center;
 `
 const contentStyle=css`
 font-size:0.7rem;
-padding: 0.5rem 1rem 2rem 1rem;
+padding: 1rem 1rem 2rem 1rem;
+width:90%;
 `
 
 const imgStyle=css`
