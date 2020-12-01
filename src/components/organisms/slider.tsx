@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import React,{Component} from "react";
+import React,{Component,HTMLAttributes} from "react";
 import Slider from "react-slick";
 import {jsx,css} from '@emotion/core';
 import Activity from "../molecules/activity";
@@ -13,6 +13,8 @@ import aanetworking from '../../images/aanetworking__edit.jpg'
 import networking from '../../images/networking__edit.jpg'
 import codeforce from '../../images/codeforce_filtered__edit.jpg'
 import study from '../../images/study-board_filtered__edit.jpg'
+import rightArrow from '../../images/chevron-right.svg'
+import leftArrow from '../../images/chevron-left.svg'
 
 const wrapperStyle=css`
 overflow:hidden;
@@ -20,18 +22,18 @@ padding: 1.5rem 2rem;
 width: 100%;
 position:relative;
 margin: 0 0 8rem 0;
-.slick-prev:before,
-.slick-next:before{
+.slick-arrow-prev,
+.slick-arrow-next{
     color:black;
     margin: 0 0.5rem;
-}
-.slick-prev{
     position:absolute;
-    left:-2.5rem;
+    bottom:6.58rem;
 }
-.slick-next{
-    position:absolute;
-    right:-1.5rem;
+.slick-arrow-prev{
+    left:-2.8rem;
+}
+.slick-arrow-next{
+    right:-2.8rem;
 }
 .slick-dots{
     display:flex;
@@ -56,6 +58,33 @@ const sliderStyle=css`
     outline:none;
 }
 `
+
+function NextArrow(props:HTMLAttributes<HTMLDivElement>) {
+    const { style, onClick } = props;
+    return (
+      <div
+        className="slick-arrow-next"
+        style={{ ...style, display: "block"}}
+        onClick={onClick}
+      >
+          <img style={{height:25, width: 25}} src={rightArrow} alt="arrow_left"/>
+      </div>
+    );
+  }
+  
+  function PrevArrow(props:HTMLAttributes<HTMLDivElement>) {
+    const { style, onClick } = props;
+    return (
+      <div
+        className="slick-arrow-prev"
+        style={{ ...style, display: "block"}}
+        onClick={onClick}
+        >
+            <img style={{height:25, width: 25}} src={leftArrow} alt="arrow_left"/>
+        </div>
+    );
+  }
+
 export default class ActivitiesSlider extends Component{
     render(){
         const settings={
@@ -63,13 +92,15 @@ export default class ActivitiesSlider extends Component{
             arrows:true,
             infinite: true,
             speed: 1000,
-            autoplay: false,
+            autoplay: true,
             autoplaySpeed: 5000,
             initialSlide:0,
             slidesToShow:3,
             slidesToScroll:1,
             centerMode:false,
             focusOnSelect:true,
+            nextArrow: <NextArrow/>,
+            prevArrow: <PrevArrow/>,
             appendDots: (dots:any) => (<div style={{
             }}>{dots}</div>),
             customPaging: ()=>(
