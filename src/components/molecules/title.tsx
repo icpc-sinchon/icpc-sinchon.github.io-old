@@ -6,7 +6,7 @@ type TitleProps={
 };
 
 const hightlightStyle=css`
-margin-left:2rem;
+margin:0rem 0rem 3rem 2rem;
 padding-left:0.4rem;
 width: 12rem;
 background:linear-gradient(to top, transparent 0%,0%, #33a23d 35%,35%, white 50%);
