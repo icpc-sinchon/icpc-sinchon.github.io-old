@@ -1,3 +1,25 @@
+
+.footer-content{
+  margin: 0.5rem 0;
+  display:flex;
+  justify-content:stretch;
+  flex-wrap:wrap;
+  padding: 0.5rem 1rem;
+}
+.footer-content--title{
+  font-size: 0.8rem;
+  margin-right:1.5rem;
+  font-weight:bold;
+}
+@media screen and (min-width: 700px){
+  .footer-content--items{
+    display:flex;
+    flex-wrap:wrap;
+  }
+}
+.footer-items--content-column:first-child{
+  margin-right: 1rem;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -619,4 +641,12 @@ pre tt:after {
   html {
     font-size: 100%;
   }
+}
+footer{
+  background-color:#33a23d;
+  padding: 1rem 1rem;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-between;
+  color:white;
 }
