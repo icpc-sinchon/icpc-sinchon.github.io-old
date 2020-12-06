@@ -29,7 +29,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     }
   `)
   return (
-    <>
+    <React.Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <footer >
@@ -56,7 +56,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           {` `} */}
           {/* <a href="https://www.gatsbyjs.org">Gatsby</a> */}
         </footer>
-      </>
+      </React.Fragment>
   )
 }
 
