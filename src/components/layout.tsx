@@ -31,7 +31,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <React.Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}</main>
+        <main style={{padding: "0 1.5rem"}}>{children}</main>
         <footer >
           <div className="footer-content">
             <div className="footer-content--title">ICPC Sinchon</div>
