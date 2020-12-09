@@ -5,6 +5,7 @@ import {jsx, css} from '@emotion/core'
 // FIXME : gatsby로 빌드 돌릴때는 문제가 없지만 VSCode에서는 빨간줄떠서 해결하긴 해야함.
 import Layout from "@components/layout"
 import SEO from "@components/seo"
+import Club from "@components/molecules/club.tsx"
 import ActivitiesSlider from "@components/organisms/slider.tsx"
 import StyledTitle from "@components/molecules/title.tsx"
 import './index.css'
@@ -18,22 +19,6 @@ import sookmyung from '../images/sookmyung.gif'
 import hongik from '../images/hongik.jpg'
 import ewha from '../images/ewha.gif'
 import yonsei from '../images/yonsei.jpg'
-
-type ClubProps={
-  image: string;
-  name: string;
-  content?: string;
-};
-
-function Club(props:ClubProps){
-  return(
-    <div className="club">
-      <img alt = {props.name} src={props.image}/>
-      <div style={{fontSize: "0.9rem", fontWeight:"bold"}}>{props.name}</div>
-      <p>{props.content}</p>
-    </div>
-  );
-}
 
 const IndexPage = () => (
   <Layout>
