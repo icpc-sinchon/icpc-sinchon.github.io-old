@@ -8,7 +8,7 @@ type HeaderProps = {
 const Header : React.FC<HeaderProps> = ({ siteTitle = '' }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#33a23d`,
       marginBottom: `1.45rem`,
     }}
   >

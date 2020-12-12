@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import React from "react";
-import {jsx, css} from '@emotion/core'
+import {jsx, css} from '@emotion/core';
 
 type ActivityProps={
     image: string;
@@ -19,7 +19,6 @@ align-items:center;
 
 const nameStyle = css`
 font-size:0.9rem;
-padding: 0.5rem 0.5rem;
 font-weight:bold;
 width:100%;
 text-align:center;
@@ -35,14 +34,13 @@ height:35vh;
 width: 100%;
 max-width:70vh;
 height:auto;
-padding-top:50%;
 `
 
 export default function Activity(props:ActivityProps){
     return(
       <div css={activityStyle}>
         <img css={imgStyle} alt={props.name} src={props.image}/>
-        <div css={nameStyle}>{props.name}</div>
+        <div css={nameStyle} style={{padding: "0.5rem 0.5rem"}}>{props.name}</div>
         <div css={contentStyle}>{props.content}</div> 
       </div>   
     );
