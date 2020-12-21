@@ -46,7 +46,8 @@ const IndexPage = () => (
     <ActivitiesSlider/>
     <Link to="/page-2/">Go to page 2</Link><br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link><br />
-    <Link to="/hall-of-fame/">Go to "Hall Of Fame"</Link>
+    <Link to="/hall-of-fame/">Go to "Hall Of Fame"</Link><br/>
+    <Link to ="/members/">Go to "Members"</Link>
   </Layout>
 )
 
