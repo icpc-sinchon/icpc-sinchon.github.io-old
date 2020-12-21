@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
 
 .footer-content{
   margin: 0.5rem 0;
@@ -21,7 +22,6 @@
   margin-right: 1rem;
 }
 html {
-  font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -29,6 +29,7 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 article,
 aside,
@@ -222,7 +223,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: 'Noto Sans KR', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

@@ -6,6 +6,7 @@ import Layout from "@components/layout"
 import SEO from "@components/seo"
 
 import StudyCard from "@components/organisms/StudyCard"
+import './index.css'
 
 import HallOfFameData from "@content/hall-of-fame.yaml"
 
