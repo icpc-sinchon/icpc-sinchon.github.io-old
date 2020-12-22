@@ -45,11 +45,12 @@ const Header : React.FC<HeaderProps> = ({ siteTitle = '' }) => (
           style={{
             color: `#333333`,
             textDecoration: `none`,
-            marginRight: `1.2rem`,
+            marginRight: `1.5rem`,
             fontSize:`0.8em`,
             lineHeight: `50px`,
             display: `inline-block`,
             verticalAlign: `middle`,
+            fontWeight: `700`,
           }}
         >
           Hall of Fame
@@ -59,11 +60,12 @@ const Header : React.FC<HeaderProps> = ({ siteTitle = '' }) => (
           style={{
             color: `#333333`,
             textDecoration: `none`,
-            marginRight: `1.2rem`,
+            marginRight: `2rem`,
             fontSize:`0.8em`,
             lineHeight: `50px`,
             display: `inline-block`,
             verticalAlign: `middle`,
+            fontWeight: `700`,
           }}
         >
           Organizers

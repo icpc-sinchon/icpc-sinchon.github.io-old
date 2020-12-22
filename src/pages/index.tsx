@@ -19,16 +19,29 @@ import sookmyung from '../images/sookmyung.gif'
 import hongik from '../images/hongik.jpg'
 import ewha from '../images/ewha.gif'
 import yonsei from '../images/yonsei.jpg'
+import mainImage from '../images/main-background.png'
+
 
 const IndexPage = () => (
   <Layout>
     <SEO title="ICPC Sinchon" />
     <div style={{ 
-      margin: `7rem 0rem 13rem 0rem`}}>
+      padding: `11rem 1rem`,
+      margin: `1rem 0 3rem 0`,
+      backgroundImage: `url(${mainImage})`,
+      backgroundSize: `100% 100%`,
+      color: `white`,
+      }}>
       <h1 className="main--title">
         ICPC Sinchon
       </h1>
-      <p>ICPC Sinchon은 신촌 인근 지역 대학교 프로그래밍 대회 동아리의 연합입니다.</p>
+      <p style={{
+        fontSize: `1.15em`,
+        fontWeight: `500`
+      }}>
+        ICPC Sinchon은 신촌 지역 대학교 프로그래밍 대회 동아리 연합입니다.<br/>
+        아무말 아무말 주저리 주저리 어쩌구 저쩌구
+      </p>
     </div>
     <StyledTitle title="Groups"/>
     <div className="clubs--wrapper">
