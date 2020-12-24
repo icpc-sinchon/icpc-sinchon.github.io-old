@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "segoeui";
+  src: url("../fonts/segoeui.woff") format("woff");
+}
+@font-face {
+  font-family: "appleNeoUL";
+  src: url("../fonts/AppleSDGothicNeoUL.woff") format("woff");
+}
+@font-face {
+  font-family: "appleNeoB";
+  src: url("../fonts/AppleSDGothicNeoB.woff") format('woff');
+}
+.head {
+  width: 100%;
+  height: 192px;
+  text-align: center;
+  position: relative;
+
+  border: 1px solid #707070;
+  margin-top: 70px;
+}
+.head .title--wrapper {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.head .title {
+  font-family: "segoeui";
+  font-size: 48px;
+  letter-spacing: 30px;
+  text-indent: 30px;
+}
+.head .sub--title {
+  font-family: "appleNeoUL";
+  font-size: 25px;
+
+  margin-top: 20px;
+}
+.season--wrapper {
+  width: 100%;
+  height: 80px;
+  margin-top: 30px;
+  text-align:center;
+  
+  line-height: 80px;;
+}
+.season--tab {
+  font-family: "appleNeoB";
+  font-size:26px;
+  letter-spacing: 6px;
+  text-indent:6px;
+  
+  display:inline-block;
+  margin-left:214px;
+}
+.season--tab:first-child{
+  margin:unset;
+}

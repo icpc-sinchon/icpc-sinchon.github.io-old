@@ -1,17 +1,19 @@
 title: Hall Of Fame
 content:
   - year: 2020
-    semester: winter
+    semester: Winter
     activity_type: study
     studies:
       - topic: 고급 알고리즘 스터디
-        lecturer: 박수현<sub><sub>(서강대)</sub></sub>, 이상원<sub><sub>(서강대)</sub></sub>
+        lecturer: 서강대학교 박수현 / 서강대학교 이상원
 
       - topic: 중급 알고리즘 스터디
-        lecturer: 임지환<sub><sub>(서강대)</sub></sub>, 이기현<sub><sub>(서강대)</sub></sub>
+        lecturer: 서강대학교 임지환 / 서강대학교 이기현
         contests:
-          - contest_name: 1차 모의고사
-            problem_picker: 임지환<sub><sub>(서강대)</sub></sub>, 이기현<sub><sub>(서강대)</sub></sub>
+          - contest_name: 중간고사
+            problem_picker:
+             - name: 임지환(서강대)</sub></sub>
+             - name: 이기현<sub><sub>(서강대)</sub></sub>
             awards:
               - prize: 1st
                 member: 백성익<sub><sub>(홍익대)</sub></sub>
@@ -19,9 +21,10 @@ content:
                 member: 정재현<sub><sub>(홍익대)</sub></sub>
               - prize: 3rd
                 member: 강승구<sub><sub>(서강대)</sub></sub>
-
-          - contest_name: 2차 모의고사
-            problem_picker: 임지환<sub><sub>(서강대)</sub></sub>, 이기현<sub><sub>(서강대)</sub></sub>
+          - contest_name: 기말고사
+            problem_picker:
+             - name: 임지환(서강대)</sub></sub>
+             - name: 이기현<sub><sub>(서강대)</sub></sub>
             awards:
               - prize: 1st
                 member: 장주호<sub><sub>(서강대)</sub></sub>
@@ -33,8 +36,11 @@ content:
       - topic: 초급 알고리즘 스터디
         lecturer: 이태한<sub><sub>(서강대)</sub></sub>, 이재열<sub><sub>(홍익대)</sub></sub>, 김성민<sub><sub>(홍익대)</sub></sub>
         contests:
-          - contest_name: 1차 모의고사
-            problem_picker: 이태한<sub><sub>(서강대)</sub></sub>, 이재열<sub><sub>(홍익대)</sub></sub>, 김성민<sub><sub>(홍익대)</sub></sub>
+          - contest_name: 중간고사
+            problem_picker:
+             - name: 이태한<sub><sub>(서강대)</sub></sub>
+             - name: 이재열<sub><sub>(홍익대)</sub></sub>
+             - name: 김성민<sub><sub>(홍익대)</sub></sub>
             awards:
               - prize: 1st
                 member: 강상원<sub><sub>(서강대)</sub></sub>
@@ -43,8 +49,12 @@ content:
               - prize: 3rd
                 member: 윤상현<sub><sub>(서강대)</sub></sub>
 
-          - contest_name: 2차 모의고사
-            problem_picker: 이태한<sub><sub>(서강대)</sub></sub>, 이재열<sub><sub>(홍익대)</sub></sub>, 김성민<sub><sub>(홍익대)</sub></sub>, 정연두<sub><sub>(홍익대)</sub></sub>
+          - contest_name: 기말고사
+            problem_picker: 
+             - name: 이태한<sub><sub>(서강대)</sub></sub>
+             - name: 이재열<sub><sub>(홍익대)</sub></sub>
+             - name: 김성민<sub><sub>(홍익대)</sub></sub>
+             - name: 정연두<sub><sub>(홍익대)</sub></sub>
             awards:
               - prize: 1st
                 member: 강상원<sub><sub>(서강대)</sub></sub>
@@ -64,8 +74,10 @@ content:
       - topic: 중급 알고리즘 스터디
         lecturer: 윤인섭<sub><sub>(연세대)</sub></sub>, 이준석<sub><sub>(서강대)</sub></sub>
         contests:
-          - contest_name: 1차 모의고사
-            problem_picker: 이기현<sub><sub>(서강대)</sub></sub>, 최재민<sub><sub>(KAIST)</sub></sub>
+          - contest_name: 중간고사
+            problem_picker: 
+             - name: 이기현<sub><sub>(서강대)</sub></sub>
+             - name: 최재민<sub><sub>(KAIST)</sub></sub>
             awards:
               - prize: 1st
                 member: 박재형<sub><sub>(서강대)</sub></sub>
@@ -77,8 +89,11 @@ content:
       - topic: 초급 알고리즘 스터디
         lecturer: 배철환<sub><sub>(서강대)</sub></sub>, 백성익<sub><sub>(홍익대)</sub></sub>
         contests:
-          - contest_name: 1차 모의고사
-            problem_picker: 이길원<sub><sub>(서강대)</sub></sub>, 전해성<sub><sub>(서강대)</sub></sub>, 남수연<sub><sub>(숙명여대)</sub></sub>
+          - contest_name: 중간고사
+            problem_picker: 
+             - name: 이길원<sub><sub>(서강대)</sub></sub>
+             - name: 전해성<sub><sub>(서강대)</sub></sub>
+             - name: 남수연<sub><sub>(숙명여대)</sub></sub>
             awards:
               - prize: 1st
                 member: 김태윤<sub><sub>(연세대)</sub></sub>
