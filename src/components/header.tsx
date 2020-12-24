@@ -14,6 +14,7 @@ const Header : React.FC<HeaderProps> = ({ siteTitle = '' }) => (
       width: `100%`,
       position: "fixed",
       top: `0`,
+      zIndex: 10000
     }}
   >
     <div
@@ -22,14 +23,14 @@ const Header : React.FC<HeaderProps> = ({ siteTitle = '' }) => (
         display: `flex`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
             color: `#33a23d`,
             textDecoration: `none`,
             marginLeft: `1.2rem`,
-            fontSize:`0.55em`,
+            fontSize:`1.1em`,
+            fontWeight: 'bold',
             lineHeight: `50px`,
             display: `inline-block`,
             verticalAlign: `middle`,
@@ -37,7 +38,6 @@ const Header : React.FC<HeaderProps> = ({ siteTitle = '' }) => (
         >
           {siteTitle}
         </Link>
-        </h1>
         <div style={{ flexGrow: 1 }}> 
         </div>
         <Link
