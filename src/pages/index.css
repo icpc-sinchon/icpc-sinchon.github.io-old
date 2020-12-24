@@ -36,6 +36,10 @@ p {
   height: 19rem;
   margin: 0 4% 0 0;
 }
+.club:hover{
+    transform: scale(1.05);
+    transition: transform .4s;
+}
 .club img {
   border-radius: 50%;
   flex-grow: 0;
