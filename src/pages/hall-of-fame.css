@@ -78,7 +78,7 @@
   margin: unset;
 }
 .season--wrap {
-  margin: 4rem auto 0 auto;
+  margin: 7rem auto 0;
   width: 92%;
 }
 .season--wrap .season--name {
@@ -88,9 +88,10 @@
   margin-bottom: 3.5rem;
 }
 .study--wrap .title--wrap {
-  margin: 2.7rem auto 0 auto;
+  margin: 2.7rem auto 0;
   width: 88%;
-  border-bottom: 0.1rem solid rgb(51, 149, 61, 0.5);
+  height: 3rem;
+  border-bottom: .1rem solid rgba(51,149,61,.5);
 }
 .study--wrap .title--wrap .study--title {
   font-size: 42px;
