@@ -1,0 +1,85 @@
+year: 2020
+semester: Winter
+activity_type: study
+studies:
+  - topic: 고급 알고리즘 스터디
+    lecturer: 서강대학교 박수현 / 서강대학교 이상원
+
+  - topic: 중급 알고리즘 스터디
+    lecturer: 서강대학교 임지환 / 서강대학교 이기현
+    contests:
+      - contest_name: 중간고사
+        problem_picker:
+          - name: 임지환
+            school: 서강대
+          - name: 이기현
+            school: 서강대
+        awards:
+          - prize: 1st
+            member: 백성익
+            school: 홍익대
+          - prize: 2nd
+            member: 정재현
+            school: 홍익대
+          - prize: 3rd
+            member: 강승구
+            school: 서강대
+      - contest_name: 기말고사
+        problem_picker:
+          - name: 임지환
+            school: 서강대
+          - name: 이기현
+            school: 서강대
+        awards:
+          - prize: 1st
+            member: 장주호
+            school: 서강대
+          - prize: 2nd
+            member: 백성익
+            school: 홍익대
+          - prize: 3rd
+            member: 정재현
+            school: 홍익대
+
+  - topic: 초급 알고리즘 스터디
+    lecturer: 서강대학교 이태한 / 홍익대학교 이재열 / 홍익대학교 김성민
+    contests:
+      - contest_name: 중간고사
+        problem_picker:
+          - name: 이태한
+            school: 서강대
+          - name: 이재열
+            school: 홍익대
+          - name: 김성민
+            school: 홍익대
+        awards:
+          - prize: 1st
+            member: 강상원
+            school: 서강대
+          - prize: 2nd
+            member: 주상민
+            school: 서강대
+          - prize: 3rd
+            member: 윤상현
+            school: 서강대
+
+      - contest_name: 기말고사
+        problem_picker:
+          - name: 이태한
+            school: 서강대
+          - name: 이재열
+            school: 홍익대
+          - name: 김성민
+            school: 홍익대
+          - name: 정연두
+            school: 홍익대
+        awards:
+          - prize: 1st
+            member: 강상원
+            school: 서강대
+          - prize: 2nd
+            member: 주상민
+            school: 서강대
+          - prize: 3rd
+            member: 임세홍
+            school: 서강대
