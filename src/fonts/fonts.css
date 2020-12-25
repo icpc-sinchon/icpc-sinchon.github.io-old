@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
+@font-face {
+  font-family: "segoeui";
+  src: url("../fonts/segoeui.woff") format("woff");
+}
+@font-face {
+  font-family: "appleNeoUL";
+  src: url("../fonts/AppleSDGothicNeoUL.woff") format("woff");
+}
+@font-face {
+  font-family: "appleNeoB";
+  src: url("../fonts/AppleSDGothicNeoB.woff") format('woff');
+}
