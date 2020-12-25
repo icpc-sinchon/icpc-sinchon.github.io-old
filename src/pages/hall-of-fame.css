@@ -63,6 +63,7 @@
 
   display: inline-block;
   margin-left: 10%;
+  cursor: pointer;
 }
 .season--tab:first-child {
   margin: unset;
