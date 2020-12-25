@@ -45,8 +45,11 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
       return <></>
     }
   }
-  const getData = obj => {
-    alert(obj.innerHTML)
+  const getData = e => {
+    let obj = document.getElementsByClassName("season--wrap")[0]
+    obj.parentNode.removeChild(obj)
+    console.log(require("@content/yaml/" + e.target.innerHTML + ".yaml"))
+    
   }
   return (
     <Layout>
@@ -63,16 +66,16 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
         </div>
 
         <div className="tab--wrapper">
-          <div className="season--tab" onClick={() => getData(this)}>
+          <div className="season--tab" onClick={e => getData(e)}>
             2020 Winter
           </div>
-          <div className="season--tab" onClick={() => getData(this)}>
+          <div className="season--tab" onClick={e => getData(e)}>
             2020 Summer
           </div>
-          <div className="season--tab" onClick={() => getData(this)}>
+          <div className="season--tab" onClick={e => getData(e)}>
             2021 Winter
           </div>
-          <div className="season--tab" onClick={() => getData(this)}>
+          <div className="season--tab" onClick={e => getData(e)}>
             2021 Summer
           </div>
         </div>
