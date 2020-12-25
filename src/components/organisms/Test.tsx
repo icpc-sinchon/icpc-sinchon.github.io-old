@@ -12,8 +12,8 @@ type TestProps = {
 export default function Test(props: TestProps) {
     return (
         <div className="test">
-        <div className="title">{props.TestType}</div>
         <table className="rank">
+        <caption className="title">{props.TestType}</caption>
           <tbody>
             <tr>
               <td>1위</td>

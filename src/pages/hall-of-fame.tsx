@@ -60,7 +60,7 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
           </div>
         </div>
 
-        <div className="season--wrapper">
+        <div className="tab--wrapper">
           <div className="season--tab">2020 Winter</div>
           <div className="season--tab">2020 Summer</div>
           <div className="season--tab">2020 Winter</div>
@@ -69,62 +69,92 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
 
         {HallOfFameData.content.map(val => {
           return (
-            <div className="content">
+            <div className="season--wrap">
               <div className="title">{val.year + " " + val.semester}</div>
               {val.studies.map(val1 => {
                 if (val1.contests == undefined)
                   return (
-                    <div>
-                      <div className="StudyTitle">{val1.topic}</div>
-                      <div className="lecturer">강사진</div>
-                      <div className="lecturer--list">{val1.lecturer}</div>
-                      <div></div>
+                    <div className="study--wrap">
+                      <div className="title--wrap">
+                        <div className="study--title">{val1.topic}</div>
+                        <div className="lecturer--wrap">
+                          <span className="lecturer">강사진</span>
+                          <span className="lecturer--list">
+                            {val1.lecturer}
+                          </span>
+                        </div>
+                      </div>
                     </div>
                   )
                 else if (Object.keys(val1.contests).length == 2) {
                   console.log(val1.contests[0])
-                    return (
-                      <div>
-                        <div className="StudyTitle">{val1.topic}</div>
-                        <div className="lecturer">강사진</div>
-                        <div className="lecturer--list">{val1.lecturer}</div>
-                        <div>
-                          <div className="MidTest">
-                            <Test
-                            TestType={val1.contests[0].contest_name}
-                            ProbPicker1={val1.contests[0].problem_picker[0].name}
-                            ProbPicker2={val1.contests[0].problem_picker[1].name}
-                              FirstRankName={val1.contests[0].awards[0].member}
-                              SecondRankName={val1.contests[0].awards[1].member}
-                              ThirdRankName={val1.contests[0].awards[2].member}
-                            ></Test>
-                          </div>
-                          <div className="FinalTest">
-                            <Test
-                            TestType={val1.contests[1].contest_name}
-                            ProbPicker1={val1.contests[1].problem_picker[0].name}
-                            ProbPicker2={val1.contests[1].problem_picker[1].name}
-                            FirstRankName={val1.contests[1].awards[0].member}
-                              SecondRankName={val1.contests[1].awards[1].member}
-                              ThirdRankName={val1.contests[1].awards[2].member}
-                            ></Test>
-                          </div>
+                  return (
+                    <div className="study--wrap">
+                      <div className="title--wrap">
+                        <div className="study--title">{val1.topic}</div>
+                        <div className="lecturer--wrap">
+                          <span className="lecturer">강사진</span>
+                          <span className="lecturer--list">
+                            {val1.lecturer}
+                          </span>
                         </div>
                       </div>
-                    )
-                }else{ // 하나짜리
-                  console.log(val1.contests[0])
-                  return (
-                    <div>
-                      <div className="StudyTitle">{val1.topic}</div>
-                      <div className="lecturer">강사진</div>
-                      <div className="lecturer--list">{val1.lecturer}</div>
-                      <div>
-                        <div className="MidTest">
+                      <div className="mid--final--wrap">
+                        <div className="mid--test">
                           <Test
                             TestType={val1.contests[0].contest_name}
-                            ProbPicker1={val1.contests[0].problem_picker[0].name}
-                            ProbPicker2={val1.contests[0].problem_picker[1].name}
+                            ProbPicker1={
+                              val1.contests[0].problem_picker[0].name
+                            }
+                            ProbPicker2={
+                              val1.contests[0].problem_picker[1].name
+                            }
+                            FirstRankName={val1.contests[0].awards[0].member}
+                            SecondRankName={val1.contests[0].awards[1].member}
+                            ThirdRankName={val1.contests[0].awards[2].member}
+                          ></Test>
+                        </div>
+                        <div className="final--test">
+                          <Test
+                            TestType={val1.contests[1].contest_name}
+                            ProbPicker1={
+                              val1.contests[1].problem_picker[0].name
+                            }
+                            ProbPicker2={
+                              val1.contests[1].problem_picker[1].name
+                            }
+                            FirstRankName={val1.contests[1].awards[0].member}
+                            SecondRankName={val1.contests[1].awards[1].member}
+                            ThirdRankName={val1.contests[1].awards[2].member}
+                          ></Test>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                } else {
+                  // 하나짜리
+                  console.log(val1.contests[0])
+                  return (
+                    <div className="study--wrap">
+                      <div className="title--wrap">
+                        <div className="study--title">{val1.topic}</div>
+                        <div className="lecturer--wrap">
+                          <span className="lecturer">강사진</span>
+                          <span className="lecturer--list">
+                            {val1.lecturer}
+                          </span>
+                        </div>
+                      </div>
+                      <div className="final--wrap">
+                        <div className="final--test">
+                          <Test
+                            TestType={val1.contests[0].contest_name}
+                            ProbPicker1={
+                              val1.contests[0].problem_picker[0].name
+                            }
+                            ProbPicker2={
+                              val1.contests[0].problem_picker[1].name
+                            }
                             FirstRankName={val1.contests[0].awards[0].member}
                             SecondRankName={val1.contests[0].awards[1].member}
                             ThirdRankName={val1.contests[0].awards[2].member}

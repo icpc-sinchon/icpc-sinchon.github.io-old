@@ -10,6 +10,10 @@
   font-family: "appleNeoB";
   src: url("../fonts/AppleSDGothicNeoB.woff") format('woff');
 }
+@font-face {
+  font-family: "appleNeoM";
+  src: url("../fonts/AppleSDGothicNeoM.woff") format('woff');
+}
 .head {
   width: 100%;
   height: 192px;
@@ -38,7 +42,7 @@
 
   margin-top: 20px;
 }
-.season--wrapper {
+.tab--wrapper {
   width: 100%;
   height: 80px;
   margin-top: 30px;
@@ -57,4 +61,52 @@
 }
 .season--tab:first-child{
   margin:unset;
+}
+.season--wrap{
+  margin: 4rem auto 0 auto;
+  width: 92%;
+}
+.season--wrap .title{
+  font-size: 39px;
+  font-family: 'appleNeoB';
+}
+.study--wrap .title--wrap{
+  margin: 2.7rem auto 0 auto;
+  width: 88%;
+}
+.study--wrap .title--wrap .study--title{
+  font-size: 42px;
+  font-family: 'appleNeoB';
+  display:inline-block;
+}
+.study--wrap .title--wrap .lecturer--wrap{
+  font-size: 10px;
+  font-family: 'appleNeoUL';
+  display: inline-block;
+  margin-left: 16px;
+}
+.study--wrap .title--wrap .lecturer--wrap .lecturer{
+  font-family: 'appleNeoM';
+  line-height: 11px;
+  font-size: 17px;
+  display: block;
+}
+.study--wrap .title--wrap .lecturer--wrap .lecturer--list{
+  font-family:'appleNeoUL';
+  font-size: 18px;
+}
+
+.study--wrap .mid--final--wrap table{
+  width: 22rem;
+  display:inline-block;
+}
+.mid--test{
+  display:inline-block;
+}
+.final--test{
+  display:inline-block;
+}
+.study--wrap .final--wrap table{
+  width: 22rem;
+  display:inline-block;
 }
