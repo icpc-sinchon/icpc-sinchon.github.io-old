@@ -57,8 +57,10 @@
 .season--tab {
   font-family: "appleNeoB";
   font-size: 1.2rem;
+  line-height: 2rem;
   letter-spacing: 6px;
   text-indent: 6px;
+  border-bottom: 0.2rem solid black;
 
   display: inline-block;
   margin-left: 10%;
@@ -80,6 +82,7 @@
 .study--wrap .title--wrap {
   margin: 2.7rem auto 0 auto;
   width: 88%;
+  border-bottom: 0.1rem solid rgb(51, 149, 61, 0.5);
 }
 .study--wrap .title--wrap .study--title {
   font-size: 42px;
@@ -169,6 +172,12 @@ td {
 }
 .show {
   display: block;
+}
+.season--wrap .study--wrap {
+  margin-bottom: 6rem;
+}
+.season--wrap .study--wrap:first-child {
+
 }
 .season--wrap .study--wrap:last-child {
   margin-bottom: 6rem;
