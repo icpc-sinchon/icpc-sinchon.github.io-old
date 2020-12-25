@@ -57,7 +57,7 @@ export default function Test(props: TestProps) {
           </tbody>
         </table>
         <table className="ProbPicker--wrap">
-        <caption className="title">&nbsp;</caption>
+        <caption className="title" css={TitleCss}>&nbsp;</caption>
           <tbody>
             <tr>
               <td className="ProbPick" css={ProbPickCss}>문항선정</td>
