@@ -13,13 +13,14 @@ import "./hall-of-fame.css"
 
 // import HallOfFameData from "@content/hall-of-fame.yaml"
 import HallOfFameData from "@content/hall-of-fame.yaml"
-
 type DataProps = {
   site: {
     buildTime: string
   }
 }
 
+getData(){
+}
 type StudyProps = {
   StudyTitle: string
   LecturerList: string
@@ -61,7 +62,7 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
         </div>
 
         <div className="tab--wrapper">
-          <div className="season--tab">2020 Winter</div>
+          <div className="season--tab" onClick={this.getData}>2020 Winter</div>
           <div className="season--tab">2020 Summer</div>
           <div className="season--tab">2020 Winter</div>
           <div className="season--tab">2020 Summer</div>
@@ -87,7 +88,7 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                     </div>
                   )
                 else if (Object.keys(val1.contests).length == 2) {
-                  console.log(val1.contests[0])
+                  console.log(val1.contests[1])
                   return (
                     <div className="study--wrap">
                       <div className="title--wrap">
@@ -104,10 +105,10 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                           <Test
                             TestType={val1.contests[0].contest_name}
                             ProbPicker1={
-                              val1.contests[0].problem_picker[0].name
+                              [val1.contests[0].problem_picker[0].name,<span className="school">{val1.contests[0].problem_picker[0].school}</span>]
                             }
                             ProbPicker2={
-                              val1.contests[0].problem_picker[1].name
+                              [val1.contests[0].problem_picker[1].name,<span className="school">{val1.contests[0].problem_picker[1].school}</span>]
                             }
                             FirstRankName={val1.contests[0].awards[0].member}
                             SecondRankName={val1.contests[0].awards[1].member}
@@ -118,10 +119,10 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                           <Test
                             TestType={val1.contests[1].contest_name}
                             ProbPicker1={
-                              val1.contests[1].problem_picker[0].name
+                              [val1.contests[1].problem_picker[0].name,<span className="school">{val1.contests[1].problem_picker[0].school}</span>]
                             }
                             ProbPicker2={
-                              val1.contests[1].problem_picker[1].name
+                              [val1.contests[1].problem_picker[1].name,<span className="school">{val1.contests[1].problem_picker[1].school}</span>]
                             }
                             FirstRankName={val1.contests[1].awards[0].member}
                             SecondRankName={val1.contests[1].awards[1].member}
@@ -133,7 +134,6 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                   )
                 } else {
                   // 하나짜리
-                  console.log(val1.contests[0])
                   return (
                     <div className="study--wrap">
                       <div className="title--wrap">
@@ -150,10 +150,10 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                           <Test
                             TestType={val1.contests[0].contest_name}
                             ProbPicker1={
-                              val1.contests[0].problem_picker[0].name
+                              [val1.contests[0].problem_picker[0].name,<span className="school">{val1.contests[0].problem_picker[0].school}</span>]
                             }
                             ProbPicker2={
-                              val1.contests[0].problem_picker[1].name
+                              [val1.contests[0].problem_picker[1].name,<span className="school">{val1.contests[0].problem_picker[1].school}</span>]
                             }
                             FirstRankName={val1.contests[0].awards[0].member}
                             SecondRankName={val1.contests[0].awards[1].member}

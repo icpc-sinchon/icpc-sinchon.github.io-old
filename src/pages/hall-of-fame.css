@@ -8,11 +8,15 @@
 }
 @font-face {
   font-family: "appleNeoB";
-  src: url("../fonts/AppleSDGothicNeoB.woff") format('woff');
+  src: url("../fonts/AppleSDGothicNeoB.woff") format("woff");
 }
 @font-face {
   font-family: "appleNeoM";
-  src: url("../fonts/AppleSDGothicNeoM.woff") format('woff');
+  src: url("../fonts/AppleSDGothicNeoM.woff") format("woff");
+}
+@font-face {
+  font-family: "appleNeoR";
+  src: url("../fonts/AppleSDGothicNeoR.woff") format("woff");
 }
 .head {
   width: 100%;
@@ -20,7 +24,8 @@
   text-align: center;
   position: relative;
 
-  border: 1px solid #707070;
+  border-top: 1px solid #707070;
+  border-bottom: 1px solid #707070;
   margin-top: 70px;
 }
 .head .title--wrapper {
@@ -46,9 +51,9 @@
   width: 100%;
   height: 80px;
   margin-top: 30px;
-  text-align:center;
-  
-  line-height: 80px;;
+  text-align: center;
+
+  line-height: 80px;
 }
 .season--tab {
   font-family: "appleNeoB";
@@ -59,56 +64,122 @@
   display: inline-block;
   margin-left: 10%;
 }
-.season--tab:first-child{
-  margin:unset;
+.season--tab:first-child {
+  margin: unset;
 }
-.season--wrap{
+.season--wrap {
   margin: 4rem auto 0 auto;
   width: 92%;
 }
-.season--wrap .title{
-  font-size: 39px;
-  font-family: 'appleNeoB';
+.season--wrap .title {
+  font-size: 1.5rem;
+  font-family: "appleNeoR";
+
+  margin-bottom: 0.5rem;
 }
-.study--wrap .title--wrap{
+.study--wrap .title--wrap {
   margin: 2.7rem auto 0 auto;
   width: 88%;
 }
-.study--wrap .title--wrap .study--title{
+.study--wrap .title--wrap .study--title {
   font-size: 42px;
-  font-family: 'appleNeoB';
-  display:inline-block;
+  font-family: "appleNeoB";
+  display: inline-block;
 }
-.study--wrap .title--wrap .lecturer--wrap{
+.study--wrap .title--wrap .lecturer--wrap {
   font-size: 10px;
-  font-family: 'appleNeoUL';
+  font-family: "appleNeoUL";
   display: inline-block;
   margin-left: 16px;
 }
-.study--wrap .title--wrap .lecturer--wrap .lecturer{
-  font-family: 'appleNeoM';
+.study--wrap .title--wrap .lecturer--wrap .lecturer {
+  font-family: "appleNeoM";
   line-height: 11px;
   font-size: 17px;
   display: block;
 }
-.study--wrap .title--wrap .lecturer--wrap .lecturer--list{
-  font-family:'appleNeoUL';
+.study--wrap .title--wrap .lecturer--wrap .lecturer--list {
+  font-family: "appleNeoUL";
   font-size: 18px;
 }
-.study--wrap .mid--final--wrap{
+.study--wrap .mid--final--wrap {
   width: 83%;
+  margin: 2.5rem auto 0 auto;
+
+  position: relative;
+  height: 12rem;
 }
-.study--wrap .mid--final--wrap table{
-  width: 22rem;
-  display:inline-block;
+.study--wrap .mid--final--wrap .mid--test {
+  position: absolute;
+  left: 0;
 }
-.mid--test{
-  display:inline-block;
+.study--wrap .mid--final--wrap .final--test {
+  position: absolute;
+  right: 0;
 }
-.final--test{
-  display:inline-block;
+.study--wrap .final--wrap {
+  width: 83%;
+  margin: 2.5rem auto 0 auto;
+  position: relative;
+  height: 12rem;
 }
-.study--wrap .final--wrap table{
-  width: 22rem;
-  display:inline-block;
+.study--wrap .final--wrap .final--test {
+  height: 12rem;
+}
+table caption {
+  text-align: left;
+}
+td {
+  text-align: right;
+}
+.study--wrap .mid--final--wrap .rank {
+  width: 11rem;
+  display: inline-block;
+}
+.rank {
+  width: 11rem;
+  display: inline-block;
+  /* 어렵다... */
+  float: left;
+}
+.ProbPicker--wrap {
+  width: 12rem;
+  display: inline-block;
+}
+.study--wrap .mid--final--wrap .ProbPicker--wrap {
+  width: 12rem;
+  font-size: 1rem;
+
+  display: inline-block;
+}
+.sunwee {
+  font-size: 1.1rem;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+.name {
+  font-family: "appleNeoM";
+  font-size: 1.3rem;
+  padding-bottom: 0;
+}
+.ProbPick {
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.mid--test {
+  display: inline-block;
+}
+.final--test {
+  display: inline-block;
+}
+.study--wrap .final--wrap .rank {
+}
+.study--wrap .final--wrap .ProbPicker--wrap {
+}
+.school {
+  font-size: 0.8rem;
+}
+@media (max-width: 1112px) {
+
 }

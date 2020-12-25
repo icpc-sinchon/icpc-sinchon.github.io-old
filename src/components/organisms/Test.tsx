@@ -16,28 +16,29 @@ export default function Test(props: TestProps) {
         <caption className="title">{props.TestType}</caption>
           <tbody>
             <tr>
-              <td>1위</td>
-              <td>{props.FirstRankName}</td>
+              <td className="sunwee">1위</td>
+              <td className="name">{props.FirstRankName}</td>
             </tr>
             <tr>
-              <td>2위</td>
-              <td>{props.SecondRankName}</td>
+              <td className="sunwee">2위</td>
+              <td className="name">{props.SecondRankName}</td>
             </tr>
             <tr>
-              <td>3위</td>
-              <td>{props.ThirdRankName}</td>
+              <td className="sunwee">3위</td>
+              <td className="name">{props.ThirdRankName}</td>
             </tr>
           </tbody>
         </table>
         <table className="ProbPicker--wrap">
+        <caption className="title">&nbsp;</caption>
           <tbody>
             <tr>
-              <td>문항선정</td>
-              <td>{props.ProbPicker1}</td>
+              <td className="ProbPick">문항선정</td>
+              <td className="name">{props.ProbPicker1}</td>
             </tr>
             <tr>
               <td></td>
-              <td>{props.ProbPicker2}</td>
+              <td className="name">{props.ProbPicker2}</td>
             </tr>
           </tbody>
         </table>
