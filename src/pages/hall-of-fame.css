@@ -74,7 +74,7 @@
 .season--wrap .season--name {
   font-size: 2.3rem;
   font-family: "appleNeoR";
-  
+
   margin-bottom: 3.5rem;
 }
 .season--wrap .title {
@@ -189,6 +189,15 @@ td {
 .no--test {
   margin: 2.5rem auto 5rem auto;
   text-align: center;
+}
+.hide{
+  display:none;
+}
+.show{
+  display:block;
+}
+.season--wrap .study--wrap:last-child{
+  margin-bottom: 6rem;
 }
 @media (max-width: 1112px) {
 }
