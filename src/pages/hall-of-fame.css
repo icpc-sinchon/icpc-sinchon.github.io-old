@@ -78,12 +78,6 @@
 
   margin-bottom: 3.5rem;
 }
-.season--wrap .title {
-  font-size: 1.5rem;
-  font-family: "appleNeoR";
-
-  margin-bottom: 0.5rem;
-}
 .study--wrap .title--wrap {
   margin: 2.7rem auto 0 auto;
   width: 88%;
@@ -143,12 +137,7 @@ td {
   width: 11rem;
   display: inline-block;
 }
-.rank {
-  width: 11rem;
-  display: inline-block;
-  /* 어렵다... */
-  float: left;
-}
+
 .ProbPicker--wrap {
   width: 12rem;
   display: inline-block;
@@ -158,21 +147,6 @@ td {
   font-size: 1rem;
 
   display: inline-block;
-}
-.sunwee {
-  font-size: 1.1rem;
-  padding-right: 0;
-  padding-bottom: 0;
-}
-.name {
-  font-family: "appleNeoM";
-  font-size: 1.3rem;
-  padding-bottom: 0;
-}
-.ProbPick {
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-top: 0;
 }
 .mid--test {
   display: inline-block;
