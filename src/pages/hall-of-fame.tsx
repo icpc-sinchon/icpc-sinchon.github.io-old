@@ -82,8 +82,8 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
           <div className="title--wrapper">
             <div className="title">HALL OF FAME</div>
             <div className="sub--title">
-              ICPC 신촌 연합 활동에 기여를 해주신 분들과, 열심히 활동하여 우수한
-              성적을 거둔 사람들을 기립니다
+              <div className="sub--title--split">ICPC 신촌 연합 활동에 기여를 해주신 분들과,&nbsp;</div><div className="sub--title--split">열심히 활동하여 우수한
+              성적을 거둔 사람들을 기립니다</div>
             </div>
           </div>
         </div>

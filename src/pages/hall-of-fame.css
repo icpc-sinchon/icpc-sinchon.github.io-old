@@ -24,9 +24,8 @@
   text-align: center;
 
   position: relative;
-  border-top: 1px solid #707070;
-  border-bottom: 1px solid #707070;
   margin-top: 5rem;
+  box-shadow: 0 0 64px 1px rgba(51,149,61,.2);
 }
 .head .title--wrapper {
   position: absolute;
@@ -46,10 +45,13 @@
   font-size: 1.3rem;
   margin-top: 1.1rem;
 }
+.sub--title--split{
+  display:inline-block;
+}
 .tab--wrapper {
   width: 100%;
   height: 3rem;
-  margin-top: 2rem;
+  margin: 3rem auto 0 auto;
   text-align: center;
 
   line-height: 3rem;
@@ -80,6 +82,7 @@
 .season--wrap {
   margin: 7rem auto 0;
   width: 92%;
+  max-width: 1705px;
 }
 .season--wrap .season--name {
   font-size: 2.3rem;
@@ -191,5 +194,36 @@ td {
 .season--wrap .study--wrap:last-child {
   margin-bottom: 6rem;
 }
-@media (max-width: 1112px) {
+
+@media (max-width: 1137px) {
+  .head .title{
+    font-family: "segoeui";
+    font-size: 1.5em;
+    letter-spacing: 1rem;
+    text-indent: 1rem;
+  }
+  .head .sub--title div{
+    font-size: 0.9rem;
+  }
+  .season--tab{
+    margin-left: 4%;
+  }
+  .tab--wrapper{
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+}
+@media (max-width:900px){
+  .season--tab{
+    font-size: 1.1rem;
+    line-height: 2.1rem;
+    margin-left: 8%;
+  }
+
+}
+@media(max-width:654px){
+  .season--tab:nth-child(3){
+    
+    /* margin-left:unset; */
+  }
 }
