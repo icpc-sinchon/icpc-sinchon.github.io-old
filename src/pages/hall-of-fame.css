@@ -52,12 +52,12 @@
 }
 .season--tab {
   font-family: "appleNeoB";
-  font-size:26px;
+  font-size: 1.2rem;
   letter-spacing: 6px;
-  text-indent:6px;
-  
-  display:inline-block;
-  margin-left:214px;
+  text-indent: 6px;
+
+  display: inline-block;
+  margin-left: 10%;
 }
 .season--tab:first-child{
   margin:unset;
@@ -95,7 +95,9 @@
   font-family:'appleNeoUL';
   font-size: 18px;
 }
-
+.study--wrap .mid--final--wrap{
+  width: 83%;
+}
 .study--wrap .mid--final--wrap table{
   width: 22rem;
   display:inline-block;
