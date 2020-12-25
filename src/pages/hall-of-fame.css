@@ -71,6 +71,12 @@
   margin: 4rem auto 0 auto;
   width: 92%;
 }
+.season--wrap .season--name {
+  font-size: 2.3rem;
+  font-family: "appleNeoR";
+  
+  margin-bottom: 3.5rem;
+}
 .season--wrap .title {
   font-size: 1.5rem;
   font-family: "appleNeoR";
@@ -130,7 +136,7 @@ table caption {
   text-align: left;
 }
 td {
-  text-align: right;
+  text-align: left;
 }
 .study--wrap .mid--final--wrap .rank {
   width: 11rem;
@@ -180,6 +186,9 @@ td {
 .school {
   font-size: 0.8rem;
 }
+.no--test {
+  margin: 2.5rem auto 5rem auto;
+  text-align: center;
+}
 @media (max-width: 1112px) {
-
 }

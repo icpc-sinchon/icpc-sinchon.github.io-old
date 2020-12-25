@@ -2,9 +2,9 @@ import React from "react"
 
 type TestProps = {
     TestType:string
-    FirstRankName: string
-    SecondRankName: string
-    ThirdRankName: string
+    FirstRank: string
+    SecondRank: string
+    ThirdRank: string
     ProbPicker1: string
     ProbPicker2: string
 }
@@ -17,15 +17,15 @@ export default function Test(props: TestProps) {
           <tbody>
             <tr>
               <td className="sunwee">1위</td>
-              <td className="name">{props.FirstRankName}</td>
+              <td className="name">{props.FirstRank}</td>
             </tr>
             <tr>
               <td className="sunwee">2위</td>
-              <td className="name">{props.SecondRankName}</td>
+              <td className="name">{props.SecondRank}</td>
             </tr>
             <tr>
               <td className="sunwee">3위</td>
-              <td className="name">{props.ThirdRankName}</td>
+              <td className="name">{props.ThirdRank}</td>
             </tr>
           </tbody>
         </table>
