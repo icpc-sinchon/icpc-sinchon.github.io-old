@@ -7,29 +7,32 @@ import {faAt} from "@fortawesome/free-solid-svg-icons"
 
 type MemberProps = {
     position: string;
-    image?: string;
+    image: string;
     name: string;
+    introduce?:string;
     school: string;
     address1: string;
-    address2?: string;
+    address2: string;
 };
 
 const MemberCardStyle=css`
 margin: 1rem 0rem;
-padding: 0.5rem 0.5rem;
-border-right: 3px solid #33a23d;
-border-top: 3px solid #33a23d;
-border-radius:0 7px 0 0;
+padding: 1rem 4rem 1rem 1rem;
 display:flex;
-flex-direction:column;
 align-items:center;
+justify-content:center;
+text-decoration:none;
+color:black;
+border-top:1px solid #707070;
+border-bottom:1px solid #707070;
 `
 const imgStyle=css`
-width:240px;
-height:240px;
+width:220px;
+height:220px;
+margin-right: 2rem;
 `
 const addrStyle=css`
-font-size:12px;
+font-size:14px;
 `
 const addrIconStyle=css`
 margin-right: 0.3rem;
@@ -37,10 +40,10 @@ margin-right: 0.3rem;
 
 export default function MemberCard(props:MemberProps){
     return(
-    <div css={MemberCardStyle}>
+    <a href={props.address2} css={MemberCardStyle}>
         <img css={imgStyle} alt={props.name} src={props.image}/>
         <div css={{width:"95%"}}>
-            <div css={{fontSize:"16px", fontWeight:"bold"}}>{props.name}<sub css={{fontWeight:"normal"}}>{props.position}</sub></div>
+            <div css={{fontSize:"20px", fontWeight:"bold"}}>{props.name}<sub css={{fontWeight:"normal"}}>{props.position}</sub></div>
             <div css={{fontSize:"14px"}}>{props.school}</div>
             <div css={addrStyle}>
                 <FontAwesomeIcon css={addrIconStyle} icon={faAt} />
@@ -51,10 +54,9 @@ export default function MemberCard(props:MemberProps){
                 <FontAwesomeIcon css={addrIconStyle} icon={faGithub} />
                 {props.address2}
             </div>
-            }
-            
+            }  
         </div>
-    </div>
+    </a>
     );
 
 }
