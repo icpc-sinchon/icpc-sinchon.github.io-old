@@ -77,7 +77,7 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
         </div>
 
         <div className="tab--wrapper">
-          <div className="season--tab" onClick={e => getData(e)}>
+          <div className="season--tab " onClick={e => getData(e)}>
             2020 Winter
           </div>
           <div className="season--tab" onClick={e => getData(e)}>
@@ -92,11 +92,10 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
         </div>
 
         {HallOfFameData.content.map(val => {
-          var data;
-          if(val.year+'--'+val.semester == "2020--Winter")
-            data=val.year + "--" + val.semester + " season--wrap show";
-          else
-            data=val.year + "--" + val.semester + " season--wrap hide"
+          var data
+          if (val.year + "--" + val.semester == "2020--Winter")
+            data = val.year + "--" + val.semester + " season--wrap show"
+          else data = val.year + "--" + val.semester + " season--wrap hide"
 
           if (val.studies == undefined) {
             return (
@@ -104,7 +103,9 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                 <div className="season--name">
                   {val.year + " " + val.semester}
                 </div>
-                <div className="no--test">아직 시행되지 않은 Algorithm Camp 입니다</div>
+                <div className="no--test">
+                  아직 시행되지 않은 Algorithm Camp 입니다
+                </div>
               </div>
             )
           } else
@@ -173,7 +174,7 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                                 </span>,
                               ]}
                               ThirdRank={[
-                                val1.contests[0].awards[1].member,
+                                val1.contests[0].awards[2].member,
                                 <span className="school">
                                   {val1.contests[0].awards[2].school}
                                 </span>,
