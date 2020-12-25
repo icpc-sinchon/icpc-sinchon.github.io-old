@@ -60,6 +60,18 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
           season[i].classList.remove("show")
       }
     }
+    var tabs = document.getElementsByClassName("season--tab")
+    for (var i = 0; i < tabs.length; i++) {
+      if (tabs[i] == e.target) {
+        if (tabs[i].classList.contains("hide--tab"))
+          tabs[i].classList.remove("hide--tab")
+      } else {
+        if (!tabs[i].classList.contains("hide--tab"))
+          tabs[i].classList.add("hide--tab")
+        if (tabs[i].classList.contains("show--tab"))
+          tabs[i].classList.remove("show--tab")
+      }
+    }
   }
 
   return (
@@ -77,16 +89,16 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
         </div>
 
         <div className="tab--wrapper">
-          <div className="season--tab " onClick={e => getData(e)}>
+          <div className="season--tab show--tab" onClick={e => getData(e)}>
             2020 Winter
           </div>
-          <div className="season--tab" onClick={e => getData(e)}>
+          <div className="season--tab hide--tab" onClick={e => getData(e)}>
             2020 Summer
           </div>
-          <div className="season--tab" onClick={e => getData(e)}>
+          <div className="season--tab hide--tab" onClick={e => getData(e)}>
             2021 Winter
           </div>
-          <div className="season--tab" onClick={e => getData(e)}>
+          <div className="season--tab hide--tab" onClick={e => getData(e)}>
             2021 Summer
           </div>
         </div>

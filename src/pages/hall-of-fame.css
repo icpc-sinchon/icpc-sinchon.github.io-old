@@ -66,6 +66,14 @@
   margin-left: 10%;
   cursor: pointer;
 }
+.hide--tab{
+  border:unset;
+  color:silver;
+}
+.show--tab{
+  border-bottom: 0.2rem solid black;
+  color:black;
+}
 .season--tab:first-child {
   margin: unset;
 }
