@@ -28,7 +28,7 @@ const IndexPage = () => (
       className="balloon"
       style={{
         padding: `11rem 1rem`,
-        margin: `1rem 0 3rem 0`,
+        margin: `1rem 0 0rem 0`,
         backgroundImage: `url(${mainImage})`,
         backgroundRepeat: `no-repeat`,
         backgroundPosition: `center center`,
