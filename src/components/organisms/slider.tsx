@@ -18,7 +18,7 @@ import leftArrow from '../../images/chevron-left.svg'
 
 const wrapperStyle=css`
 overflow:hidden;
-padding: 1.5rem 2rem;
+padding: 1.5rem 4rem;
 width: 100%;
 position:relative;
 margin: 0 0 8rem 0;
@@ -31,9 +31,11 @@ margin: 0 0 8rem 0;
 }
 .slick-arrow-prev{
     left:-2.8rem;
+    cursor:pointer;
 }
 .slick-arrow-next{
     right:-2.8rem;
+    cursor:pointer;
 }
 .slick-dots{
     display:flex;
