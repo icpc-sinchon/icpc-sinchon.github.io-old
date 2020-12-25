@@ -19,8 +19,6 @@ type DataProps = {
   }
 }
 
-getData(){
-}
 type StudyProps = {
   StudyTitle: string
   LecturerList: string
@@ -62,7 +60,7 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
         </div>
 
         <div className="tab--wrapper">
-          <div className="season--tab" onClick={this.getData}>2020 Winter</div>
+          <div className="season--tab">2020 Winter</div>
           <div className="season--tab">2020 Summer</div>
           <div className="season--tab">2020 Winter</div>
           <div className="season--tab">2020 Summer</div>
