@@ -29,6 +29,7 @@ type StudyProps = {
   fSecondRank: string
   fThirdRank: string
 }
+
 const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
   const renderActivity = activity => {
     if (activity.activity_type === "study") {
@@ -44,7 +45,9 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
       return <></>
     }
   }
-
+  const getData = obj => {
+    alert(obj.innerHTML)
+  }
   return (
     <Layout>
       <SEO title="ICPC Sinchon - Hall Of Fame" />
@@ -60,16 +63,26 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
         </div>
 
         <div className="tab--wrapper">
-          <div className="season--tab">2020 Winter</div>
-          <div className="season--tab">2020 Summer</div>
-          <div className="season--tab">2020 Winter</div>
-          <div className="season--tab">2020 Summer</div>
+          <div className="season--tab" onClick={() => getData(this)}>
+            2020 Winter
+          </div>
+          <div className="season--tab" onClick={() => getData(this)}>
+            2020 Summer
+          </div>
+          <div className="season--tab" onClick={() => getData(this)}>
+            2021 Winter
+          </div>
+          <div className="season--tab" onClick={() => getData(this)}>
+            2021 Summer
+          </div>
         </div>
 
         {HallOfFameData.content.map(val => {
           return (
             <div className="season--wrap">
-              <div className="season--name">{val.year + " " + val.semester}</div>
+              <div className="season--name">
+                {val.year + " " + val.semester}
+              </div>
               {val.studies.map(val1 => {
                 if (val1.contests == undefined)
                   return (
@@ -83,7 +96,9 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                           </span>
                         </div>
                       </div>
-                      <div className="no--test">모의고사가 진행되지 않았습니다</div>
+                      <div className="no--test">
+                        모의고사가 진행되지 않았습니다
+                      </div>
                     </div>
                   )
                 else if (Object.keys(val1.contests).length == 2) {
@@ -103,29 +118,71 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                         <div className="mid--test">
                           <Test
                             TestType={val1.contests[0].contest_name}
-                            ProbPicker1={
-                              [val1.contests[0].problem_picker[0].name,<span className="school">{val1.contests[0].problem_picker[0].school}</span>]
-                            }
-                            ProbPicker2={
-                              [val1.contests[0].problem_picker[1].name,<span className="school">{val1.contests[0].problem_picker[1].school}</span>]
-                            }
-                            FirstRank={[val1.contests[0].awards[0].member,<span className="school">{val1.contests[0].awards[0].school}</span>]}
-                            SecondRank={[val1.contests[0].awards[1].member,<span className="school">{val1.contests[0].awards[1].school}</span>]}
-                            ThirdRank={[val1.contests[0].awards[1].member,<span className="school">{val1.contests[0].awards[2].school}</span>]}
+                            ProbPicker1={[
+                              val1.contests[0].problem_picker[0].name,
+                              <span className="school">
+                                {val1.contests[0].problem_picker[0].school}
+                              </span>,
+                            ]}
+                            ProbPicker2={[
+                              val1.contests[0].problem_picker[1].name,
+                              <span className="school">
+                                {val1.contests[0].problem_picker[1].school}
+                              </span>,
+                            ]}
+                            FirstRank={[
+                              val1.contests[0].awards[0].member,
+                              <span className="school">
+                                {val1.contests[0].awards[0].school}
+                              </span>,
+                            ]}
+                            SecondRank={[
+                              val1.contests[0].awards[1].member,
+                              <span className="school">
+                                {val1.contests[0].awards[1].school}
+                              </span>,
+                            ]}
+                            ThirdRank={[
+                              val1.contests[0].awards[1].member,
+                              <span className="school">
+                                {val1.contests[0].awards[2].school}
+                              </span>,
+                            ]}
                           ></Test>
                         </div>
                         <div className="final--test">
                           <Test
                             TestType={val1.contests[1].contest_name}
-                            ProbPicker1={
-                              [val1.contests[1].problem_picker[0].name,<span className="school">{val1.contests[1].problem_picker[0].school}</span>]
-                            }
-                            ProbPicker2={
-                              [val1.contests[1].problem_picker[1].name,<span className="school">{val1.contests[1].problem_picker[1].school}</span>]
-                            }
-                            FirstRank={[val1.contests[1].awards[0].member,<span className="school">{val1.contests[1].awards[0].school}</span>]}
-                            SecondRank={[val1.contests[1].awards[1].member,<span className="school">{val1.contests[1].awards[1].school}</span>]}
-                            ThirdRank={[val1.contests[1].awards[2].member,<span className="school">{val1.contests[1].awards[2].school}</span>]}
+                            ProbPicker1={[
+                              val1.contests[1].problem_picker[0].name,
+                              <span className="school">
+                                {val1.contests[1].problem_picker[0].school}
+                              </span>,
+                            ]}
+                            ProbPicker2={[
+                              val1.contests[1].problem_picker[1].name,
+                              <span className="school">
+                                {val1.contests[1].problem_picker[1].school}
+                              </span>,
+                            ]}
+                            FirstRank={[
+                              val1.contests[1].awards[0].member,
+                              <span className="school">
+                                {val1.contests[1].awards[0].school}
+                              </span>,
+                            ]}
+                            SecondRank={[
+                              val1.contests[1].awards[1].member,
+                              <span className="school">
+                                {val1.contests[1].awards[1].school}
+                              </span>,
+                            ]}
+                            ThirdRank={[
+                              val1.contests[1].awards[2].member,
+                              <span className="school">
+                                {val1.contests[1].awards[2].school}
+                              </span>,
+                            ]}
                           ></Test>
                         </div>
                       </div>
@@ -148,15 +205,36 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                         <div className="final--test">
                           <Test
                             TestType={val1.contests[0].contest_name}
-                            ProbPicker1={
-                              [val1.contests[0].problem_picker[0].name,<span className="school">{val1.contests[0].problem_picker[0].school}</span>]
-                            }
-                            ProbPicker2={
-                              [val1.contests[0].problem_picker[1].name,<span className="school">{val1.contests[0].problem_picker[1].school}</span>]
-                            }
-                            FirstRank={[val1.contests[0].awards[0].member,<span className="school">{val1.contests[0].awards[0].school}</span>]}
-                            SecondRank={[val1.contests[0].awards[1].member,<span className="school">{val1.contests[0].awards[1].school}</span>]}
-                            ThirdRank={[val1.contests[0].awards[2].member,<span className="school">{val1.contests[0].awards[2].school}</span>]}
+                            ProbPicker1={[
+                              val1.contests[0].problem_picker[0].name,
+                              <span className="school">
+                                {val1.contests[0].problem_picker[0].school}
+                              </span>,
+                            ]}
+                            ProbPicker2={[
+                              val1.contests[0].problem_picker[1].name,
+                              <span className="school">
+                                {val1.contests[0].problem_picker[1].school}
+                              </span>,
+                            ]}
+                            FirstRank={[
+                              val1.contests[0].awards[0].member,
+                              <span className="school">
+                                {val1.contests[0].awards[0].school}
+                              </span>,
+                            ]}
+                            SecondRank={[
+                              val1.contests[0].awards[1].member,
+                              <span className="school">
+                                {val1.contests[0].awards[1].school}
+                              </span>,
+                            ]}
+                            ThirdRank={[
+                              val1.contests[0].awards[2].member,
+                              <span className="school">
+                                {val1.contests[0].awards[2].school}
+                              </span>,
+                            ]}
                           ></Test>
                         </div>
                       </div>

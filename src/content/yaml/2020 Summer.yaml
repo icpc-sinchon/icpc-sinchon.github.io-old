@@ -1,0 +1,48 @@
+year: 2020
+semester: Summer
+activity_type: study
+studies:
+  - topic: 고급 알고리즘 스터디
+    lecturer: 강사는 없었으나, 전해성(서강대)님이 하드캐리
+
+  - topic: 중급 알고리즘 스터디
+    lecturer: 연세대학교 윤인섭 / 서강대학교 이준석
+    contests:
+      - contest_name: 중간고사
+        problem_picker:
+          - name: 이기현
+            school: 서강대
+          - name: 최재민
+            school: KAIST
+        awards:
+          - prize: 1st
+            member: 박재형
+            school: 서강대
+          - prize: 2nd
+            member: 남유진
+            school: 연세대
+          - prize: 3rd
+            member: 박준성
+            school: 서강대
+
+  - topic: 초급 알고리즘 스터디
+    lecturer: 서강대학교 배철환 / 홍익대학교 백성익
+    contests:
+      - contest_name: 중간고사
+        problem_picker:
+          - name: 이길원
+            school: 서강대
+          - name: 전해성
+            school: 서강대
+          - name: 남수연
+            school: 숙명여대
+        awards:
+          - prize: 1st
+            member: 김태윤
+            school: 연세대
+          - prize: 2nd
+            member: 김도현
+            school: 홍익대
+          - prize: 3rd
+            member: 윤이빈
+            school: 숙명여대
