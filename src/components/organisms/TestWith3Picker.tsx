@@ -19,8 +19,21 @@ const RankCss = css`
 const TitleCss = css`
   font-size: 1.5rem;
   font-family: "appleNeoR";
+  margin-bottom: 0.7rem;
 
-  margin-bottom: 0.5rem;
+  border-bottom: 1px solid hsla(0,0%,0%,0.12);
+  width: 6.3rem;
+  padding-bottom: 0.6rem;
+  padding-left: 0.4rem;
+`
+const TitleProbPickCss = css`
+  font-size: 1.5rem;
+  font-family: "appleNeoR";
+  margin-bottom: 0.7rem;
+
+  width: 6.3rem;
+  padding-bottom: 0.6rem;
+  padding-left: 0.4rem;
 `
 const SunweeCss = css`
   font-size: 1.1rem;
@@ -36,6 +49,9 @@ const ProbPickCss = css`
   padding-right: 0;
   padding-bottom: 0;
   padding-top: 0;
+`
+const NoBorder=css`
+  border: none;
 `
 export default function Test(props: TestProps) {
 
@@ -73,7 +89,7 @@ export default function Test(props: TestProps) {
         </tbody>
       </table>
       <table className="ProbPicker--wrap">
-        <caption className="title" css={TitleCss}>
+        <caption className="title" css={TitleProbPickCss}>
           &nbsp;
         </caption>
         <tbody>
@@ -86,13 +102,13 @@ export default function Test(props: TestProps) {
             </td>
           </tr>
           <tr>
-            <td></td>
+            <td css={NoBorder}></td>
             <td className="name" css={NameCss}>
               {props.ProbPicker2}
             </td>
           </tr>
           <tr>
-            <td></td>
+            <td css={NoBorder}></td>
             <td className="name" css={NameCss}>
               {props.ProbPicker3}
             </td>
