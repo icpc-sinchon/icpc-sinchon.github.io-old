@@ -24,9 +24,8 @@
   text-align: center;
 
   position: relative;
-  border-top: 1px solid #707070;
-  border-bottom: 1px solid #707070;
   margin-top: 5rem;
+  box-shadow: 0 0 64px 1px rgba(51,149,61,.2);
 }
 .head .title--wrapper {
   position: absolute;
@@ -44,12 +43,15 @@
 .head .sub--title {
   font-family: "appleNeoUL";
   font-size: 1.3rem;
-  margin-top: 1.7rem;
+  margin-top: 1.1rem;
+}
+.sub--title--split{
+  display:inline-block;
 }
 .tab--wrapper {
   width: 100%;
   height: 3rem;
-  margin-top: 2rem;
+  margin: 3rem auto 0 auto;
   text-align: center;
 
   line-height: 3rem;
@@ -57,19 +59,30 @@
 .season--tab {
   font-family: "appleNeoB";
   font-size: 1.2rem;
+  line-height: 2rem;
   letter-spacing: 6px;
   text-indent: 6px;
+  border-bottom: 0.2rem solid black;
 
   display: inline-block;
   margin-left: 10%;
   cursor: pointer;
 }
+.hide--tab{
+  border:unset;
+  color:silver;
+}
+.show--tab{
+  border-bottom: 0.2rem solid black;
+  color:black;
+}
 .season--tab:first-child {
   margin: unset;
 }
 .season--wrap {
-  margin: 4rem auto 0 auto;
+  margin: 7rem auto 0;
   width: 92%;
+  max-width: 1705px;
 }
 .season--wrap .season--name {
   font-size: 2.3rem;
@@ -78,8 +91,10 @@
   margin-bottom: 3.5rem;
 }
 .study--wrap .title--wrap {
-  margin: 2.7rem auto 0 auto;
+  margin: 2.7rem auto 0;
   width: 88%;
+  height: 3rem;
+  border-bottom: .1rem solid rgba(51,149,61,.5);
 }
 .study--wrap .title--wrap .study--title {
   font-size: 42px;
@@ -138,7 +153,7 @@ td {
 }
 
 .ProbPicker--wrap {
-  width: 12rem;
+  width: 11rem;
   display: inline-block;
 }
 .study--wrap .mid--final--wrap .ProbPicker--wrap {
@@ -170,8 +185,99 @@ td {
 .show {
   display: block;
 }
+.season--wrap .study--wrap {
+  margin-bottom: 6rem;
+}
+.season--wrap .study--wrap:first-child {
+
+}
 .season--wrap .study--wrap:last-child {
   margin-bottom: 6rem;
 }
-@media (max-width: 1112px) {
+
+@media (max-width: 1137px) {
+  .head .title{
+    font-family: "segoeui";
+    font-size: 1.5em;
+    letter-spacing: 1rem;
+    text-indent: 1rem;
+  }
+  .head .sub--title div{
+    font-size: 0.9rem;
+  }
+  .season--tab{
+    margin-left: 4%;
+    letter-spacing: 0;
+    text-indent:0;
+  }
+  .tab--wrapper{
+    overflow-y: hidden;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 0 1.9rem;
+
+  }
+  .tab--wrapper::-webkit-scrollbar{
+    width:10px;
+    height:0.3rem;
+    background-color: unset;
+  }
+  .tab--wrapper::-webkit-scrollbar-thumb{
+    background-color:  rgba(51,149,61,.2);
+  }
+  .study--wrap .title--wrap .study--title{
+    font-size:1.9rem;
+  }
+
+  .study--wrap .mid--final--wrap,
+  .study--wrap .final--wrap {
+    text-align: center;
+  }
+  .study--wrap .mid--test,
+  .study--wrap .final--test{
+    position:unset !important;
+  }
+  .season--wrap .study--wrap {
+    margin-bottom: 13rem;
+}
+}
+@media (max-width:900px){
+  .season--tab{
+    font-size: 1.1rem;
+    line-height: 2.1rem;
+    margin-left: 8%;
+  }
+
+}
+@media(max-width:550px){
+  .season--tab:nth-child(3){
+    
+    /* margin-left:unset; */
+  }
+  .study--wrap .mid--final--wrap ,
+  .study--wrap .final--wrap {
+    width:90%;
+  }
+  .study--wrap .rank{
+    width:10rem;
+  }
+  .study--wrap.mid--test,
+  .study--wrap.final--test{
+    width:100%;
+  }
+  .ProbPicker--wrap{
+    width: 10.3rem !important;
+  }
+  .test{
+    text-align: right;
+  }
+}
+@media(max-width:400px){
+  .study--wrap .rank{
+    width: 8.7rem;
+  }
+  .study--wrap .mid--final--wrap,
+  .study--wrap .final--wrap{
+    width: 92%;
+  }
 }
