@@ -180,6 +180,10 @@ td {
 .school {
   font-size: 0.8rem;
 }
+.school--lecturer{
+  font-size: 0.7rem;
+  font-family: "appleNeoUL";
+}
 .no--test {
   margin: 2.5rem auto 5rem auto;
   text-align: center;

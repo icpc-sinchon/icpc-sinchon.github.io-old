@@ -179,19 +179,19 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                             lecturer={"강사진"}
                             lecturer1={[
                               val1.lecturer[0].name,
-                              <span className="school">
+                              <span className="school--lecturer">
                                 {val1.lecturer[0].school}
                               </span>,
                             ]}
                             lecturer2={[
                               val1.lecturer[1].name,
-                              <span className="school">
+                              <span className="school--lecturer">
                                 {val1.lecturer[1].school}
                               </span>,
                             ]}
                             lecturer3={[
                               val1.lecturer[2].name,
-                              <span className="school">
+                              <span className="school--lecturer">
                                 {val1.lecturer[2].school}
                               </span>,
                             ]}
@@ -303,19 +303,19 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                             lecturer={"강사진"}
                             lecturer1={[
                               val1.lecturer[0].name,
-                              <span className="school">
+                              <span className="school--lecturer">
                                 {val1.lecturer[0].school}
                               </span>,
                             ]}
                             lecturer2={[
                               val1.lecturer[1].name,
-                              <span className="school">
+                              <span className="school--lecturer">
                                 {val1.lecturer[1].school}
                               </span>,
                             ]}
                             lecturer3={[
                               val1.lecturer[2].name,
-                              <span className="school">
+                              <span className="school--lecturer">
                                 {val1.lecturer[2].school}
                               </span>,
                             ]}
@@ -420,19 +420,19 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                             lecturer={"강사진"}
                             lecturer1={[
                               val1.lecturer[0].name,
-                              <span className="school">
+                              <span className="school--lecturer">
                                 {val1.lecturer[0].school}
                               </span>,
                             ]}
                             lecturer2={[
                               val1.lecturer[1].name,
-                              <span className="school">
+                              <span className="school--lecturer">
                                 {val1.lecturer[1].school}
                               </span>,
                             ]}
                             lecturer3={[
                               val1.lecturer[2].name,
-                              <span className="school">
+                              <span className="school--lecturer">
                                 {val1.lecturer[2].school}
                               </span>,
                             ]}
