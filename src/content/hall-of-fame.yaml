@@ -5,10 +5,10 @@ content:
     activity_type: study
     studies:
       - topic: 고급 알고리즘 스터디
-        lecturer: 서강대학교 박수현 / 서강대학교 이상원
+        lecturer: 서강대학교 박수현 | 서강대학교 이상원
 
       - topic: 중급 알고리즘 스터디
-        lecturer: 서강대학교 임지환 / 서강대학교 이기현
+        lecturer: 서강대학교 임지환 | 서강대학교 이기현
         contests:
           - contest_name: 중간고사
             problem_picker:
@@ -44,7 +44,7 @@ content:
                 school: 홍익대
 
       - topic: 초급 알고리즘 스터디
-        lecturer: 서강대학교 이태한 / 홍익대학교 이재열 / 홍익대학교 김성민
+        lecturer: 서강대학교 이태한 | 홍익대학교 이재열 | 홍익대학교 김성민
         contests:
           - contest_name: 중간고사
             problem_picker:
@@ -94,7 +94,7 @@ content:
         lecturer: 강사는 없었으나, 전해성(서강대)님이 하드캐리
 
       - topic: 중급 알고리즘 스터디
-        lecturer: 연세대학교 윤인섭 / 서강대학교 이준석
+        lecturer: 연세대학교 윤인섭 | 서강대학교 이준석
         contests:
           - contest_name: 중간고사
             problem_picker:
@@ -114,7 +114,7 @@ content:
                 school: 서강대
 
       - topic: 초급 알고리즘 스터디
-        lecturer: 서강대학교 배철환 / 홍익대학교 백성익
+        lecturer: 서강대학교 배철환 | 홍익대학교 백성익
         contests:
           - contest_name: 중간고사
             problem_picker:

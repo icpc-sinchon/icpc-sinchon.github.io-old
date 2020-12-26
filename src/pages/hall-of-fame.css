@@ -153,7 +153,7 @@ td {
 }
 
 .ProbPicker--wrap {
-  width: 12rem;
+  width: 11rem;
   display: inline-block;
 }
 .study--wrap .mid--final--wrap .ProbPicker--wrap {
@@ -207,11 +207,39 @@ td {
   }
   .season--tab{
     margin-left: 4%;
+    letter-spacing: 0;
+    text-indent:0;
   }
   .tab--wrapper{
+    overflow-y: hidden;
     overflow-x: scroll;
     white-space: nowrap;
+    padding: 0 1.9rem;
+
   }
+  .tab--wrapper::-webkit-scrollbar{
+    width:10px;
+    height:0.3rem;
+    background-color: unset;
+  }
+  .tab--wrapper::-webkit-scrollbar-thumb{
+    background-color:  rgba(51,149,61,.2);
+  }
+  .study--wrap .title--wrap .study--title{
+    font-size:1.9rem;
+  }
+
+  .study--wrap .mid--final--wrap,
+  .study--wrap .final--wrap {
+    text-align: center;
+  }
+  .study--wrap .mid--test,
+  .study--wrap .final--test{
+    position:unset !important;
+  }
+  .season--wrap .study--wrap {
+    margin-bottom: 13rem;
+}
 }
 @media (max-width:900px){
   .season--tab{
@@ -221,9 +249,35 @@ td {
   }
 
 }
-@media(max-width:654px){
+@media(max-width:550px){
   .season--tab:nth-child(3){
     
     /* margin-left:unset; */
+  }
+  .study--wrap .mid--final--wrap ,
+  .study--wrap .final--wrap {
+    width:90%;
+  }
+  .study--wrap .rank{
+    width:10rem;
+  }
+  .study--wrap.mid--test,
+  .study--wrap.final--test{
+    width:100%;
+  }
+  .ProbPicker--wrap{
+    width: 10.3rem !important;
+  }
+  .test{
+    text-align: right;
+  }
+}
+@media(max-width:400px){
+  .study--wrap .rank{
+    width: 8.7rem;
+  }
+  .study--wrap .mid--final--wrap,
+  .study--wrap .final--wrap{
+    width: 92%;
   }
 }
