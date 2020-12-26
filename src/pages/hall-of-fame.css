@@ -25,7 +25,7 @@
 
   position: relative;
   margin-top: 5rem;
-  box-shadow: 0 0 64px 1px rgba(51,149,61,.2);
+  box-shadow: 0 0 64px 1px rgba(51, 149, 61, 0.2);
 }
 .head .title--wrapper {
   position: absolute;
@@ -45,8 +45,8 @@
   font-size: 1.3rem;
   margin-top: 1.1rem;
 }
-.sub--title--split{
-  display:inline-block;
+.sub--title--split {
+  display: inline-block;
 }
 .tab--wrapper {
   width: 100%;
@@ -68,13 +68,13 @@
   margin-left: 10%;
   cursor: pointer;
 }
-.hide--tab{
-  border:unset;
-  color:silver;
+.hide--tab {
+  border: unset;
+  color: silver;
 }
-.show--tab{
+.show--tab {
   border-bottom: 0.2rem solid black;
-  color:black;
+  color: black;
 }
 .season--tab:first-child {
   margin: unset;
@@ -94,7 +94,7 @@
   margin: 2.7rem auto 0;
   width: 88%;
   height: 3rem;
-  border-bottom: .1rem solid rgba(51,149,61,.5);
+  border-bottom: 0.1rem solid rgba(51, 149, 61, 0.5);
 }
 .study--wrap .title--wrap .study--title {
   font-size: 42px;
@@ -189,95 +189,97 @@ td {
   margin-bottom: 6rem;
 }
 .season--wrap .study--wrap:first-child {
-
 }
 .season--wrap .study--wrap:last-child {
   margin-bottom: 6rem;
 }
 
 @media (max-width: 1137px) {
-  .head .title{
+  .head .title {
     font-family: "segoeui";
-    font-size: 1.5em;
+    font-size: 2.5em;
     letter-spacing: 1rem;
     text-indent: 1rem;
   }
-  .head .sub--title div{
+  .head .sub--title div {
     font-size: 0.9rem;
   }
-  .season--tab{
+  .season--tab {
     margin-left: 4%;
     letter-spacing: 0;
-    text-indent:0;
+    text-indent: 0;
   }
-  .tab--wrapper{
+  .tab--wrapper {
     overflow-y: hidden;
     overflow-x: scroll;
     white-space: nowrap;
     padding: 0 1.9rem;
-
   }
-  .tab--wrapper::-webkit-scrollbar{
-    width:10px;
-    height:0.3rem;
+  .tab--wrapper::-webkit-scrollbar {
+    width: 10px;
+    height: 0.3rem;
     background-color: unset;
   }
-  .tab--wrapper::-webkit-scrollbar-thumb{
-    background-color:  rgba(51,149,61,.2);
+  .tab--wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(51, 149, 61, 0.2);
   }
-  .study--wrap .title--wrap .study--title{
-    font-size:1.9rem;
+  .study--wrap .title--wrap .study--title {
+    font-size: 1.9rem;
   }
 
   .study--wrap .mid--final--wrap,
   .study--wrap .final--wrap {
     text-align: center;
+    height: auto;
   }
   .study--wrap .mid--test,
-  .study--wrap .final--test{
-    position:unset !important;
+  .study--wrap .final--test {
+    position: unset !important;
   }
   .season--wrap .study--wrap {
-    margin-bottom: 13rem;
+    margin-bottom: 5rem;
+  }
 }
-}
-@media (max-width:900px){
-  .season--tab{
+@media (max-width: 900px) {
+  .season--tab {
     font-size: 1.1rem;
     line-height: 2.1rem;
     margin-left: 8%;
   }
-
 }
-@media(max-width:550px){
-  .season--tab:nth-child(3){
-    
+@media(max-width:845px){
+  .head .title {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 587px) {
+  .season--tab:nth-child(3) {
     /* margin-left:unset; */
   }
-  .study--wrap .mid--final--wrap ,
+  .study--wrap .mid--final--wrap,
   .study--wrap .final--wrap {
-    width:90%;
+    width: 90%;
   }
-  .study--wrap .rank{
-    width:10rem;
+  .study--wrap .rank {
+    width: 10rem;
   }
   .study--wrap.mid--test,
-  .study--wrap.final--test{
-    width:100%;
+  .study--wrap.final--test {
+    width: 100%;
   }
-  .ProbPicker--wrap{
+  .ProbPicker--wrap {
     width: 10.3rem !important;
   }
-  .test{
+  .test {
     text-align: right;
   }
 }
-@media(max-width:400px){
-  .study--wrap .rank{
+@media (max-width: 400px) {
+  .study--wrap .rank {
     width: 8.7rem;
   }
   .study--wrap .mid--final--wrap,
-  .study--wrap .final--wrap{
+  .study--wrap .final--wrap {
     width: 92%;
   }
 }

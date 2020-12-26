@@ -8,7 +8,7 @@ type TestProps = {
   ThirdRank: string
   ProbPicker1: string
   ProbPicker2: string
-  ProbPickers: string
+  ProbPicker3: string
 }
 const RankCss = css`
   width: 11rem;
@@ -91,7 +91,12 @@ export default function Test(props: TestProps) {
               {props.ProbPicker2}
             </td>
           </tr>
-          {/* <ExtraPropPicker ProbPicker={props.ProbPickers}></ExtraPropPicker> */}
+          <tr>
+            <td></td>
+            <td className="name" css={NameCss}>
+              {props.ProbPicker3}
+            </td>
+          </tr>
         </tbody>
       </table>
     </div>
