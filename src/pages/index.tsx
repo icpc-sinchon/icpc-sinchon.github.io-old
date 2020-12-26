@@ -36,6 +36,7 @@ const IndexPage = () => (
       }}
     >
       <div className="balloon--text">
+        <div>240</div>
         <h1 className="main--title">ICPC Sinchon</h1>
         <p
           style={{
@@ -43,9 +44,9 @@ const IndexPage = () => (
             fontWeight: `500`,
           }}
         >
-          ICPC Sinchon은 신촌 지역 대학교 프로그래밍 대회 동아리 연합입니다.
+          신촌지역 대학교
           <br />
-          아무말 아무말 주저리 주저리 어쩌구 저쩌구
+          프로그래밍 대회 동아리 연합
         </p>
       </div>
     </div>
