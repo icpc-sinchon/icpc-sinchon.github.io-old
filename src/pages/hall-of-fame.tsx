@@ -141,6 +141,7 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                           <div className="lecturer--wrap">
                             <span className="lecturer">강사진</span>
                             <span className="lecturer--list">
+                              {val1.lecturer[0].school}&nbsp;
                               {val1.lecturer[0].name}&nbsp;|&nbsp;
                               {val1.lecturer[1].school}&nbsp;
                               {val1.lecturer[1].name}&nbsp;|&nbsp;
