@@ -53,8 +53,12 @@
   height: 3rem;
   margin: 3rem auto 0 auto;
   text-align: center;
-
   line-height: 3rem;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.tab--wrapper::-webkit-scrollbar {
+  display: none;
 }
 .season--tab {
   font-family: "appleNeoB";
@@ -91,9 +95,8 @@
   margin-bottom: 3.5rem;
 }
 .study--wrap .title--wrap {
-  margin: 2.7rem auto 0;
+  margin: 2.2rem auto 0;
   width: 88%;
-  height: 3rem;
   border-bottom: 0.1rem solid rgba(51, 149, 61, 0.5);
 }
 .study--wrap .title--wrap .study--title {
@@ -106,6 +109,7 @@
   font-family: "appleNeoUL";
   display: inline-block;
   margin-left: 16px;
+  margin-top: 0.5rem;
 }
 .study--wrap .title--wrap .lecturer--wrap .lecturer {
   font-family: "appleNeoM";
@@ -119,18 +123,19 @@
 }
 .study--wrap .mid--final--wrap {
   width: 83%;
-  margin: 2.5rem auto 0 auto;
-
+  margin: 2rem auto 0 auto;
   position: relative;
-  height: 12rem;
+  min-height: 12rem;
 }
 .study--wrap .mid--final--wrap .mid--test {
   position: absolute;
   left: 0;
+  margin-top:0.5rem;
 }
 .study--wrap .mid--final--wrap .final--test {
   position: absolute;
   right: 0;
+  margin-top:0.5rem;
 }
 .study--wrap .final--wrap {
   width: 83%;
