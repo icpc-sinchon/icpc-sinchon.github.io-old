@@ -34,6 +34,7 @@ height:35vh;
 width: 100%;
 max-width:70vh;
 height:auto;
+margin-bottom: 1.45rem;
 `
 
 export default function Activity(props:ActivityProps){
