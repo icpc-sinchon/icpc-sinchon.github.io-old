@@ -28,7 +28,7 @@ const IndexPage = () => (
     <div
       className="balloon"
       style={{
-        padding: `7.1rem 0`,
+        padding: `7.1rem 1rem`,
         margin: `1rem auto 3rem auto`,
         backgroundImage: `url(${mainImage})`,
         backgroundRepeat: `no-repeat`,
@@ -52,7 +52,6 @@ const IndexPage = () => (
           paddingLeft: `1rem`
         }}>
           <div
-          className="balloon--240"
             style={{
               color: `rgb(0, 132, 13)`,
               fontFamily: `appleNeoB`,
@@ -81,7 +80,6 @@ const IndexPage = () => (
             }}
           >
             <span
-            className="balloon--title--sin"
               style={{
                 lineHeight: ``,
               }}
@@ -90,7 +88,6 @@ const IndexPage = () => (
             </span>
             <br />
             <span
-              className="balloon--title--pmg"
               style={{
                 lineHeight: `5.7rem`,
               }}
