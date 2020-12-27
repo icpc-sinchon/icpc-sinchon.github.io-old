@@ -151,6 +151,27 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                             </span>
                           </div>
                         </div>
+                        <LecturerMobileTable
+                            lecturer={"강사진"}
+                            lecturer1={[
+                              val1.lecturer[0].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[0].school}
+                              </span>,
+                            ]}
+                            lecturer2={[
+                              val1.lecturer[1].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[1].school}
+                              </span>,
+                            ]}
+                            lecturer3={[
+                              val1.lecturer[2].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[2].school}
+                              </span>,
+                            ]}
+                          ></LecturerMobileTable>
                         <div className="no--test">
                           모의고사가 진행되지 않았습니다
                         </div>

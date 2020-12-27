@@ -109,7 +109,13 @@ content:
     activity_type: study
     studies:
       - topic: 고급 알고리즘 스터디
-        lecturer: 강사는 없었으나, 전해성(서강대)님이 하드캐리
+        lecturer:
+          - name: 
+            school: 강사는 없었으나, 전해성(서강대)님이 하드캐리
+          - name: 
+            school: 
+          - name: 
+            school: 
 
       - topic: 중급 알고리즘 스터디
         lecturer:
