@@ -51,15 +51,19 @@ export default function LogoScreen(){
                 <div className="balloon--240" css={logoNumStyle}>
                     240
                 </div>
-                <h1 className="main--title" css={logoTitleStyle}>
+                <h1 
+                className="main--title" 
+                css={logoTitleStyle}>
                     ICPC Sinchon
                 </h1>
                 <div css={logoContentStyle}>
-                    <span css={{lineHeight: ``,}}>
+                    <span className="balloon--title--sin"
+                    css={{lineHeight: ``,}}>
                         신촌지역 대학교
                     </span>
                     <br />
-                    <span css={{lineHeight: `5.7rem`,}}>
+                    <span className="balloon--title--pmg"
+                    css={{lineHeight: `5.7rem`,}}>
                         프로그래밍 대회 동아리 연합
                     </span>
                 </div>
