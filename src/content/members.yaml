@@ -1,55 +1,61 @@
 title: Staff
 content:
   - position: 회장
-    image: 'https://lh3.googleusercontent.com/proxy/UzV4yzwa_kHbEmJR6yfPVvCePLuFpUlUGU2GDzmmMdv8fy64WTjQd0tZvD0muWQkGB7C1sFnNaVq9_QW8dQmpdTmMcHOzqcAg_LyO4-h8LpCWRU3VSyFIu-Rg8XSLhsMzeIrpgxjMHU2Em2ZQOeStfU'
+    image: "https://github.com/YeonjuSeo.png"
     name: 김땡땡
     school: 동와플대
     address1: icpcsinchon@gmail.com
-    address2: chocolate@gmail.com
+    address2: https://github.com/blah 
   - position: 부회장
-    image: 'https://lh3.googleusercontent.com/proxy/UzV4yzwa_kHbEmJR6yfPVvCePLuFpUlUGU2GDzmmMdv8fy64WTjQd0tZvD0muWQkGB7C1sFnNaVq9_QW8dQmpdTmMcHOzqcAg_LyO4-h8LpCWRU3VSyFIu-Rg8XSLhsMzeIrpgxjMHU2Em2ZQOeStfU'
+    image: "https://github.com/YeonjuSeo.png"
     name: 이땡땡
     school: 서와플대
     address1: icpcsinchon@gmail.com
-    address2: mint@gmail.com
+    address2: https://github.com/blah 
   - position: 멤버
-    image: 'https://lh3.googleusercontent.com/proxy/UzV4yzwa_kHbEmJR6yfPVvCePLuFpUlUGU2GDzmmMdv8fy64WTjQd0tZvD0muWQkGB7C1sFnNaVq9_QW8dQmpdTmMcHOzqcAg_LyO4-h8LpCWRU3VSyFIu-Rg8XSLhsMzeIrpgxjMHU2Em2ZQOeStfU'
+    image: "https://github.com/YeonjuSeo.png"
     name: 박땡땡
     school: 남와플대
     address1: icpcsinchon@gmail.com
+    address2: https://github.com/blah 
   - position: 멤버
-    image: 'https://lh3.googleusercontent.com/proxy/UzV4yzwa_kHbEmJR6yfPVvCePLuFpUlUGU2GDzmmMdv8fy64WTjQd0tZvD0muWQkGB7C1sFnNaVq9_QW8dQmpdTmMcHOzqcAg_LyO4-h8LpCWRU3VSyFIu-Rg8XSLhsMzeIrpgxjMHU2Em2ZQOeStfU'
+    image: "https://github.com/YeonjuSeo.png"
     name: 최땡땡
     school: 북와플대
     address1: icpcsinchon@gmail.com
+    address2: https://github.com/blah 
   - position: 멤버
-    image: 'https://lh3.googleusercontent.com/proxy/UzV4yzwa_kHbEmJR6yfPVvCePLuFpUlUGU2GDzmmMdv8fy64WTjQd0tZvD0muWQkGB7C1sFnNaVq9_QW8dQmpdTmMcHOzqcAg_LyO4-h8LpCWRU3VSyFIu-Rg8XSLhsMzeIrpgxjMHU2Em2ZQOeStfU'
+    image: "https://github.com/YeonjuSeo.png"
     name: 정땡땡
     school: 북서와플대
     address1: icpcsinchon@gmail.com
     address2: berry@gmail.com
   - position: 멤버
-    image: 'https://lh3.googleusercontent.com/proxy/UzV4yzwa_kHbEmJR6yfPVvCePLuFpUlUGU2GDzmmMdv8fy64WTjQd0tZvD0muWQkGB7C1sFnNaVq9_QW8dQmpdTmMcHOzqcAg_LyO4-h8LpCWRU3VSyFIu-Rg8XSLhsMzeIrpgxjMHU2Em2ZQOeStfU'
+    image: "https://github.com/YeonjuSeo.png"
     name: 강땡땡
     school: 북동와플대
     address1: icpcsinchon@gmail.com
   - position: 멤버
-    image: 'https://lh3.googleusercontent.com/proxy/UzV4yzwa_kHbEmJR6yfPVvCePLuFpUlUGU2GDzmmMdv8fy64WTjQd0tZvD0muWQkGB7C1sFnNaVq9_QW8dQmpdTmMcHOzqcAg_LyO4-h8LpCWRU3VSyFIu-Rg8XSLhsMzeIrpgxjMHU2Em2ZQOeStfU'
+    image: "https://github.com/YeonjuSeo.png"
     name: 조땡땡
     school: 남서와플대
     address1: icpcsinchon@gmail.com
+    address2: https://github.com/blah 
   - position: 멤버
-    image: 'https://lh3.googleusercontent.com/proxy/UzV4yzwa_kHbEmJR6yfPVvCePLuFpUlUGU2GDzmmMdv8fy64WTjQd0tZvD0muWQkGB7C1sFnNaVq9_QW8dQmpdTmMcHOzqcAg_LyO4-h8LpCWRU3VSyFIu-Rg8XSLhsMzeIrpgxjMHU2Em2ZQOeStfU'
+    image: "https://github.com/YeonjuSeo.png"
     name: 윤땡땡
     school: 남동와플대
     address1: icpcsinchon@gmail.com
+    address2: https://github.com/blah 
   - position: 멤버
-    image: 'https://lh3.googleusercontent.com/proxy/UzV4yzwa_kHbEmJR6yfPVvCePLuFpUlUGU2GDzmmMdv8fy64WTjQd0tZvD0muWQkGB7C1sFnNaVq9_QW8dQmpdTmMcHOzqcAg_LyO4-h8LpCWRU3VSyFIu-Rg8XSLhsMzeIrpgxjMHU2Em2ZQOeStfU'
+    image: "https://github.com/YeonjuSeo.png"
     name: 장땡땡
     school: 동서남북와플대
     address1: icpcsinchon@gmail.com
+    address2: https://github.com/blah 
   - position: 멤버
-    image: 'https://lh3.googleusercontent.com/proxy/UzV4yzwa_kHbEmJR6yfPVvCePLuFpUlUGU2GDzmmMdv8fy64WTjQd0tZvD0muWQkGB7C1sFnNaVq9_QW8dQmpdTmMcHOzqcAg_LyO4-h8LpCWRU3VSyFIu-Rg8XSLhsMzeIrpgxjMHU2Em2ZQOeStfU'
+    image: "https://github.com/YeonjuSeo.png"
     name: 임땡땡
     school: 동서남북와플대
     address1: icpcsinchon@gmail.com
+    address2: https://github.com/blah 
