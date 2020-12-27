@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{"+s8K":function(t,e,n){"use strict";n.r(e);n("q1tI");var c=n("qKvR"),a=n("9Dj+"),i=n("H8eV");e.default=function(t){t.data,t.path;return Object(c.c)(a.a,null,Object(c.c)(i.a,{title:"ICPC Sinchon - Members"}),Object(c.c)("div",null,"Hello SUAPC!"))}}}]);
+//# sourceMappingURL=component---src-pages-suapc-tsx-461311a24da43f141dfd.js.map
