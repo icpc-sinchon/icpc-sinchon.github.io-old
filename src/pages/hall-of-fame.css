@@ -1,23 +1,3 @@
-@font-face {
-  font-family: "segoeui";
-  src: url("../fonts/segoeui.woff") format("woff");
-}
-@font-face {
-  font-family: "appleNeoUL";
-  src: url("../fonts/AppleSDGothicNeoUL.woff") format("woff");
-}
-@font-face {
-  font-family: "appleNeoB";
-  src: url("../fonts/AppleSDGothicNeoB.woff") format("woff");
-}
-@font-face {
-  font-family: "appleNeoM";
-  src: url("../fonts/AppleSDGothicNeoM.woff") format("woff");
-}
-@font-face {
-  font-family: "appleNeoR";
-  src: url("../fonts/AppleSDGothicNeoR.woff") format("woff");
-}
 .head {
   width: 100%;
   height: 9rem;

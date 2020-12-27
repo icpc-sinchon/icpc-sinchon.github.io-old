@@ -10,6 +10,7 @@ import StudyBox from "@components/organisms/StudyBox"
 import Test from "@components/organisms/Test"
 import TestWith3Picker from "@components/organisms/TestWith3Picker"
 import LecturerMobileTable from "@components/organisms/LecturerMobileTable"
+import "../fonts/fonts.css"
 import "./index.css"
 import "./hall-of-fame.css"
 

@@ -8,6 +8,7 @@ import SEO from "@components/seo"
 import Club from "@components/molecules/club.tsx"
 import ActivitiesSlider from "@components/organisms/slider.tsx"
 import StyledTitle from "@components/molecules/title.tsx"
+import "../fonts/fonts.css"
 import "./index.css"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
@@ -27,27 +28,51 @@ const IndexPage = () => (
     <div
       className="balloon"
       style={{
-        padding: `11rem 1rem`,
-        margin: `1rem 0 3rem 0`,
-        backgroundImage: `url(${mainImage})`,
+        padding: `7.1rem 1rem`,
+        margin: `1rem 3.5rem 3rem 3.5rem`,
+        // backgroundImage: `url(${mainImage})`,
         backgroundRepeat: `no-repeat`,
-        backgroundPosition: `center center`,
-        color: `white`,
+        backgroundPosition: `center center`
       }}
     >
-      <div className="balloon--text">
-        <div>240</div>
-        <h1 className="main--title">ICPC Sinchon</h1>
-        <p
+      <div 
+      className="balloon--text"
+      style={{
+        position:'relative',
+        textAlign:"right"
+      }}>
+        <div
+        style={{
+          color: `rgb(0, 132, 13)`,
+          fontFamily: `appleNeoB`,
+          position: `absolute`,
+          top: `-0.7rem`,
+          right: `-0.9rem`,
+          fontSize: `1.5rem`
+        }}>240</div>
+        <h1 
+        className="main--title"
+        style={{
+          fontFamily:'segoeuib',
+          color:'#00840D'
+        }}>ICPC Sinchon</h1>
+        <div
           style={{
-            fontSize: `1.15em`,
-            fontWeight: `500`,
+            fontFamily:"TheMpgtM",
+            fontSize: `3.4em`,
+            color:`black`
           }}
         >
-          신촌지역 대학교
+          <span
+          style={{
+            lineHeight:``
+          }}>신촌지역 대학교</span>
           <br />
-          프로그래밍 대회 동아리 연합
-        </p>
+          <span
+          style={{
+            lineHeight: `5.7rem`
+          }}>프로그래밍 대회 동아리 연합</span>
+        </div>
       </div>
     </div>
     <StyledTitle title="Groups" />

@@ -40,13 +40,13 @@ const Header : React.FC<HeaderProps> = ({ siteTitle = '' }) => (
         </Link>
         <div style={{ flexGrow: 1 }}> 
         </div>
-        {/* <Link
+        <Link
         to="/suapc"
         style={{
           color: `#33A23D`,
           textDecoration: `none`,
           marginRight: `1.5rem`,
-          fontSize:`0.8em`,
+          fontSize:`0.9em`,
           lineHeight: `50px`,
           display: `inline-block`,
           verticalAlign: `middle`,
@@ -54,9 +54,9 @@ const Header : React.FC<HeaderProps> = ({ siteTitle = '' }) => (
         }}>
         SUAPC <span
         style={{
-          fontSize:`0.3em`
+          fontSize:`0.7em`
         }}>2021</span>
-        </Link> */}
+        </Link>
         <Link
           to="/hall-of-fame"
           style={{
