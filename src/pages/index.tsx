@@ -8,18 +8,19 @@ import SEO from "@components/seo"
 import Club from "@components/molecules/club.tsx"
 import ActivitiesSlider from "@components/organisms/slider.tsx"
 import StyledTitle from "@components/molecules/title.tsx"
+import "../fonts/fonts.css"
 import "./index.css"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
 // images
 // import Image from "@components/image"
-import sogang from "../images/sogang.jpg"
-import sookmyung from "../images/sookmyung.png"
-import hongik from "../images/hongik.jpg"
-import ewha from "../images/ewha.gif"
-import yonsei from "../images/yonsei.jpg"
-import mainImage from "../images/main-background.png"
+import sogang from "../images/logos/sogang.jpg"
+import sookmyung from "../images/logos/sookmyung.png"
+import hongik from "../images/logos/hongik.png"
+import ewha from "../images/logos/ewha.png"
+import yonsei from "../images/logos/yonsei.jpg"
+import mainImage from "../images/suapc2020.png"
 
 const IndexPage = () => (
   <Layout>
@@ -27,26 +28,74 @@ const IndexPage = () => (
     <div
       className="balloon"
       style={{
-        padding: `11rem 1rem`,
-        margin: `1rem 0 0rem 0`,
+        padding: `7.1rem 1rem`,
+        margin: `1rem auto 3rem auto`,
         backgroundImage: `url(${mainImage})`,
         backgroundRepeat: `no-repeat`,
         backgroundPosition: `center center`,
-        color: `white`,
+        maxWidth:`2210px`
       }}
     >
-      <div className="balloon--text">
-        <h1 className="main--title">ICPC Sinchon</h1>
-        <p
-          style={{
-            fontSize: `1.15em`,
-            fontWeight: `500`,
-          }}
-        >
-          ICPC Sinchon은 신촌 지역 대학교 프로그래밍 대회 동아리 연합입니다.
-          <br />
-          아무말 아무말 주저리 주저리 어쩌구 저쩌구
-        </p>
+      <div
+        className="balloon--text"
+        style={{
+          position: "relative",
+          textAlign: "right",
+          paddingRight: `3.3rem`
+        }}
+      >
+        <div 
+        className="balloon--text--whiteback"
+        style={{
+          backgroundColor:`rgba(255,255,255,0.8)`,
+          display: `inline-block`,
+          paddingLeft: `1rem`
+        }}>
+          <div
+            style={{
+              color: `rgb(0, 132, 13)`,
+              fontFamily: `appleNeoB`,
+              position: `absolute`,
+              top: `0.9rem`,
+              right: `2.1rem`,
+              fontSize: `1.5rem`,
+            }}
+          >
+            240
+          </div>
+          <h1
+            className="main--title"
+            style={{
+              fontFamily: "segoeuib",
+              color: "#00840D",
+            }}
+          >
+            ICPC Sinchon
+          </h1>
+          <div
+            style={{
+              fontFamily: "TheMpgtM",
+              fontSize: `3.4em`,
+              color: `black`,
+            }}
+          >
+            <span
+              style={{
+                lineHeight: ``,
+              }}
+            >
+              신촌지역 대학교
+            </span>
+            <br />
+            <span
+              style={{
+                lineHeight: `5.7rem`,
+              }}
+            >
+              프로그래밍 대회 동아리 연합
+            </span>
+          </div>
+        </div>
       </div>
     </div>
     <StyledTitle title="Groups" />

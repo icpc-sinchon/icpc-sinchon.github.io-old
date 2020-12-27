@@ -1,13 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
 @font-face {
   font-family: "segoeui";
-  src: url("../fonts/segoeui.woff") format("woff");
+  src: url("./segoeui.woff") format("woff");
+}
+@font-face {
+  font-family: "segoeuib";
+  src: url("./segoeuib.woff") format("woff");
 }
 @font-face {
   font-family: "appleNeoUL";
-  src: url("../fonts/AppleSDGothicNeoUL.woff") format("woff");
+  src: url("./AppleSDGothicNeoUL.woff") format("woff");
 }
 @font-face {
   font-family: "appleNeoB";
-  src: url("../fonts/AppleSDGothicNeoB.woff") format('woff');
+  src: url("./AppleSDGothicNeoB.woff") format("woff");
+}
+@font-face {
+  font-family: "appleNeoM";
+  src: url("./AppleSDGothicNeoM.woff") format("woff");
+}
+@font-face {
+  font-family: "appleNeoR";
+  src: url("./AppleSDGothicNeoR.woff") format("woff");
+}
+@font-face {
+  font-family: "TheMpgtL";
+  src: url("./THEmpgtL.woff") format("woff");
+}
+@font-face {
+  font-family: "TheMpgtM";
+  src: url("./THEmpgtM.woff") format("woff");
 }

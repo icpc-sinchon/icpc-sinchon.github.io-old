@@ -9,6 +9,8 @@ import StudyCard from "@components/organisms/StudyCard"
 import StudyBox from "@components/organisms/StudyBox"
 import Test from "@components/organisms/Test"
 import TestWith3Picker from "@components/organisms/TestWith3Picker"
+import LecturerMobileTable from "@components/organisms/LecturerMobileTable"
+import "../fonts/fonts.css"
 import "./index.css"
 import "./hall-of-fame.css"
 
@@ -140,7 +142,12 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                           <div className="lecturer--wrap">
                             <span className="lecturer">강사진</span>
                             <span className="lecturer--list">
-                              {val1.lecturer}
+                              {val1.lecturer[0].school}&nbsp;
+                              {val1.lecturer[0].name}&nbsp;|&nbsp;
+                              {val1.lecturer[1].school}&nbsp;
+                              {val1.lecturer[1].name}&nbsp;|&nbsp;
+                              {val1.lecturer[2].school}&nbsp;
+                              {val1.lecturer[2].name}
                             </span>
                           </div>
                         </div>
@@ -160,10 +167,36 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                             <div className="lecturer--wrap">
                               <span className="lecturer">강사진</span>
                               <span className="lecturer--list">
-                                {val1.lecturer}
+                                {val1.lecturer[0].school}&nbsp;
+                                {val1.lecturer[0].name}&nbsp;|&nbsp;
+                                {val1.lecturer[1].school}&nbsp;
+                                {val1.lecturer[1].name}&nbsp;|&nbsp;
+                                {val1.lecturer[2].school}&nbsp;
+                                {val1.lecturer[2].name}
                               </span>
                             </div>
                           </div>
+                          <LecturerMobileTable
+                            lecturer={"강사진"}
+                            lecturer1={[
+                              val1.lecturer[0].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[0].school}
+                              </span>,
+                            ]}
+                            lecturer2={[
+                              val1.lecturer[1].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[1].school}
+                              </span>,
+                            ]}
+                            lecturer3={[
+                              val1.lecturer[2].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[2].school}
+                              </span>,
+                            ]}
+                          ></LecturerMobileTable>
                           <div className="mid--final--wrap">
                             <div className="mid--test">
                               <TestWith3Picker
@@ -258,10 +291,36 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                             <div className="lecturer--wrap">
                               <span className="lecturer">강사진</span>
                               <span className="lecturer--list">
-                                {val1.lecturer}
+                                {val1.lecturer[0].school}&nbsp;
+                                {val1.lecturer[0].name}&nbsp;|&nbsp;
+                                {val1.lecturer[1].school}&nbsp;
+                                {val1.lecturer[1].name}&nbsp;|&nbsp;
+                                {val1.lecturer[2].school}&nbsp;
+                                {val1.lecturer[2].name}
                               </span>
                             </div>
                           </div>
+                          <LecturerMobileTable
+                            lecturer={"강사진"}
+                            lecturer1={[
+                              val1.lecturer[0].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[0].school}
+                              </span>,
+                            ]}
+                            lecturer2={[
+                              val1.lecturer[1].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[1].school}
+                              </span>,
+                            ]}
+                            lecturer3={[
+                              val1.lecturer[2].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[2].school}
+                              </span>,
+                            ]}
+                          ></LecturerMobileTable>
                           <div className="mid--final--wrap">
                             <div className="mid--test">
                               <Test
@@ -349,10 +408,36 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                             <div className="lecturer--wrap">
                               <span className="lecturer">강사진</span>
                               <span className="lecturer--list">
-                                {val1.lecturer}
+                                {val1.lecturer[0].school}&nbsp;
+                                {val1.lecturer[0].name}&nbsp;|&nbsp;
+                                {val1.lecturer[1].school}&nbsp;
+                                {val1.lecturer[1].name}&nbsp;|&nbsp;
+                                {val1.lecturer[2].school}&nbsp;
+                                {val1.lecturer[2].name}
                               </span>
                             </div>
                           </div>
+                          <LecturerMobileTable
+                            lecturer={"강사진"}
+                            lecturer1={[
+                              val1.lecturer[0].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[0].school}
+                              </span>,
+                            ]}
+                            lecturer2={[
+                              val1.lecturer[1].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[1].school}
+                              </span>,
+                            ]}
+                            lecturer3={[
+                              val1.lecturer[2].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[2].school}
+                              </span>,
+                            ]}
+                          ></LecturerMobileTable>
                           <div className="final--wrap">
                             <div className="final--test">
                               <TestWith3Picker
@@ -406,7 +491,12 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                             <div className="lecturer--wrap">
                               <span className="lecturer">강사진</span>
                               <span className="lecturer--list">
-                                {val1.lecturer}
+                                {val1.lecturer[0].school}&nbsp;
+                                {val1.lecturer[0].name}&nbsp;|&nbsp;
+                                {val1.lecturer[1].school}&nbsp;
+                                {val1.lecturer[1].name}&nbsp;|&nbsp;
+                                {val1.lecturer[2].school}&nbsp;
+                                {val1.lecturer[2].name}
                               </span>
                             </div>
                           </div>

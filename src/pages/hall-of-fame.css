@@ -1,30 +1,10 @@
-@font-face {
-  font-family: "segoeui";
-  src: url("../fonts/segoeui.woff") format("woff");
-}
-@font-face {
-  font-family: "appleNeoUL";
-  src: url("../fonts/AppleSDGothicNeoUL.woff") format("woff");
-}
-@font-face {
-  font-family: "appleNeoB";
-  src: url("../fonts/AppleSDGothicNeoB.woff") format("woff");
-}
-@font-face {
-  font-family: "appleNeoM";
-  src: url("../fonts/AppleSDGothicNeoM.woff") format("woff");
-}
-@font-face {
-  font-family: "appleNeoR";
-  src: url("../fonts/AppleSDGothicNeoR.woff") format("woff");
-}
 .head {
   width: 100%;
   height: 9rem;
   text-align: center;
 
   position: relative;
-  margin-top: 5rem;
+  margin-top: 0rem;
   box-shadow: 0 0 64px 1px rgba(51, 149, 61, 0.2);
 }
 .head .title--wrapper {
@@ -54,12 +34,12 @@
   margin: 3rem auto 0 auto;
   text-align: center;
   line-height: 3rem;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  /* -ms-overflow-style: none; /* IE and Edge */
+  /* scrollbar-width: none; Firefox */
 }
-.tab--wrapper::-webkit-scrollbar {
+/* .tab--wrapper::-webkit-scrollbar {
   display: none;
-}
+} */
 .season--tab {
   font-family: "appleNeoB";
   font-size: 1.2rem;
@@ -90,7 +70,7 @@
 }
 .season--wrap .season--name {
   font-size: 2.3rem;
-  font-family: "appleNeoR";
+  font-family: "appleNeoB";
 
   margin-bottom: 3.5rem;
 }
@@ -130,12 +110,12 @@
 .study--wrap .mid--final--wrap .mid--test {
   position: absolute;
   left: 0;
-  margin-top:0.5rem;
+  margin-top: 0.5rem;
 }
 .study--wrap .mid--final--wrap .final--test {
   position: absolute;
   right: 0;
-  margin-top:0.5rem;
+  margin-top: 0.5rem;
 }
 .study--wrap .final--wrap {
   width: 83%;
@@ -180,6 +160,10 @@ td {
 .school {
   font-size: 0.8rem;
 }
+.school--lecturer{
+  font-size: 0.7rem;
+  font-family: "appleNeoUL";
+}
 .no--test {
   margin: 2.5rem auto 5rem auto;
   text-align: center;
@@ -198,13 +182,18 @@ td {
 .season--wrap .study--wrap:last-child {
   margin-bottom: 6rem;
 }
-
+.lecturer--wrap--mobile {
+  display: none;
+}
 @media (max-width: 1137px) {
+  .lecturer--wrap--mobile {
+    display: block;
+  }
   .head .title {
     font-family: "segoeui";
-    font-size: 2.5em;
-    letter-spacing: 1rem;
-    text-indent: 1rem;
+    font-size: 2.7rem;
+    letter-spacing: 0.7rem;
+    text-indent: 0.7rem;
   }
   .head .sub--title div {
     font-size: 0.9rem;
@@ -221,8 +210,7 @@ td {
     padding: 0 1.9rem;
   }
   .tab--wrapper::-webkit-scrollbar {
-    width: 10px;
-    height: 0.3rem;
+    height: 0rem;
     background-color: unset;
   }
   .tab--wrapper::-webkit-scrollbar-thumb {
@@ -244,7 +232,14 @@ td {
   .season--wrap .study--wrap {
     margin-bottom: 5rem;
   }
+  .study--wrap .title--wrap {
+    padding-bottom: 0.9rem;
+  }
+  .study--wrap .title--wrap .lecturer--wrap {
+    display: none;
+  }
 }
+
 @media (max-width: 900px) {
   .season--tab {
     font-size: 1.1rem;
@@ -252,12 +247,17 @@ td {
     margin-left: 8%;
   }
 }
-@media(max-width:845px){
+@media (max-width: 845px) {
   .head .title {
-    font-size: 1.5em;
+    font-size: 2rem;
   }
 }
 @media (max-width: 587px) {
+  .head{
+    width: 91%;
+    border-radius: 1rem;
+    margin: 5rem auto 0 auto;
+  }
   .season--tab:nth-child(3) {
     /* margin-left:unset; */
   }
@@ -266,25 +266,51 @@ td {
     width: 90%;
   }
   .study--wrap .rank {
-    width: 10rem;
+    width: 11rem;
   }
   .study--wrap.mid--test,
   .study--wrap.final--test {
     width: 100%;
   }
   .ProbPicker--wrap {
-    width: 10.3rem !important;
+    width: 10.9rem !important;
   }
   .test {
     text-align: right;
   }
+  .ProbPick {
+    width: 3.8rem;
+  }
 }
-@media (max-width: 400px) {
-  .study--wrap .rank {
-    width: 8.7rem;
+@media (max-width: 426px) {
+  .season--wrap .season--name {
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+  .head .title {
+    font-size: 1.6rem;
+    letter-spacing: 0.5rem;
+    text-indent: 0.5rem;
+  }
+  .season--wrap {
+    width: 95%;
+    margin-bottom: 4.2rem;
+  }
+  .rank {
+    width: 8.9rem !important;
   }
   .study--wrap .mid--final--wrap,
   .study--wrap .final--wrap {
     width: 92%;
   }
+}
+@media (max-width: 360px) {
+  .mid--final--wrap,
+  .final--wrap {
+    width: 100% !important;
+  }
+}
+.lecturer--wrap--mobile {
+  width: 92%;
+  margin: 2rem auto 0 auto;
 }

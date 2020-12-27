@@ -1,26 +1,31 @@
 /** @jsx jsx */
 import React from "react"
-import {jsx, css} from '@emotion/core'
+import { jsx, css } from "@emotion/core"
 
-type TitleProps={
-    title:string;
-};
+type TitleProps = {
+  title: string
+}
 
-const hightlightStyle=css`
-margin: 3rem 0 3rem 2rem;
-padding-left:0.4rem;
-width: 12rem;
-background:linear-gradient(to top, transparent 0%,0%, #33a23d 35%,35%, white 50%);
-border-bottom: 0.3rem solid #33a23d;
-font-size: 2rem;
-font-weight:bold;
+const hightlightStyle = css`
+  margin: 0rem 0rem 0.2rem 0rem;
+  padding: 0 0.4rem 0.35rem 0.4rem;
+  display:inline-block;
+  border-bottom: 0.3rem solid rgba(161, 203, 149, 0.5);
+  font-family: 'appleNeoR';
+  font-size: 2rem;
+  font-weight: bold;
+  color: #489A02;
 `
-
-export default function StyledTitle(props:TitleProps){
-    return(
-    <div css={hightlightStyle}>
-        {props.title}
+const gamssaStyle = css`
+  display: inline-block;
+  margin: 0rem 0rem 3rem 2rem;
+  padding: 0 2.9rem 0 0.3rem;
+  border-bottom: 0.3rem solid rgba(161, 203, 149, 0.5);
+`
+export default function StyledTitle(props: TitleProps) {
+  return (
+    <div css={gamssaStyle}>
+      <div css={hightlightStyle}>{props.title}</div>
     </div>
-    );
-
+  )
 }
