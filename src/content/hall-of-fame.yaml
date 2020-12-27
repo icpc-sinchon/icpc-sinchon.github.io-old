@@ -136,6 +136,22 @@ content:
               - prize: 3rd
                 member: 박준성
                 school: 서강대
+          - contest_name: 기말고사
+            problem_picker:
+              - name: 
+                school: 
+              - name: 
+                school: 
+            awards:
+              - prize: 1st
+                member: 데이터를 제공해주세요!
+                school: 
+              - prize: 2nd
+                member: 
+                school: 
+              - prize: 3rd
+                member: 
+                school: 
 
       - topic: 초급 알고리즘 스터디
         lecturer:
@@ -164,6 +180,24 @@ content:
               - prize: 3rd
                 member: 윤이빈
                 school: 숙명여대
+          - contest_name: 기말고사
+            problem_picker:
+              - name: 
+                school: 
+              - name: 
+                school: 
+              - name: 
+                school: 
+            awards:
+              - prize: 1st
+                member: 데이터를 제공해주세요!
+                school: 
+              - prize: 2nd
+                member: 
+                school: 
+              - prize: 3rd
+                member: 
+                school: 
   - year: 2021
     semester: Winter
     activity_type: study
