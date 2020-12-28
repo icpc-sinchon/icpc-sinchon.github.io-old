@@ -22,7 +22,7 @@ const TitleCss = css`
   font-family: "appleNeoR";
   margin-bottom: 0.7rem;
 
-  border-bottom: 1px solid hsla(0,0%,0%,0.12);
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
   width: 6.3rem;
   padding-bottom: 0.6rem;
   padding-left: 0.4rem;
@@ -51,11 +51,10 @@ const ProbPickCss = css`
   padding-bottom: 0;
   padding-top: 0;
 `
-const NoBorder=css`
+const NoBorder = css`
   border: none;
 `
 export default function Test(props: TestProps) {
-
   return (
     <div className="test">
       <table className="rank" css={RankCss}>

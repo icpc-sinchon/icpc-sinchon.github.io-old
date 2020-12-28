@@ -306,7 +306,7 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                         </div>
                       )
                     } 
-                    else if(Object.keys(val1.contests[0].problem_picker).length == 4){
+                    else if(Object.keys(val1.contests[0].problem_picker).length == 3){
                       return (
                         <div className="study--wrap">
                           <div className="title--wrap">
@@ -346,7 +346,7 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                           ></LecturerMobileTable>
                           <div className="mid--final--wrap">
                             <div className="mid--test">
-                              <TestWith4Picker
+                              <TestWith3Picker
                                 TestType={val1.contests[0].contest_name}
                                 ProbPicker1={[
                                   val1.contests[0].problem_picker[0].name,
@@ -364,12 +364,6 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                                   val1.contests[0].problem_picker[2].name,
                                   <span className="school">
                                     {val1.contests[0].problem_picker[2].school}
-                                  </span>,
-                                ]}
-                                ProbPicker4={[
-                                  val1.contests[0].problem_picker[3].name,
-                                  <span className="school">
-                                    {val1.contests[0].problem_picker[3].school}
                                   </span>,
                                 ]}
                                 FirstRank={[
@@ -390,10 +384,10 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                                     {val1.contests[0].awards[2].school}
                                   </span>,
                                 ]}
-                              ></TestWith4Picker>
+                              ></TestWith3Picker>
                             </div>
                             <div className="final--test">
-                              <TestWith3Picker
+                              <TestWith4Picker
                                 TestType={val1.contests[1].contest_name}
                                 ProbPicker1={[
                                   val1.contests[1].problem_picker[0].name,
@@ -411,6 +405,12 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                                   val1.contests[1].problem_picker[2].name,
                                   <span className="school">
                                     {val1.contests[1].problem_picker[2].school}
+                                  </span>,
+                                ]}
+                                ProbPicker4={[
+                                  val1.contests[1].problem_picker[3].name,
+                                  <span className="school">
+                                    {val1.contests[1].problem_picker[3].school}
                                   </span>,
                                 ]}
                                 FirstRank={[
@@ -431,7 +431,7 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                                     {val1.contests[1].awards[2].school}
                                   </span>,
                                 ]}
-                              ></TestWith3Picker>
+                              ></TestWith4Picker>
                             </div>
                           </div>
                         </div>
