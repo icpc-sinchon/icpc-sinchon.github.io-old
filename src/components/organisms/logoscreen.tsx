@@ -19,9 +19,9 @@ text-align: right;
 padding-right: 3.3rem;
 `
 const bgLayerStyle = css`
-background-color:rgba(255,255,255,1);
+background-color:rgba(255,255,255,0.8);
 display: inline-block;
-padding-left: 1rem';
+padding-left: 1rem;
 `
 const logoNumStyle=css`
 color: rgb(0, 132, 13);
