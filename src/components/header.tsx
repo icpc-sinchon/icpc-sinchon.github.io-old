@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-
+import './header.css'
 type HeaderProps = {
   siteTitle: string
 }
@@ -25,6 +25,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
     >
       <Link
         to="/"
+        className="ICPCSinchon"
         style={{
           color: `#33a23d`,
           textDecoration: `none`,
@@ -41,6 +42,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
       <div style={{ flexGrow: 1 }}></div>
       <Link
         to="/suapc"
+        className="Suapc"
         style={{
           color: `#33A23D`,
           textDecoration: `none`,
@@ -63,6 +65,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
       </Link>
       <Link
         to="/hall-of-fame"
+        className="HallOfFame"
         style={{
           color: `#333333`,
           textDecoration: `none`,
@@ -78,6 +81,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
       </Link>
       <Link
         to="/members"
+        className="Organizers"
         style={{
           color: `#333333`,
           textDecoration: `none`,

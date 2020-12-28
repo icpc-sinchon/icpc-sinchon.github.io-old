@@ -1,0 +1,53 @@
+@media (max-width: 496px) {
+  .ICPCSinchon {
+    font-size: 0.9rem !important;
+  }
+  .Organizers {
+    font-size: 0.7rem !important;
+    margin-right: 1.5rem !important;
+  }
+  .Suapc {
+    font-size: 0.7rem !important;
+    margin-right: 1rem !important;
+  }
+  .HallOfFame {
+    font-size: 0.7rem !important;
+    margin-right: 1rem !important;
+  }
+}
+@media(max-width:380px){
+    .ICPCSinchon {
+        margin-left: 1rem !important;
+        font-size: 0.9rem !important;
+      }
+      .Organizers {
+        font-size: 0.7rem !important;
+        margin-right: 1rem !important;
+      }
+      .Suapc {
+        font-size: 0.7rem !important;
+        margin-right: 0.9rem !important;
+      }
+      .HallOfFame {
+        font-size: 0.7rem !important;
+        margin-right: 0.9rem !important;
+      }
+}
+@media(max-width:345px){
+    .ICPCSinchon {
+        margin-left: 0.8rem !important;
+        font-size: 0.7rem !important;
+      }
+      .Organizers {
+        font-size: 0.7rem !important;
+        margin-right: 0.7rem !important;
+      }
+      .Suapc {
+        font-size: 0.7rem !important;
+        margin-right: 0.7rem !important;
+      }
+      .HallOfFame {
+        font-size: 0.7rem !important;
+        margin-right: 0.7rem !important;
+      }
+}
