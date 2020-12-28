@@ -144,20 +144,24 @@ content:
                 school: 서강대
           - contest_name: 기말고사
             problem_picker:
-              - name: 
-                school: 
-              - name: 
-                school: 
+              - name: 백성익
+                school: 홍익대
+              - name: 이국렬
+                school: 연세대
+              - name: 임지환
+                school: 서강대
+              - name: 이준석
+                school: 서강대
             awards:
               - prize: 1st
-                member: 데이터를 제공해주세요!
-                school: 
+                member: 김관우
+                school: 서강대
               - prize: 2nd
-                member: 
-                school: 
+                member: 남유진
+                school: 연세대
               - prize: 3rd
-                member: 
-                school: 
+                member: 이승은
+                school: 서강대
 
       - topic: 초급 알고리즘 스터디
         lecturer:
@@ -188,22 +192,22 @@ content:
                 school: 숙명여대
           - contest_name: 기말고사
             problem_picker:
-              - name: 
-                school: 
-              - name: 
-                school: 
+              - name: 백성익
+                school: 홍익대
+              - name: 이재열
+                school: 홍익대
               - name: 
                 school: 
             awards:
               - prize: 1st
-                member: 데이터를 제공해주세요!
-                school: 
+                member: 김태윤
+                school: 연세대
               - prize: 2nd
-                member: 
-                school: 
+                member: 김도현
+                school: 홍익대
               - prize: 3rd
-                member: 
-                school: 
+                member: 김경민
+                school: 홍익대
   - year: 2021
     semester: Winter
     activity_type: study
