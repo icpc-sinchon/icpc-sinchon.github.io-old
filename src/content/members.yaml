@@ -3,17 +3,17 @@ content:
   - position: 회장
     name: 김웨은
     school: 숙명여대
-    address1: icpcsinchon@gmail.com
+    address1: whaeundo25@gmail.com
     address2: https://github.com/whaeundo25
   - position: 임원진
-    name: 4.3
-    school: 숙와플대
-    address1: icpcsinchon@gmail.com
+    name: 남수연
+    school: 숙명여대
+    address1: kaithape@gmail.com
     address2: https://github.com/mori8
   - position: 임원진
     name: 김수운
     school: 홍익대
-    address1: icpcsinchon@gmail.com
+    address1: blueint323@gmail.com
     address2: https://github.com/blueint323
   - position: 임원진
     name: 라라라
@@ -43,10 +43,10 @@ content:
   - position: 임원진
     name: 강효규
     school: 서강대
-    address1: icpcsinchon@gmail.com
+    address1: djs100201@gmail.com
     address2: https://github.com/djs100201
   - position: 임원진
     name: 홍재령
     school: 이화여대
-    address1: icpcsinchon@gmail.com
+    address1: jar199@gmail.com
     address2: https://github.com/Jar199
