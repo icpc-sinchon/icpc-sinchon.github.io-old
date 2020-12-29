@@ -1,61 +1,52 @@
 title: Staff
 content:
   - position: 회장
-    image: "https://github.com/YeonjuSeo.png"
-    name: 김땡땡
-    school: 동와플대
+    name: 김웨은
+    school: 숙명여대
     address1: icpcsinchon@gmail.com
-    address2: https://github.com/blah 
-  - position: 부회장
-    image: "https://github.com/YeonjuSeo.png"
-    name: 이땡땡
-    school: 서와플대
+    address2: https://github.com/whaeundo25
+  - position: 임원진
+    name: 4.3
+    school: 숙와플대
     address1: icpcsinchon@gmail.com
-    address2: https://github.com/blah 
-  - position: 멤버
-    image: "https://github.com/YeonjuSeo.png"
-    name: 박땡땡
-    school: 남와플대
+    address2: https://github.com/mori8
+  - position: 임원진
+    name: 김수운
+    school: 홍익대
     address1: icpcsinchon@gmail.com
-    address2: https://github.com/blah 
-  - position: 멤버
-    image: "https://github.com/YeonjuSeo.png"
-    name: 최땡땡
-    school: 북와플대
+    address2: https://github.com/blueint323
+  - position: 임원진
+    name: 라라라
+    school: 서강대
+    address1: raararaara@gmail.com
+    address2: https://github.com/raararaara
+  - position: 임원진
+    name: 이재열
+    school: 홍익대
     address1: icpcsinchon@gmail.com
-    address2: https://github.com/blah 
-  - position: 멤버
-    image: "https://github.com/YeonjuSeo.png"
-    name: 정땡땡
-    school: 북서와플대
+    address2: https://github.com/malkoG
+  - position: 임원진
+    name: 이동주
+    school: 서강대
+    address1: nant0313@gmail.com
+    address2: https://github.com/nant0313
+  - position: 임원진
+    name: 김경근
+    school: 홍익대
+    address1: junek3@gmail.com
+    address2: https://github.com/juneK3
+  - position: 임원진
+    name: 박수현
+    school: 서강대
+    address1: shiftpsh@gmail.com
+    address2: https://github.com/shiftpsh
+  - position: 임원진
+    name: 강효규
+    school: 서강대
     address1: icpcsinchon@gmail.com
-    address2: berry@gmail.com
-  - position: 멤버
-    image: "https://github.com/YeonjuSeo.png"
-    name: 강땡땡
-    school: 북동와플대
+    address2: https://github.com/djs100201
+  - position: 임원진
+    name: 홍재령
+    school: 이화여대
     address1: icpcsinchon@gmail.com
-  - position: 멤버
-    image: "https://github.com/YeonjuSeo.png"
-    name: 조땡땡
-    school: 남서와플대
-    address1: icpcsinchon@gmail.com
-    address2: https://github.com/blah 
-  - position: 멤버
-    image: "https://github.com/YeonjuSeo.png"
-    name: 윤땡땡
-    school: 남동와플대
-    address1: icpcsinchon@gmail.com
-    address2: https://github.com/blah 
-  - position: 멤버
-    image: "https://github.com/YeonjuSeo.png"
-    name: 장땡땡
-    school: 동서남북와플대
-    address1: icpcsinchon@gmail.com
-    address2: https://github.com/blah 
-  - position: 멤버
-    image: "https://github.com/YeonjuSeo.png"
-    name: 임땡땡
-    school: 동서남북와플대
-    address1: icpcsinchon@gmail.com
-    address2: https://github.com/blah 
+    address2: https://github.com/Jar199

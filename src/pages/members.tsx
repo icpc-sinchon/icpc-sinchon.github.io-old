@@ -24,7 +24,8 @@ margin-bottom: 8rem;
 `
 
 const Members:React.FC<PageProps<DataProps>> = ({data,path})=>{
-    const renderMember=(member:MemberProps) => <MemberCard position={member.position} image={member.image} name={member.name} school={member.school} address1={member.address1} address2={member.address2}/>
+    let cache = new Date().getTime();
+    const renderMember=(member:MemberProps) => <MemberCard position={member.position} image={member.address2+".png?cache="+cache} name={member.name} school={member.school} address1={member.address1} address2={member.address2}/>
 
     return(
         <Layout>
