@@ -1,7 +1,7 @@
 title: Staff
 content:
   - position: 회장
-    name: 김웨은
+    name: 김도은
     school: 숙명여대
     address1: doeun536@gmail.com
     address2: https://github.com/whaeundo25
@@ -50,3 +50,8 @@ content:
     school: 이화여대
     address1: fos990805@gmail.com
     address2: https://github.com/Jar199
+  - position: 임원진
+    name: 이국렬
+    school: 연세대
+    address1: lky7674@gmail.com
+    address2: https://github.com/lky7674
