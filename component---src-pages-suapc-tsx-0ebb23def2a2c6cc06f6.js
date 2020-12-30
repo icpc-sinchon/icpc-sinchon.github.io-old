@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[13],{"+s8K":function(t,c,n){"use strict";n.r(c);n("q1tI");var e=n("qKvR"),a=n("9Dj+"),i=n("H8eV"),s=n("t14A"),o=n.n(s);c.default=function(t){t.data,t.path;return Object(e.c)(a.a,null,Object(e.c)(i.a,{title:"ICPC Sinchon - Members"}),Object(e.c)("img",{src:o.a}))}},t14A:function(t,c,n){t.exports=n.p+"static/main-f6c9b4515f73000055e2d9c9fbc2a964.svg"}}]);
+//# sourceMappingURL=component---src-pages-suapc-tsx-0ebb23def2a2c6cc06f6.js.map
