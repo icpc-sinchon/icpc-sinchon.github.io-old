@@ -139,7 +139,559 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                 <div className="season--name">
                   {val.year + " " + val.semester}
                 </div>
-                <StudyTitle study = {val.studies}/>
+                {val.studies.map(val1 => {
+                  //중간도 기말도 없었을 경우
+                  if (val1.contests == undefined)
+                    return (
+                      <div className="study--wrap">
+                        <div className="title--wrap">
+                          <div className="study--title">{val1.topic}</div>
+                          <div className="lecturer--wrap">
+                            <span className="lecturer">강사진</span>
+                            <span className="lecturer--list">
+                              {val1.lecturers.map((lecturer) => `${lecturer.name}&nbsp;${lecturer.school}`).join("&nbsp;|&nbsp;")}
+                            </span>
+                          </div>
+                        </div>
+                        <LecturerMobileTable
+                            lecturer={"강사진"}
+                            lecturer1={[
+                              val1.lecturer[0].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[0].school}
+                              </span>,
+                            ]}
+                            lecturer2={[
+                              val1.lecturer[1].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[1].school}
+                              </span>,
+                            ]}
+                            lecturer3={[
+                              val1.lecturer[2].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[2].school}
+                              </span>,
+                            ]}
+                          ></LecturerMobileTable>
+                        <div className="no--test">
+                          모의고사가 진행되지 않았습니다
+                        </div>
+                      </div>
+                    )
+                    // 중간기말 모두 있었을 경우
+                  else if (Object.keys(val1.contests).length == 2) {
+                    // 중간 3 기말 3
+                    if (
+                      Object.keys(val1.contests[0].problem_picker).length == 3
+                    ) {
+                      return (
+                        <div className="study--wrap">
+                          <div className="title--wrap">
+                            <div className="study--title">{val1.topic}</div>
+                            <div className="lecturer--wrap">
+                              <span className="lecturer">강사진</span>
+                              <span className="lecturer--list">
+                                {
+                                  val1.lecturers.map((lecturer) => `${lecturer.name}&nbsp;${lecturer.school}`).join("&nbsp;|&nbsp;")
+                                }
+                              </span>
+                            </div>
+                          </div>
+                          <LecturerMobileTable
+                            lecturer={"강사진"}
+                            lecturer1={[
+                              val1.lecturer[0].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[0].school}
+                              </span>,
+                            ]}
+                            lecturer2={[
+                              val1.lecturer[1].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[1].school}
+                              </span>,
+                            ]}
+                            lecturer3={[
+                              val1.lecturer[2].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[2].school}
+                              </span>,
+                            ]}
+                          ></LecturerMobileTable>
+                          <div className="mid--final--wrap">
+                            <div className="mid--test">
+                              <TestWith3Picker
+                                TestType={val1.contests[0].contest_name}
+                                ProbPicker1={[
+                                  val1.contests[0].problem_picker[0].name,
+                                  <span className="school">
+                                    {val1.contests[0].problem_picker[0].school}
+                                  </span>,
+                                ]}
+                                ProbPicker2={[
+                                  val1.contests[0].problem_picker[1].name,
+                                  <span className="school">
+                                    {val1.contests[0].problem_picker[1].school}
+                                  </span>,
+                                ]}
+                                ProbPicker3={[
+                                  val1.contests[0].problem_picker[2].name,
+                                  <span className="school">
+                                    {val1.contests[0].problem_picker[2].school}
+                                  </span>,
+                                ]}
+                                FirstRank={[
+                                  val1.contests[0].awards[0].member,
+                                  <span className="school">
+                                    {val1.contests[0].awards[0].school}
+                                  </span>,
+                                ]}
+                                SecondRank={[
+                                  val1.contests[0].awards[1].member,
+                                  <span className="school">
+                                    {val1.contests[0].awards[1].school}
+                                  </span>,
+                                ]}
+                                ThirdRank={[
+                                  val1.contests[0].awards[2].member,
+                                  <span className="school">
+                                    {val1.contests[0].awards[2].school}
+                                  </span>,
+                                ]}
+                              ></TestWith3Picker>
+                            </div>
+                            <div className="final--test">
+                              <TestWith3Picker
+                                TestType={val1.contests[1].contest_name}
+                                ProbPicker1={[
+                                  val1.contests[1].problem_picker[0].name,
+                                  <span className="school">
+                                    {val1.contests[1].problem_picker[0].school}
+                                  </span>,
+                                ]}
+                                ProbPicker2={[
+                                  val1.contests[1].problem_picker[1].name,
+                                  <span className="school">
+                                    {val1.contests[1].problem_picker[1].school}
+                                  </span>,
+                                ]}
+                                ProbPicker3={[
+                                  val1.contests[1].problem_picker[2].name,
+                                  <span className="school">
+                                    {val1.contests[1].problem_picker[2].school}
+                                  </span>,
+                                ]}
+                                FirstRank={[
+                                  val1.contests[1].awards[0].member,
+                                  <span className="school">
+                                    {val1.contests[1].awards[0].school}
+                                  </span>,
+                                ]}
+                                SecondRank={[
+                                  val1.contests[1].awards[1].member,
+                                  <span className="school">
+                                    {val1.contests[1].awards[1].school}
+                                  </span>,
+                                ]}
+                                ThirdRank={[
+                                  val1.contests[1].awards[2].member,
+                                  <span className="school">
+                                    {val1.contests[1].awards[2].school}
+                                  </span>,
+                                ]}
+                              ></TestWith3Picker>
+                            </div>
+                          </div>
+                        </div>
+                      )
+                    } 
+                    else if(Object.keys(val1.contests[0].problem_picker).length == 3){
+                      // 중간 3 기말 4
+                      return (
+                        <div className="study--wrap">
+                          <div className="title--wrap">
+                            <div className="study--title">{val1.topic}</div>
+                            <div className="lecturer--wrap">
+                              <span className="lecturer">강사진</span>
+                              <span className="lecturer--list">
+                                {val1.lecturer[0].school}&nbsp;
+                                {val1.lecturer[0].name}&nbsp;|&nbsp;
+                                {val1.lecturer[1].school}&nbsp;
+                                {val1.lecturer[1].name}&nbsp;|&nbsp;
+                                {val1.lecturer[2].school}&nbsp;
+                                {val1.lecturer[2].name}
+                              </span>
+                            </div>
+                          </div>
+                          <LecturerMobileTable
+                            lecturer={"강사진"}
+                            lecturer1={[
+                              val1.lecturer[0].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[0].school}
+                              </span>,
+                            ]}
+                            lecturer2={[
+                              val1.lecturer[1].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[1].school}
+                              </span>,
+                            ]}
+                            lecturer3={[
+                              val1.lecturer[2].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[2].school}
+                              </span>,
+                            ]}
+                          ></LecturerMobileTable>
+                          <div className="mid--final--wrap">
+                            <div className="mid--test">
+                              <TestWith3Picker
+                                TestType={val1.contests[0].contest_name}
+                                ProbPicker1={[
+                                  val1.contests[0].problem_picker[0].name,
+                                  <span className="school">
+                                    {val1.contests[0].problem_picker[0].school}
+                                  </span>,
+                                ]}
+                                ProbPicker2={[
+                                  val1.contests[0].problem_picker[1].name,
+                                  <span className="school">
+                                    {val1.contests[0].problem_picker[1].school}
+                                  </span>,
+                                ]}
+                                ProbPicker3={[
+                                  val1.contests[0].problem_picker[2].name,
+                                  <span className="school">
+                                    {val1.contests[0].problem_picker[2].school}
+                                  </span>,
+                                ]}
+                                FirstRank={[
+                                  val1.contests[0].awards[0].member,
+                                  <span className="school">
+                                    {val1.contests[0].awards[0].school}
+                                  </span>,
+                                ]}
+                                SecondRank={[
+                                  val1.contests[0].awards[1].member,
+                                  <span className="school">
+                                    {val1.contests[0].awards[1].school}
+                                  </span>,
+                                ]}
+                                ThirdRank={[
+                                  val1.contests[0].awards[2].member,
+                                  <span className="school">
+                                    {val1.contests[0].awards[2].school}
+                                  </span>,
+                                ]}
+                              ></TestWith3Picker>
+                            </div>
+                            <div className="final--test">
+                              <TestWith4Picker
+                                TestType={val1.contests[1].contest_name}
+                                ProbPicker1={[
+                                  val1.contests[1].problem_picker[0].name,
+                                  <span className="school">
+                                    {val1.contests[1].problem_picker[0].school}
+                                  </span>,
+                                ]}
+                                ProbPicker2={[
+                                  val1.contests[1].problem_picker[1].name,
+                                  <span className="school">
+                                    {val1.contests[1].problem_picker[1].school}
+                                  </span>,
+                                ]}
+                                ProbPicker3={[
+                                  val1.contests[1].problem_picker[2].name,
+                                  <span className="school">
+                                    {val1.contests[1].problem_picker[2].school}
+                                  </span>,
+                                ]}
+                                ProbPicker4={[
+                                  val1.contests[1].problem_picker[3].name,
+                                  <span className="school">
+                                    {val1.contests[1].problem_picker[3].school}
+                                  </span>,
+                                ]}
+                                FirstRank={[
+                                  val1.contests[1].awards[0].member,
+                                  <span className="school">
+                                    {val1.contests[1].awards[0].school}
+                                  </span>,
+                                ]}
+                                SecondRank={[
+                                  val1.contests[1].awards[1].member,
+                                  <span className="school">
+                                    {val1.contests[1].awards[1].school}
+                                  </span>,
+                                ]}
+                                ThirdRank={[
+                                  val1.contests[1].awards[2].member,
+                                  <span className="school">
+                                    {val1.contests[1].awards[2].school}
+                                  </span>,
+                                ]}
+                              ></TestWith4Picker>
+                            </div>
+                          </div>
+                        </div>
+                      )
+                    }else {
+                      // 중간 2 기말 2
+                      return (
+                        <div className="study--wrap">
+                          <div className="title--wrap">
+                            <div className="study--title">{val1.topic}</div>
+                            <div className="lecturer--wrap">
+                              <span className="lecturer">강사진</span>
+                              <span className="lecturer--list">
+                                {val1.lecturer[0].school}&nbsp;
+                                {val1.lecturer[0].name}&nbsp;|&nbsp;
+                                {val1.lecturer[1].school}&nbsp;
+                                {val1.lecturer[1].name}&nbsp;|&nbsp;
+                                {val1.lecturer[2].school}&nbsp;
+                                {val1.lecturer[2].name}
+                              </span>
+                            </div>
+                          </div>
+                          <LecturerMobileTable
+                            lecturer={"강사진"}
+                            lecturer1={[
+                              val1.lecturer[0].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[0].school}
+                              </span>,
+                            ]}
+                            lecturer2={[
+                              val1.lecturer[1].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[1].school}
+                              </span>,
+                            ]}
+                            lecturer3={[
+                              val1.lecturer[2].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[2].school}
+                              </span>,
+                            ]}
+                          ></LecturerMobileTable>
+                          <div className="mid--final--wrap">
+                            <div className="mid--test">
+                              <Test
+                                TestType={val1.contests[0].contest_name}
+                                ProbPicker1={[
+                                  val1.contests[0].problem_picker[0].name,
+                                  <span className="school">
+                                    {val1.contests[0].problem_picker[0].school}
+                                  </span>,
+                                ]}
+                                ProbPicker2={[
+                                  val1.contests[0].problem_picker[1].name,
+                                  <span className="school">
+                                    {val1.contests[0].problem_picker[1].school}
+                                  </span>,
+                                ]}
+                                FirstRank={[
+                                  val1.contests[0].awards[0].member,
+                                  <span className="school">
+                                    {val1.contests[0].awards[0].school}
+                                  </span>,
+                                ]}
+                                SecondRank={[
+                                  val1.contests[0].awards[1].member,
+                                  <span className="school">
+                                    {val1.contests[0].awards[1].school}
+                                  </span>,
+                                ]}
+                                ThirdRank={[
+                                  val1.contests[0].awards[2].member,
+                                  <span className="school">
+                                    {val1.contests[0].awards[2].school}
+                                  </span>,
+                                ]}
+                              ></Test>
+                            </div>
+                            <div className="final--test">
+                              <Test
+                                TestType={val1.contests[1].contest_name}
+                                ProbPicker1={[
+                                  val1.contests[1].problem_picker[0].name,
+                                  <span className="school">
+                                    {val1.contests[1].problem_picker[0].school}
+                                  </span>,
+                                ]}
+                                ProbPicker2={[
+                                  val1.contests[1].problem_picker[1].name,
+                                  <span className="school">
+                                    {val1.contests[1].problem_picker[1].school}
+                                  </span>,
+                                ]}
+                                FirstRank={[
+                                  val1.contests[1].awards[0].member,
+                                  <span className="school">
+                                    {val1.contests[1].awards[0].school}
+                                  </span>,
+                                ]}
+                                SecondRank={[
+                                  val1.contests[1].awards[1].member,
+                                  <span className="school">
+                                    {val1.contests[1].awards[1].school}
+                                  </span>,
+                                ]}
+                                ThirdRank={[
+                                  val1.contests[1].awards[2].member,
+                                  <span className="school">
+                                    {val1.contests[1].awards[2].school}
+                                  </span>,
+                                ]}
+                              ></Test>
+                            </div>
+                          </div>
+                        </div>
+                      )
+                    }
+                  } else {
+                    // 기말고사만 있었을 경우
+                    if (
+                      Object.keys(val1.contests[0].problem_picker).length == 3
+                    ) {
+                      return (
+                        <div className="study--wrap">
+                          <div className="title--wrap">
+                            <div className="study--title">{val1.topic}</div>
+                            <div className="lecturer--wrap">
+                              <span className="lecturer">강사진</span>
+                              <span className="lecturer--list">
+                                {val1.lecturer[0].school}&nbsp;
+                                {val1.lecturer[0].name}&nbsp;|&nbsp;
+                                {val1.lecturer[1].school}&nbsp;
+                                {val1.lecturer[1].name}&nbsp;|&nbsp;
+                                {val1.lecturer[2].school}&nbsp;
+                                {val1.lecturer[2].name}
+                              </span>
+                            </div>
+                          </div>
+                          <LecturerMobileTable
+                            lecturer={"강사진"}
+                            lecturer1={[
+                              val1.lecturer[0].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[0].school}
+                              </span>,
+                            ]}
+                            lecturer2={[
+                              val1.lecturer[1].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[1].school}
+                              </span>,
+                            ]}
+                            lecturer3={[
+                              val1.lecturer[2].name,
+                              <span className="school--lecturer">
+                                {val1.lecturer[2].school}
+                              </span>,
+                            ]}
+                          ></LecturerMobileTable>
+                          <div className="final--wrap">
+                            <div className="final--test">
+                              <TestWith3Picker
+                                TestType={val1.contests[0].contest_name}
+                                ProbPicker1={[
+                                  val1.contests[0].problem_picker[0].name,
+                                  <span className="school">
+                                    {val1.contests[0].problem_picker[0].school}
+                                  </span>,
+                                ]}
+                                ProbPicker2={[
+                                  val1.contests[0].problem_picker[1].name,
+                                  <span className="school">
+                                    {val1.contests[0].problem_picker[1].school}
+                                  </span>,
+                                ]}
+                                ProbPicker3={[
+                                  val1.contests[0].problem_picker[2].name,
+                                  <span className="school">
+                                    {val1.contests[0].problem_picker[2].school}
+                                  </span>,
+                                ]}
+                                FirstRank={[
+                                  val1.contests[0].awards[0].member,
+                                  <span className="school">
+                                    {val1.contests[0].awards[0].school}
+                                  </span>,
+                                ]}
+                                SecondRank={[
+                                  val1.contests[0].awards[1].member,
+                                  <span className="school">
+                                    {val1.contests[0].awards[1].school}
+                                  </span>,
+                                ]}
+                                ThirdRank={[
+                                  val1.contests[0].awards[2].member,
+                                  <span className="school">
+                                    {val1.contests[0].awards[2].school}
+                                  </span>,
+                                ]}
+                              ></TestWith3Picker>
+                            </div>
+                          </div>
+                        </div>
+                      )
+                    } else {
+                      return (
+                        <div className="study--wrap">
+                          <div className="title--wrap">
+                            <div className="study--title">{val1.topic}</div>
+                            <div className="lecturer--wrap">
+                              <span className="lecturer">강사진</span>
+                              <span className="lecturer--list">
+                                {val1.lecturers.map((lecturer) => `${lecturer.name}&nbsp;${lecturer.school}`).join("&nbsp;|&nbsp;")}
+                              </span>
+                            </div>
+                          </div>
+                          <div className="final--wrap">
+                            <div className="final--test">
+                              <Test
+                                TestType={val1.contests[0].contest_name}
+                                ProbPicker1={[
+                                  val1.contests[0].problem_picker[0].name,
+                                  <span className="school">
+                                    {val1.contests[0].problem_picker[0].school}
+                                  </span>,
+                                ]}
+                                ProbPicker2={[
+                                  val1.contests[0].problem_picker[1].name,
+                                  <span className="school">
+                                    {val1.contests[0].problem_picker[1].school}
+                                  </span>,
+                                ]}
+                                FirstRank={[
+                                  val1.contests[0].awards[0].member,
+                                  <span className="school">
+                                    {val1.contests[0].awards[0].school}
+                                  </span>,
+                                ]}
+                                SecondRank={[
+                                  val1.contests[0].awards[1].member,
+                                  <span className="school">
+                                    {val1.contests[0].awards[1].school}
+                                  </span>,
+                                ]}
+                                ThirdRank={[
+                                  val1.contests[0].awards[2].member,
+                                  <span className="school">
+                                    {val1.contests[0].awards[2].school}
+                                  </span>,
+                                ]}
+                              ></Test>
+                            </div>
+                          </div>
+                        </div>
+                      )
+                    }
+                  }
+                })}
               </div>
             )
         })}

@@ -1,11 +1,8 @@
 /** @jsx jsx */
-import React,{Fragment} from "react"
+import React from "react"
 import { jsx, css } from "@emotion/core"
 
-import { IStudy } from "@models/study"
-
 import styled from "@emotion/styled"
-import ScoreBoard from "./ScoreBoard";
 
 const StudyTitleWrapper = styled.div`
   display: flex;
@@ -19,32 +16,34 @@ const StudyTitleWrapper = styled.div`
 //             {val1.lecturer[1].name}&nbsp;
 //         </span>
 
-const StudyTitle: React.FC<{ study: IStudy }> = ({ study }) => {
-  const renderLecturers = ((study) => 
-      <Fragment>
-      {study.map((teacher) => {
-          return(
-              <Fragment>
-              <span>{teacher.topic}</span>
-              <span>{teacher.topic}</span>
-              </Fragment>
-              )
-          }
-          )}
-      </Fragment>
+// val1.lecturers.map((lecturer) => `${lecturer.name}&nbsp;${lecturer.school}`).join("&nbsp;|&nbsp;")
+
+const StudyTitle: React.FC<{ lecturers }> = ({ lecturers }) => {
+  const renderLecturers = ((lecturers) => {
+    return(
+      <StudyTitleWrapper>
+      {lecturers.map(lecturer => {
+        return(
+          <>
+          <span>{lecturer.school}</span>
+          <span>{lecturer.name}</span>
+          </>
+        )
+      })}
+      </StudyTitleWrapper>
     )
+  })
 
   return (
   <div className="title--wrap">
-    <div className="study--title">{study.topic}</div>
+    {/* <div className="study--title">{study.topic}</div> */}
     <div className="lecturer--wrap">
       <span className="lecturer">강사진</span>
       <span className="lecturer--list">
-          {renderLecturers(study)}
+          {renderLecturers(lecturers)}
       </span>
     </div>
-  </div>
-  )
+  </div>)
 }
 
 export default StudyTitle 

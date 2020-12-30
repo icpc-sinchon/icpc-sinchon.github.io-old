@@ -5,7 +5,7 @@ content:
     activity_type: study
     studies:
       - topic: 고급 알고리즘 스터디
-        lecturer: 
+        lecturers: 
           - name: 박수현
             school: 서강대
           - name: 이상원
@@ -14,7 +14,7 @@ content:
             school: 
 
       - topic: 중급 알고리즘 스터디
-        lecturer:
+        lecturers:
           - name: 임지환
             school: 서강대
           - name: 이기현
@@ -56,7 +56,7 @@ content:
                 school: 홍익대
 
       - topic: 초급 알고리즘 스터디
-        lecturer:
+        lecturers:
           - name: 이태한
             school: 서강대
           - name: 이재열
@@ -109,7 +109,7 @@ content:
     activity_type: study
     studies:
       - topic: 고급 알고리즘 스터디
-        lecturer:
+        lecturers:
           - name: 
             school: 강사는 없었으나, 전해성(서강대)님이 하드캐리
           - name: 
@@ -118,7 +118,7 @@ content:
             school: 
 
       - topic: 중급 알고리즘 스터디
-        lecturer:
+        lecturers:
           - name: 윤인섭
             school: 연세대
           - name: 이준석
@@ -164,7 +164,7 @@ content:
                 school: 서강대
 
       - topic: 초급 알고리즘 스터디
-        lecturer:
+        lecturers:
           - name: 배철환
             school: 서강대
           - name: 백성익
