@@ -4,6 +4,7 @@ import {jsx,css} from '@emotion/core'
 import { PageProps, Link, graphql } from "gatsby"
 import Layout from "@components/layout"
 import SEO from "@components/seo"
+import svg from "../images/main.svg"
 
 type DataProps = {
     site: {
@@ -15,7 +16,7 @@ const SUAPC:React.FC<PageProps<DataProps>> = ({data,path})=>{
     return(
         <Layout>
             <SEO title="ICPC Sinchon - Members"/>
-            <div>Hello SUAPC!</div>
+            <img src={svg}/>
         </Layout>
     )
 }
