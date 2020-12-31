@@ -29,6 +29,7 @@ const imgStyle=css`
 width:220px;
 height:220px;
 margin-right: 2rem;
+border-radius: 50%;
 `
 const addrStyle=css`
 font-size:14px;
