@@ -10,8 +10,6 @@ content:
             school: 서강대
           - name: 이상원
             school: 서강대
-          - name: 
-            school: 
 
       - topic: 중급 알고리즘 스터디
         lecturers:
@@ -19,8 +17,6 @@ content:
             school: 서강대
           - name: 이기현
             school: 서강대
-          - name: 
-            school: 
         contests:
           - contest_name: 중간고사
             problem_picker:
@@ -110,12 +106,8 @@ content:
     studies:
       - topic: 고급 알고리즘 스터디
         lecturers:
-          - name: 
-            school: 강사는 없었으나, 전해성(서강대)님이 하드캐리
-          - name: 
-            school: 
-          - name: 
-            school: 
+          - name: 강사는 없었으나, 전해성(서강대)님이 하드캐리
+            school: ' '
 
       - topic: 중급 알고리즘 스터디
         lecturers:
@@ -123,8 +115,6 @@ content:
             school: 연세대
           - name: 이준석
             school: 서강대
-          - name: 
-            school: 
         contests:
           - contest_name: 중간고사
             problem_picker:
@@ -169,8 +159,6 @@ content:
             school: 서강대
           - name: 백성익
             school: 홍익대
-          - name: 
-            school: 
         contests:
           - contest_name: 중간고사
             problem_picker:
@@ -196,8 +184,6 @@ content:
                 school: 홍익대
               - name: 이재열
                 school: 홍익대
-              - name: 
-                school: 
             awards:
               - prize: 1st
                 member: 김태윤

@@ -135,15 +135,14 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                               {study.lecturers.map((lecturer:ILecturer) => `${lecturer.name} ${lecturer.school}`).join(" | ")}
                             </span>
                           </div>
+                          
                         </div>
                         {study.contests==undefined 
-                        ? <div className="no--test">
+                        ? <div className="no--contest">
                         모의고사가 진행되지 않았습니다
                         </div>
-                        : <div className="mid--final--wrap">
-                            <div className="mid--test">
-                              <Test contests={study.contests}/>
-                            </div>
+                        : <div className="contest--wrap">
+                            <Test contests={study.contests}/>
                           </div>
                         }
                       </div>
