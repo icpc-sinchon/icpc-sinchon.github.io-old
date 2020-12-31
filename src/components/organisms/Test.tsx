@@ -3,12 +3,8 @@ import React from "react"
 
 type TestProps = {
   TestType: string
-  FirstRank: string
-  SecondRank: string
-  ThirdRank: string
-  ProbPicker1: string
-  ProbPicker2: string
-  ProbPickers: string
+  awards: object
+  problem_picker: object
 }
 const RankCss = css`
   width: 11rem;
@@ -21,7 +17,7 @@ const TitleCss = css`
   font-family: "appleNeoR";
   margin-bottom: 0.7rem;
 
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
+  border-bottom: 1px solid hsla(0,0%,0%,0.12);
   width: 6.3rem;
   padding-bottom: 0.6rem;
   padding-left: 0.4rem;
@@ -53,39 +49,30 @@ const ProbPickCss = css`
 const NoBorder=css`
   border: none;
 `
-export default function Test(props: TestProps) {
 
-  return (
-    <div className="test">
+const Test:React.FC<{contests}>= ({contests})=>(
+  <>
+    {contests.map(contest=>{
+      return(
+        <div className="test">
       <table className="rank" css={RankCss}>
         <caption className="title" css={TitleCss}>
-          {props.TestType}
+          {contest.contest_name}
         </caption>
         <tbody>
-          <tr>
-            <td className="sunwee" css={SunweeCss}>
-              1위
-            </td>
-            <td className="name" css={NameCss}>
-              {props.FirstRank}
-            </td>
-          </tr>
-          <tr>
-            <td className="sunwee" css={SunweeCss}>
-              2위
-            </td>
-            <td className="name" css={NameCss}>
-              {props.SecondRank}
-            </td>
-          </tr>
-          <tr>
-            <td className="sunwee" css={SunweeCss}>
-              3위
-            </td>
-            <td className="name" css={NameCss}>
-              {props.ThirdRank}
-            </td>
-          </tr>
+          {contest.awards.map(award=>{
+            return(
+            <tr>
+              <td className="sunwee" css={SunweeCss}>
+                {award.prize}
+              </td>
+              <td className="name" css={NameCss}>
+                {award.member}
+              </td>
+            </tr>
+            )
+          })
+          }
         </tbody>
       </table>
       <table className="ProbPicker--wrap">
@@ -93,23 +80,26 @@ export default function Test(props: TestProps) {
           &nbsp;
         </caption>
         <tbody>
-          <tr>
-            <td className="ProbPick" css={ProbPickCss}>
+          <td className="ProbPick" css={ProbPickCss}>
               문항선정
-            </td>
-            <td className="name" css={NameCss}>
-              {props.ProbPicker1}
-            </td>
-          </tr>
-          <tr>
-            <td css={NoBorder}></td>
-            <td className="name" css={NameCss}>
-              {props.ProbPicker2}
-            </td>
-          </tr>
-          {/* <ExtraPropPicker ProbPicker={props.ProbPickers}></ExtraPropPicker> */}
+          </td>
+          {contest.problem_picker.map(picker=>{
+            return(
+            <tr>
+              <td className="name" css={NameCss}>
+                {picker.name}
+              </td>
+              <td className="name" css={NameCss}>
+                {picker.school}
+              </td>
+            </tr>
+            )
+          })}
         </tbody>
       </table>
     </div>
-  )
-}
+      )
+    })}
+  </>
+)
+export default Test
