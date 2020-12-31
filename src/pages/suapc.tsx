@@ -80,7 +80,8 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
           </div>
           <hr />
           <div className="sponser--wrapper">
-            <img src={sponser}></img>
+            <img src={sponser}
+              draggable="false"></img>
           </div>
         </div>
         <div className="content--wrapper">
