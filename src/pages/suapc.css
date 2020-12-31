@@ -45,10 +45,10 @@ hr {
 }
 .content--wrapper {
   width: 100%;
-  height: 33rem;
   margin-top: 6rem;
-  position:relative;
+  display: flex;
 }
+
 .season--wrapper {
     width: 24rem;
     height:100%;
@@ -57,16 +57,37 @@ hr {
   color: rgba(83, 154, 80, 0.3);
   font-size: 2rem;
   font-family: "Inter";
+  font-weight: 900;
   line-height: 2.7rem;
   cursor: pointer;
 }
 .selected {
   color: #539a50;
 }
+
+.selected::after {
+  content: '<';
+  margin-left: 1.4rem;
+}
+
 .result--wrapper{
-    width:calc(100% - 24rem);
-    height:100%;
-    position: absolute;
-    right: 0;
-    top: 0;
+    width: calc(100% - 24rem);
+    height: 100%;
+    margin-right: 5rem;
+}
+
+.result--wrapper > div {
+  padding: 1.65rem 0;
+}
+
+.organizer--table--wrapper {
+  display: flex;
+}
+
+.organizer--table--wrapper > div {
+  flex-grow: 1;
+}
+
+.organizer--table--wrapper > div:first-child {
+  margin: 0 2rem;
 }
