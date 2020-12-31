@@ -113,7 +113,9 @@
   position: absolute;
   margin-top: 0.5rem;
 }
+
 .study--wrap .contest--wrap .ProbPicker--wrap {
+
   width: 12rem;
   font-size: 1rem;
   display: inline-block;
