@@ -44,15 +44,14 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
     let toInspect = document.getElementsByClassName("result--wrapper")
     for (let i = 0; i < toInspect.length; i++) {
       // 선택한 대회
-      if(toInspect[i] == selected){
-        if(selected.classList.contains("hide"))
+      if (toInspect[i] == selected) {
+        if (selected.classList.contains("hide"))
           selected.classList.remove("hide")
-        if(!selected.classList.contains("show"))
-          selected.classList.add("show")
-      }else{
+        if (!selected.classList.contains("show")) selected.classList.add("show")
+      } else {
         // 선택하지 않은 대회가 보여지고 있는 상태일 경우
-        if(toInspect[i].classList.contains("show")){
-          toInspect[i].classList.remove("show");
+        if (toInspect[i].classList.contains("show")) {
+          toInspect[i].classList.remove("show")
           toInspect[i].classList.add("hide")
         }
       }
