@@ -22,10 +22,11 @@ const theadBorder = css`
 `;
 
 export default function WinnerTable(props: infoProps) {
+  console.log(props.info)
   return (
     <div className="test" css={flexStyle}>
         <div css={description}>
-          <p>Div. {props.info[0]}</p>
+          <p>Div. {props.info.div}</p>
       </div>
       <table className="rank">
         <thead>
@@ -38,7 +39,7 @@ export default function WinnerTable(props: infoProps) {
         </thead>
         <tbody>
             {
-                props.info[1].map((data) => {
+                props.info.winner.map((data) => {
                     return (
                         <tr>
                             <td>{data["prize"]}</td>

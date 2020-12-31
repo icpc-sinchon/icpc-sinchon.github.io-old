@@ -50,8 +50,8 @@ hr {
 }
 
 .season--wrapper {
-    width: 24rem;
-    height:100%;
+  width: 24rem;
+  height: 100%;
 }
 .season {
   color: rgba(83, 154, 80, 0.3);
@@ -66,20 +66,25 @@ hr {
 }
 
 .selected::after {
-  content: '<';
+  content: "<";
   margin-left: 1.4rem;
 }
 
-.result--wrapper{
-    width: calc(100% - 24rem);
-    height: 100%;
-    margin-right: 5rem;
+.result--wrapper {
+  width: calc(100% - 24rem);
+  height: 100%;
+  margin-right: 5rem;
 }
 
 .result--wrapper > div {
   padding: 1.65rem 0;
 }
-
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
 .organizer--table--wrapper {
   display: flex;
 }

@@ -52,10 +52,13 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
   const getData = e => {
     var arr = e.target.innerHTML.split(" ")
     var name = arr[0] + "--" + arr[1]
+
     var target = document.getElementsByClassName(name)[0]
     if (target.classList.contains("hide")) target.classList.remove("hide")
     if (!target.classList.contains("show")) target.classList.add("show")
+
     var season = document.getElementsByClassName("season--wrap")
+
     for (var i = 0; i < season.length; i++) {
       if (!season[i].classList.contains(name)) {
         if (!season[i].classList.contains("hide"))

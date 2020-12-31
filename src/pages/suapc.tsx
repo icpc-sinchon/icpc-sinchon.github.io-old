@@ -7,7 +7,7 @@ import SEO from "@components/seo"
 import "../fonts/fonts.css"
 import "./suapc.css"
 import sponser from "../images/sponser.png"
-import WinnerTable from "@components/organisms/WinnerTable"
+import ResultWrapper from "@components/organisms/ResultWrapper"
 import OrganizerTable from "@components/organisms/OrganizerTable"
 import suapc2020Summer from "@content/yaml/SUAPC 2020 Summer.yaml"
 import supac2021Winter from "@content/yaml/SUAPC 2021 Winter.yaml"
@@ -19,51 +19,91 @@ type DataProps = {
 }
 
 const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
-    console.log(Object.values(suapc2020Summer.awards[0]));
-    return (
-        <Layout>
-        <SEO title="ICPC Sinchon - Members" />
-        <div className="wrapper">
-            <div className="suapc--wrapper">
-            <div className="logo--info--wrapper">
-                <div className="logo--wrapper">SUAPC</div>
-                <div className="info--wrapper">
-                <span className="info--part">
-                    SUAPC는 신촌지역 5개 대학(연세, 서강, 이화, 홍익, 숙명)의 학부생
-                    및 대학원 1년차를 대상으로 하는
-                </span>
-                <span className="info--part">
-                    프로그래밍 대회입니다. 대회 문제는 서울 리저널의 문제 출제
-                    경향을 따르며 제한시간 동안 얼마나 많은
-                </span>
-                <span className="info--part">
-                    문제를 정확하게 풀 수 있는지를 평가하여 순위를 결정합니다.
-                </span>
-                </div>
+  const getData = e => {
+    // 클릭한 대회 "연도--시즌"을 name에 담음
+    let arr = e.target.innerHTML.split(" ")
+    let name = arr[0] + "--" + arr[1]
+    let target = e.target
+
+    // 클릭한 대회가 이미 선택된 대회가 아닐 경우, selected class 추가
+    if (!target.classList.contains("selected")) target.classList.add("selected")
+
+    // 클릭한 대회가 아닌 다른 대회가 선택되어 있을 경우, 선택 해제함
+    let season = document.getElementsByClassName("season")
+    for (let i = 0; i < season.length; i++) {
+      console.log(season[i])
+      if (season[i] != e.target) {
+        if (season[i].classList.contains("selected"))
+          season[i].classList.remove("selected")
+      }
+    }
+
+    // 클릭한 대회로 DATA 변경
+    let selected = document.getElementsByClassName(name)[0]
+
+    let toInspect = document.getElementsByClassName("result--wrapper")
+    for (let i = 0; i < toInspect.length; i++) {
+      // 선택한 대회
+      if(toInspect[i] == selected){
+        if(selected.classList.contains("hide"))
+          selected.classList.remove("hide")
+        if(!selected.classList.contains("show"))
+          selected.classList.add("show")
+      }else{
+        // 선택하지 않은 대회가 보여지고 있는 상태일 경우
+        if(toInspect[i].classList.contains("show")){
+          toInspect[i].classList.remove("show");
+          toInspect[i].classList.add("hide")
+        }
+      }
+    }
+  }
+  return (
+    <Layout>
+      <SEO title="ICPC Sinchon - Members" />
+      <div className="wrapper">
+        <div className="suapc--wrapper">
+          <div className="logo--info--wrapper">
+            <div className="logo--wrapper">SUAPC</div>
+            <div className="info--wrapper">
+              <span className="info--part">
+                SUAPC는 신촌지역 5개 대학(연세, 서강, 이화, 홍익, 숙명)의 학부생
+                및 대학원 1년차를 대상으로 하는
+              </span>
+              <span className="info--part">
+                프로그래밍 대회입니다. 대회 문제는 서울 리저널의 문제 출제
+                경향을 따르며 제한시간 동안 얼마나 많은
+              </span>
+              <span className="info--part">
+                문제를 정확하게 풀 수 있는지를 평가하여 순위를 결정합니다.
+              </span>
             </div>
-            <hr />
-            <div className="sponser--wrapper">
-                <img src={sponser}></img>
-            </div>
-            </div>
-            <div className="content--wrapper">
-            <div className="season--wrapper">
-                <div className="season">2021 Winter</div>
-                <div className="season selected">2020 Summer</div>
-            </div>
-            <div className="result--wrapper">
-                <WinnerTable info={Object.values(suapc2020Summer.awards[0])}/>
-                <WinnerTable info={Object.values(suapc2020Summer.awards[1])}/>
-                <div className="organizer--table--wrapper">
-                    <OrganizerTable name="출제진" info={Object.values(suapc2020Summer.examiner)}/>
-                    <OrganizerTable name="검수진" info={Object.values(suapc2020Summer.checker)}/>
-                </div>
-                
-            </div>
-            </div>
+          </div>
+          <hr />
+          <div className="sponser--wrapper">
+            <img src={sponser}></img>
+          </div>
         </div>
-        </Layout>
-    )
+        <div className="content--wrapper">
+          <div className="season--wrapper">
+            <div className="season" onClick={e => getData(e)}>
+              2021 Winter
+            </div>
+            <div className="season selected" onClick={e => getData(e)}>
+              2020 Summer
+            </div>
+          </div>
+          <ResultWrapper
+            season={Object.values(suapc2020Summer)}
+            seasonName="2020--Summer show"
+          />
+          <div className="result--wrapper 2021--Winter hide">
+            아직 시행되지 않은 SUAPC 입니다.
+          </div>
+        </div>
+      </div>
+    </Layout>
+  )
 }
 
 export default SUAPC
