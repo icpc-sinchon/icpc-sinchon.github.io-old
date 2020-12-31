@@ -8,27 +8,31 @@ type infoProps = {
 }
 
 const flexStyle = css`
-    display: flex;
+  display: flex;
 `;
 
 const description = css`
-    width: 5rem;
-    padding: calc(0.725rem - 1px) 0;
-    font-size: 1em;
-    font-weight: 600;
+  width: 5rem;
+  padding: calc(0.725rem - 1px) 0;
+  font-size: 1.2em;
+  font-weight: 600;
+`;
+
+const theadBorder = css`
+  border-bottom: 1px solid #666;
 `;
 
 export default function OrganizerTable(props: infoProps) {
   return (
-    <div className="test" css={flexStyle}>
+    <div css={flexStyle}>
       <div css={description}>
           <p>{props.name}</p>
       </div>
-      <table className="rank">
+      <table>
         <thead>
             <tr>
-                <th>이름</th>
-                <th>소속</th>
+                <th css={theadBorder}>이름</th>
+                <th css={theadBorder}>소속</th>
             </tr>
         </thead>
         <tbody>
@@ -37,7 +41,7 @@ export default function OrganizerTable(props: infoProps) {
                     return (
                         <tr>
                             <td>{data["name"]}</td>
-                            <td css={{width: "15rem"}}>{data["school"]}</td>
+                            <td css={{width: "14rem"}}>{data["school"]}</td>
                         </tr>
                     )
                 })

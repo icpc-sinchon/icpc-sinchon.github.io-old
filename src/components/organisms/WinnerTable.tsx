@@ -13,10 +13,13 @@ const flexStyle = css`
 const description = css`
     width: 5rem;
     padding: calc(0.725rem - 1px) 0;
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 600;
 `;
 
+const theadBorder = css`
+  border-bottom: 1px solid #666;
+`;
 
 export default function WinnerTable(props: infoProps) {
   return (
@@ -27,10 +30,10 @@ export default function WinnerTable(props: infoProps) {
       <table className="rank">
         <thead>
             <tr>
-                <th>순위</th>
-                <th>팀명</th>
-                <th>구성원</th>
-                <th>소속</th>
+                <th css={theadBorder}>순위</th>
+                <th css={theadBorder}>팀명</th>
+                <th css={theadBorder}>구성원</th>
+                <th css={theadBorder}>소속</th>
             </tr>
         </thead>
         <tbody>
@@ -39,7 +42,7 @@ export default function WinnerTable(props: infoProps) {
                     return (
                         <tr>
                             <td>{data["prize"]}</td>
-                            <td css={{width: "28rem"}}>{data["team"]}</td>
+                            <td css={{width: "26rem"}}>{data["team"]}</td>
                             <td>{data["member"]}</td>
                             <td>{data["school"]}</td>
                         </tr>

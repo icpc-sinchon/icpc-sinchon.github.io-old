@@ -48,8 +48,8 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
             </div>
             <div className="content--wrapper">
             <div className="season--wrapper">
-                <div className="season selected">2021 Winter</div>
-                <div className="season">2020 Summer</div>
+                <div className="season">2021 Winter</div>
+                <div className="season selected">2020 Summer</div>
             </div>
             <div className="result--wrapper">
                 <WinnerTable info={Object.values(suapc2020Summer.awards[0])}/>
