@@ -1,0 +1,72 @@
+.wrapper {
+  margin: 5rem auto 0 auto;
+  width: 85rem;
+}
+.suapc--wrapper {
+  position: relative;
+  width: 100%;
+  height: 13rem;
+}
+.logo--info--wrapper {
+  display: inline-block;
+  padding-right: 14.4rem;
+}
+.logo--wrapper {
+  font-family: "segoeuib";
+  font-size: 4.3rem;
+  color: #539a50;
+  display: inline-block;
+}
+.info--wrapper {
+  margin-top: 1rem;
+}
+.info--part {
+  display: block;
+  font-family: "appleNeoB";
+  color: #666666;
+  line-height: 1.3rem;
+}
+hr {
+  width: 0.1rem;
+  height: 11rem;
+  position: absolute;
+  top: -2.1rem;
+  left: 54.4rem;
+}
+.sponser--wrapper {
+  width: 23rem;
+  position: absolute;
+  right: 0;
+  top: -1.7rem;
+}
+.sponser--wrapper img {
+  width: 100%;
+  height: 100%;
+}
+.content--wrapper {
+  width: 100%;
+  height: 23rem;
+  margin-top: 6rem;
+  position:relative;
+}
+.season--wrapper {
+    width: 24rem;
+    height:100%;
+}
+.season {
+  color: rgba(83, 154, 80, 0.3);
+  font-size: 2rem;
+  font-family: "Inter";
+  line-height: 2.7rem;
+  cursor: pointer;
+}
+.selected {
+  color: #539a50;
+}
+.result--wrapper{
+    width:calc(100% - 24rem);
+    height:100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}

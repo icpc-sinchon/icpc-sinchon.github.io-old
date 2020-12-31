@@ -31,10 +31,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <React.Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
-        <main
-        style={{
-          paddingTop:`50px` //header크기만큼
-        }}>{children}</main>
+        <main>{children}</main>
         <footer >
           <div className="footer-content">
             <div className="footer-content--title">ICPC Sinchon</div>
