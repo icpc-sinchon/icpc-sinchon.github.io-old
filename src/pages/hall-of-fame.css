@@ -71,7 +71,6 @@
 .season--wrap .season--name {
   font-size: 2.3rem;
   font-family: "appleNeoB";
-
   margin-bottom: 3.5rem;
 }
 .study--wrap .title--wrap {
@@ -93,78 +92,46 @@
 }
 .study--wrap .title--wrap .lecturer--wrap .lecturer {
   font-family: "appleNeoM";
-  line-height: 11px;
   font-size: 17px;
   display: block;
+  margin-right:5px;
 }
 .study--wrap .title--wrap .lecturer--wrap .lecturer--list {
   font-family: "appleNeoUL";
   font-size: 18px;
 }
-.study--wrap .mid--final--wrap {
+.study--wrap .contest--wrap {
   width: 83%;
   margin: 2rem auto 0 auto;
   position: relative;
   min-height: 12rem;
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
 }
-.study--wrap .mid--final--wrap .mid--test {
+.study--wrap .contest--wrap .contest {
   position: absolute;
-  left: 0;
   margin-top: 0.5rem;
-}
-.study--wrap .mid--final--wrap .final--test {
-  position: absolute;
-  right: 0;
-  margin-top: 0.5rem;
-}
-.study--wrap .final--wrap {
-  width: 83%;
-  margin: 2.5rem auto 0 auto;
-  position: relative;
-  height: 12rem;
-}
-.study--wrap .final--wrap .final--test {
-  height: 12rem;
-}
-table caption {
-  text-align: left;
-}
-td {
-  text-align: center;
-}
-.study--wrap .mid--final--wrap .rank {
-  width: 11rem;
-  display: inline-block;
 }
 
-.ProbPicker--wrap {
-  width: 11rem;
-  display: inline-block;
-}
-.study--wrap .mid--final--wrap .ProbPicker--wrap {
+.study--wrap .contest--wrap .ProbPicker--wrap {
+
   width: 12rem;
   font-size: 1rem;
-
   display: inline-block;
 }
-.mid--test {
+.contest {
   display: inline-block;
-}
-.final--test {
-  display: inline-block;
-}
-.study--wrap .final--wrap .rank {
-}
-.study--wrap .final--wrap .ProbPicker--wrap {
 }
 .school {
   font-size: 0.8rem;
 }
-.school--lecturer{
+/* 모바일용 강사 학교 */
+.school--lecturer{ 
   font-size: 0.7rem;
   font-family: "appleNeoUL";
 }
-.no--test {
+.no--contest {
   margin: 2.5rem auto 5rem auto;
   text-align: center;
 }
@@ -176,8 +143,6 @@ td {
 }
 .season--wrap .study--wrap {
   margin-bottom: 6rem;
-}
-.season--wrap .study--wrap:first-child {
 }
 .season--wrap .study--wrap:last-child {
   margin-bottom: 6rem;
@@ -220,13 +185,12 @@ td {
     font-size: 1.9rem;
   }
 
-  .study--wrap .mid--final--wrap,
-  .study--wrap .final--wrap {
+  .study--wrap .contest--wrap{
     text-align: center;
     height: auto;
+    justify-content:center;
   }
-  .study--wrap .mid--test,
-  .study--wrap .final--test {
+  .study--wrap .contest{
     position: unset !important;
   }
   .season--wrap .study--wrap {
@@ -234,11 +198,12 @@ td {
   }
   .study--wrap .title--wrap {
     padding-bottom: 0.9rem;
+    font-size: 0.7rem;
   }
   .study--wrap .title--wrap .lecturer--wrap {
-    display: none;
+    display: flex;
   }
-}
+} 
 
 @media (max-width: 900px) {
   .season--tab {
@@ -258,18 +223,14 @@ td {
     border-radius: 1rem;
     margin: 5rem auto 0 auto;
   }
-  .season--tab:nth-child(3) {
-    /* margin-left:unset; */
-  }
-  .study--wrap .mid--final--wrap,
-  .study--wrap .final--wrap {
+  .study--wrap .contest--wrap {
     width: 90%;
+    justify-content:center;
   }
   .study--wrap .rank {
     width: 11rem;
   }
-  .study--wrap.mid--test,
-  .study--wrap.final--test {
+  .study--wrap.contest {
     width: 100%;
   }
   .ProbPicker--wrap {
@@ -299,14 +260,13 @@ td {
   .rank {
     width: 8.9rem !important;
   }
-  .study--wrap .mid--final--wrap,
-  .study--wrap .final--wrap {
+  .study--wrap .contest--wrap {
     width: 92%;
+    
   }
 }
 @media (max-width: 360px) {
-  .mid--final--wrap,
-  .final--wrap {
+  .contest--wrap{
     width: 100% !important;
   }
 }
