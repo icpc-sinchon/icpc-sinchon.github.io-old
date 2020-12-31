@@ -4,8 +4,8 @@ type TestProps = {
   name: string
   lecturer: string
   lecturer1: string
-  lecturer2: string
-  lecturer3: string
+  lecturer2?: string
+  lecturer3?: string
 }
 const NameCss = css`
   font-family: "appleNeoM";
