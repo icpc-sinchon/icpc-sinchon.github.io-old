@@ -1,5 +1,6 @@
 import { css } from "@emotion/core"
 import React from "react"
+import {  IAward,IContest } from "@models/contest.d.ts"
 
 type TestProps = {
   TestType: string
@@ -46,9 +47,9 @@ const ProbPickCss = css`
   padding-bottom: 0;
   padding-top: 0;
 `
-const Test: React.FC<{ contests }> = ({ contests }) => (
+const Test: React.FC<{ contests:IContest }> = ({ contests }) => (
   <>
-    {contests.map(contest => {
+    {contests.map((contest:IContest) => {
       return (
         <div className="test">
           <table className="rank" css={RankCss}>
@@ -56,7 +57,7 @@ const Test: React.FC<{ contests }> = ({ contests }) => (
               {contest.contest_name}
             </caption>
             <tbody>
-              {contest.awards.map(award => {
+              {contest.awards.map((award:IAward) => {
                 return (
                   <tr>
                     <td className="sunwee" css={SunweeCss}>
