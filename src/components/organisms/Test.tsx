@@ -3,9 +3,7 @@ import React, { Fragment } from "react"
 import { IAward, IContest } from "@models/contest.d.ts"
 
 type TestProps = {
-  TestType: string
-  awards: object
-  problem_picker: object
+  contests: Array<any>
 }
 const RankCss = css`
   width: 11rem;
@@ -47,9 +45,9 @@ const ProbPickCss = css`
   padding-bottom: 0;
   padding-top: 0;
 `
-const Test: React.FC<{ contests: IContest }> = ({ contests }) => (
+const Test: React.FC<{ contests: IContest }> = (props:TestProps) => (
   <Fragment>
-    {contests.map((contest: IContest) => {
+    {props.contests.map(contest => {
       return (
         <div className="test">
           <table className="rank" css={RankCss}>
