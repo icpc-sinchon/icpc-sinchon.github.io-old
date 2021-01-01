@@ -19,6 +19,7 @@ export default function ResultWrapper(props: infoProps) {
           name="출제진"
           info={props.season[4]}
         />
+        <div className="organizer--table--flexwrap"></div>
         <OrganizerTable
           name="검수진"
           info={props.season[5]}

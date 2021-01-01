@@ -25,7 +25,9 @@ export default function WinnerTable(props: infoProps) {
   console.log(props.info)
   return (
     <div className="test" css={flexStyle}>
-        <div css={description}>
+      <div 
+      className="test--title"
+      css={description}>
           <p>Div. {props.info.div}</p>
       </div>
       <table className="rank">

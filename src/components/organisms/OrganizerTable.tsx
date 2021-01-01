@@ -25,13 +25,17 @@ const theadBorder = css`
 export default function OrganizerTable(props: infoProps) {
   return (
     <div css={flexStyle}>
-      <div css={description}>
+      <div 
+      className="organizer--title"
+      css={description}>
           <p>{props.name}</p>
       </div>
       <table>
         <thead>
             <tr>
-                <th css={theadBorder}>이름</th>
+                <th 
+                className="organizer--table--name"
+                css={theadBorder}>이름</th>
                 <th css={theadBorder}>소속</th>
             </tr>
         </thead>

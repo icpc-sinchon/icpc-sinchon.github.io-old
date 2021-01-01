@@ -1,5 +1,9 @@
+td, th {
+  text-align: left;
+}
+
 .hof--wrapper{
-  width:100vw;
+  width: 79vw;
   margin: 5rem auto 0 auto;
 }
 .head {
@@ -11,18 +15,18 @@
 
 .logo--info--wrapper {
   display: inline-block;
-  padding-right: 14.4rem;
 }
-.logo--wrapper {
+.hof--logo--wrapper {
+  line-height: 3.8rem;
   font-family: "segoeuib";
   font-size: 4.3rem;
   color: #539a50;
   display: inline-block;
 }
-.info--wrapper {
+.hof--info--wrapper {
   margin-top: 1rem;
 }
-.info--part {
+.hof--info--part {
   display: block;
   font-family: "appleNeoB";
   color: #666666;
@@ -38,16 +42,32 @@
   color: silver;
 }
 .show--tab {
-  border-bottom: 0.2rem solid   rgba(83, 154, 80, 0.3);
-  color:   rgba(83, 154, 80, 0.3);
+  border-bottom: 0.2rem solid#539a50 !important;
+  color:  #539a50 !important;
 }
-.season--tab:first-child {
+.hof--season{
+  color: rgba(83, 154, 80, 0.3);
+  font-size: 2rem;
+  font-family: "Inter";
+  font-weight: 900;
+  line-height: 2.7rem;
+  cursor: pointer;
+  margin-left:4.6rem;
+}
+.hof--season:first-child {
   margin: unset;
 }
-.season--wrapper {
+.hof--season--wrapper {
+  /* 스크롤  */
+  white-space: nowrap;
+  overflow-x: scroll;
+
   margin: 7rem auto 0;
   max-width: 1705px;
   display:flex;
+}
+.season--wrap{
+  margin-top:7rem;
 }
 .season--wrap .season--name {
   font-size: 2.3rem;
@@ -107,6 +127,7 @@
 .school {
   font-size: 0.8rem;
 }
+
 /* 모바일용 강사 학교 */
 .school--lecturer{ 
   font-size: 0.7rem;
@@ -131,6 +152,14 @@
 .lecturer--wrap--mobile {
   display: none;
 }
+.no--test{
+  margin-bottom:17rem;
+}
+@media (max-width:1568px){
+  .hof--season{
+    font-size:1.5rem;
+  }
+}
 @media (max-width: 1137px) {
   .lecturer--wrap--mobile {
     display: block;
@@ -144,7 +173,7 @@
   .head .sub--title div {
     font-size: 0.9rem;
   }
-  .season--tab {
+  .hof--season {
     margin-left: 4%;
     letter-spacing: 0;
     text-indent: 0;
@@ -187,7 +216,7 @@
 } 
 
 @media (max-width: 900px) {
-  .season--tab {
+  .hof--season {
     font-size: 1.1rem;
     line-height: 2.1rem;
     margin-left: 8%;
@@ -202,13 +231,13 @@
   .head{
     width: 91%;
     border-radius: 1rem;
-    margin: 5rem auto 0 auto;
+    margin: 0 auto 0 auto;
   }
   .study--wrap .contest--wrap {
     width: 90%;
     justify-content:center;
   }
-  .study--wrap .rank {
+  .study--wrap .hof--rank {
     width: 11rem;
   }
   .study--wrap.contest {
@@ -224,6 +253,7 @@
     width: 3.8rem;
   }
 }
+
 @media (max-width: 426px) {
   .season--wrap .season--name {
     text-align: center;
@@ -238,12 +268,23 @@
     width: 95%;
     margin-bottom: 4.2rem;
   }
-  .rank {
+  .hof--rank {
     width: 8.9rem !important;
   }
   .study--wrap .contest--wrap {
     width: 92%;
     
+  }
+}
+@media(max-width: 402px){
+  .hof--wrapper{
+    margin-top:3rem;
+  }
+  .hof--logo--wrapper{
+    font-size:3.9rem;
+  }
+  .hof--info--part{
+    font-size: 0.8rem;
   }
 }
 @media (max-width: 360px) {
