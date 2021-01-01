@@ -1,9 +1,5 @@
-td, th {
-  text-align: left;
-}
-
 .hof--wrapper{
-  width: 79vw;
+  width: 86.1vw;
   margin: 5rem auto 0 auto;
 }
 .head {
@@ -76,7 +72,6 @@ td, th {
 }
 .study--wrap .title--wrap {
   margin: 2.2rem auto 0;
-  width: 88%;
   border-bottom: 0.1rem solid rgba(51, 149, 61, 0.5);
 }
 .study--wrap .title--wrap .study--title {
@@ -92,6 +87,7 @@ td, th {
   margin-top: 0.5rem;
 }
 .study--wrap .title--wrap .lecturer--wrap .lecturer {
+  line-height: 0.9rem;
   font-family: "appleNeoM";
   font-size: 17px;
   display: block;
@@ -102,7 +98,7 @@ td, th {
   font-size: 18px;
 }
 .study--wrap .contest--wrap {
-  width: 83%;
+  width: 96%;
   margin: 2rem auto 0 auto;
   position: relative;
   min-height: 12rem;
@@ -150,6 +146,8 @@ td, th {
   margin-bottom: 6rem;
 }
 .lecturer--wrap--mobile {
+  width: 23rem;
+  justify-content: center;
   display: none;
 }
 .no--test{
@@ -161,6 +159,9 @@ td, th {
   }
 }
 @media (max-width: 1137px) {
+  .lecturer--wrap{
+    display:none !important;
+  }
   .lecturer--wrap--mobile {
     display: block;
   }
@@ -233,8 +234,10 @@ td, th {
     border-radius: 1rem;
     margin: 0 auto 0 auto;
   }
+  .season--name{
+    display:none;
+  }
   .study--wrap .contest--wrap {
-    width: 90%;
     justify-content:center;
   }
   .study--wrap .hof--rank {
@@ -244,9 +247,10 @@ td, th {
     width: 100%;
   }
   .ProbPicker--wrap {
-    width: 10.9rem !important;
+    width: 11.1rem !important;
   }
   .test {
+    width: 100%;
     text-align: right;
   }
   .ProbPick {
@@ -265,19 +269,18 @@ td, th {
     text-indent: 0.5rem;
   }
   .season--wrap {
-    width: 95%;
     margin-bottom: 4.2rem;
   }
   .hof--rank {
     width: 8.9rem !important;
   }
   .study--wrap .contest--wrap {
-    width: 92%;
-    
+    width: 100%;
   }
 }
 @media(max-width: 402px){
   .hof--wrapper{
+    width:89.2vw;
     margin-top:3rem;
   }
   .hof--logo--wrapper{
@@ -293,6 +296,5 @@ td, th {
   }
 }
 .lecturer--wrap--mobile {
-  width: 92%;
   margin: 2rem auto 0 auto;
 }

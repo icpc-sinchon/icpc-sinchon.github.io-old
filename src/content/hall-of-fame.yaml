@@ -25,13 +25,13 @@ content:
               - name: 이기현
                 school: 서강대
             awards:
-              - prize: 1st
+              - prize: 1
                 member: 백성익
                 school: 홍익대
-              - prize: 2nd
+              - prize: 2
                 member: 정재현
                 school: 홍익대
-              - prize: 3rd
+              - prize: 3
                 member: 강승구
                 school: 서강대
           - contest_name: 기말고사
@@ -41,13 +41,13 @@ content:
               - name: 이기현
                 school: 서강대
             awards:
-              - prize: 1st
+              - prize: 1
                 member: 장주호
                 school: 서강대
-              - prize: 2nd
+              - prize: 2
                 member: 백성익
                 school: 홍익대
-              - prize: 3rd
+              - prize: 3
                 member: 정재현
                 school: 홍익대
 
@@ -69,13 +69,13 @@ content:
               - name: 김성민
                 school: 홍익대
             awards:
-              - prize: 1st
+              - prize: 1
                 member: 강상원
                 school: 서강대
-              - prize: 2nd
+              - prize: 2
                 member: 주상민
                 school: 서강대
-              - prize: 3rd
+              - prize: 3
                 member: 윤상현
                 school: 서강대
 
@@ -90,13 +90,13 @@ content:
               - name: 정연두
                 school: 홍익대
             awards:
-              - prize: 1st
+              - prize: 1
                 member: 강상원
                 school: 서강대
-              - prize: 2nd
+              - prize: 2
                 member: 주상민
                 school: 서강대
-              - prize: 3rd
+              - prize: 3
                 member: 임세홍
                 school: 서강대
 
@@ -123,13 +123,13 @@ content:
               - name: 최재민
                 school: KAIST
             awards:
-              - prize: 1st
+              - prize: 1
                 member: 박재형
                 school: 서강대
-              - prize: 2nd
+              - prize: 2
                 member: 남유진
                 school: 연세대
-              - prize: 3rd
+              - prize: 3
                 member: 박준성
                 school: 서강대
           - contest_name: 기말고사
@@ -143,13 +143,13 @@ content:
               - name: 이준석
                 school: 서강대
             awards:
-              - prize: 1st
+              - prize: 1
                 member: 김관우
                 school: 서강대
-              - prize: 2nd
+              - prize: 2
                 member: 남유진
                 school: 연세대
-              - prize: 3rd
+              - prize: 3
                 member: 이승은
                 school: 서강대
 
@@ -169,13 +169,13 @@ content:
               - name: 남수연
                 school: 숙명여대
             awards:
-              - prize: 1st
+              - prize: 1
                 member: 김태윤
                 school: 연세대
-              - prize: 2nd
+              - prize: 2
                 member: 김도현
                 school: 홍익대
-              - prize: 3rd
+              - prize: 3
                 member: 윤이빈
                 school: 숙명여대
           - contest_name: 기말고사
@@ -185,13 +185,13 @@ content:
               - name: 이재열
                 school: 홍익대
             awards:
-              - prize: 1st
+              - prize: 1
                 member: 김태윤
                 school: 연세대
-              - prize: 2nd
+              - prize: 2
                 member: 김도현
                 school: 홍익대
-              - prize: 3rd
+              - prize: 3
                 member: 김경민
                 school: 홍익대
   - year: 2021
