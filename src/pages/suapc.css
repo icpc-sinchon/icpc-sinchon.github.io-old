@@ -113,7 +113,9 @@ hr {
   border-bottom: 0.28rem solid#539a50;
   color: #539a50;
 }
-
+.no--contest{
+  margin:0 0 13rem 0;
+}
 @media (max-width: 1766px) {
   .wrapper {
     width: 80vw;
@@ -135,6 +137,9 @@ hr {
   }
   .result--wrapper {
     width: 100%;
+  }
+  .no--contest{
+    margin:6rem 0 13rem 0;
   }
 }
 @media (max-width: 1543px) {

@@ -153,7 +153,7 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
             season={Object.values(suapc2020Summer)}
             seasonName="2020--Summer show"
           />
-          <div className="result--wrapper 2021--Winter hide">
+          <div className="result--wrapper no--contest 2021--Winter hide">
             아직 시행되지 않은 SUAPC 입니다.
           </div>
         </div>
