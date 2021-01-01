@@ -153,7 +153,7 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                         </div>
                       ) : (
                         <div className="contest--wrap">
-                          <Test contests={study.contests} />
+                          <Test contests={Object.values(study.contests)} />
                         </div>
                       )}
                     </div>

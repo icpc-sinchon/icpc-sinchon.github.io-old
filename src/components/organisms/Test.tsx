@@ -1,6 +1,6 @@
 import { css } from "@emotion/core"
-import React,{Fragment} from "react"
-import {  IAward,IContest } from "@models/contest.d.ts"
+import React, { Fragment } from "react"
+import { IAward, IContest } from "@models/contest.d.ts"
 
 type TestProps = {
   TestType: string
@@ -47,9 +47,9 @@ const ProbPickCss = css`
   padding-bottom: 0;
   padding-top: 0;
 `
-const Test: React.FC<{ contests:IContest }> = ({ contests }) => (
+const Test: React.FC<{ contests: IContest }> = ({ contests }) => (
   <Fragment>
-    {contests.map((contest:IContest) => {
+    {contests.map((contest: IContest) => {
       return (
         <div className="test">
           <table className="rank" css={RankCss}>
@@ -57,7 +57,7 @@ const Test: React.FC<{ contests:IContest }> = ({ contests }) => (
               {contest.contest_name}
             </caption>
             <tbody>
-              {contest.awards.map((award:IAward) => {
+              {contest.awards.map((award: IAward) => {
                 return (
                   <tr>
                     <td className="sunwee" css={SunweeCss}>
