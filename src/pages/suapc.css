@@ -67,11 +67,6 @@ hr {
   color: #539a50;
 }
 
-.selected::after {
-  content: "<";
-  margin-left: 1.4rem;
-}
-
 .result--wrapper {
   width: calc(100% - 24rem);
   height: 100%;
