@@ -1,5 +1,5 @@
 import { css } from "@emotion/core"
-import React from "react"
+import React,{Fragment} from "react"
 import {  IAward,IContest } from "@models/contest.d.ts"
 
 type TestProps = {
@@ -48,7 +48,7 @@ const ProbPickCss = css`
   padding-top: 0;
 `
 const Test: React.FC<{ contests:IContest }> = ({ contests }) => (
-  <>
+  <Fragment>
     {contests.map((contest:IContest) => {
       return (
         <div className="test">
