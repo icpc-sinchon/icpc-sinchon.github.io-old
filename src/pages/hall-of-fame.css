@@ -54,10 +54,6 @@
   margin: unset;
 }
 .hof--season--wrapper {
-  /* 스크롤  */
-  white-space: nowrap;
-  overflow-x: scroll;
-
   margin: 7rem auto 0;
   max-width: 1705px;
   display:flex;
@@ -173,6 +169,10 @@
   }
   .head .sub--title div {
     font-size: 0.9rem;
+  }
+  .hof--season--wrapper{
+    white-space: nowrap;
+    overflow-x: scroll;
   }
   .hof--season {
     margin-left: 4%;
