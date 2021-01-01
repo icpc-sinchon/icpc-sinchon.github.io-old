@@ -99,3 +99,13 @@ h1 {
     word-break: keep-all;
   }
 }
+@media(max-width:600px){
+  .activity--wrapper{
+    margin: 0 0 2rem 0 !important;
+  }
+  .activity--mobile--content{
+    margin-top: -0.8rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0rem 2rem 0rem !important;
+  }
+}

@@ -6,67 +6,49 @@ content:
         name: 김도은
         school: 숙명여대
         address1: doeun536@gmail.com
-        address2: https://github.com/whaeundo25
+        address2: whaeundo25
         address3: whaeun25
       - position: 임원진
         name: 남수연
         school: 숙명여대
         address1: kaithape@gmail.com
-        address2: https://github.com/mori8
+        address2: mori8
         address3: ccoco
       - position: 임원진
         name: 김수운
         school: 홍익대
         address1: bizdori01@gmail.com
-        address2: https://github.com/blueint323
+        address2: blueint323
         address3: swoon
-      - position: 임원진
-        name: 라라라
-        school: 서강대
-        address1: raararaara@gmail.com
-        address2: https://github.com/raararaara
-        address3: raararaara
-      - position: 임원진
-        name: 이재열
-        school: 홍익대
-        address1: icpcsinchon@gmail.com
-        address2: https://github.com/malkoG
-        address3: malkoring
       - position: 임원진
         name: 노란주
         school: 서강대
         address1: nant0313@gmail.com
-        address2: https://github.com/nant0313
+        address2: nant0313
         address3: k512
       - position: 임원진
         name: 김경근
         school: 홍익대
         address1: rlarudrms28@gmail.com
-        address2: https://github.com/juneK3
+        address2: juneK3
         address3: juneK3
-      - position: 임원진
-        name: 박수현
-        school: 서강대
-        address1: shiftpsh@gmail.com
-        address2: https://github.com/shiftpsh
-        address3: shiftpsh
       - position: 임원진
         name: 강효규
         school: 서강대
         address1: djs080307@gmail.com
-        address2: https://github.com/djs100201
+        address2: djs100201
         address3: djs100201
       - position: 임원진
         name: 홍재령
         school: 이화여대
         address1: fos990805@gmail.com
-        address2: https://github.com/Jar199
+        address2: Jar199
         address3: fos0805
       - position: 임원진
         name: 이국렬
         school: 연세대
         address1: 3822c@naver.com
-        address2: https://github.com/lky7674
+        address2: lky7674
         address3: lky7674
   - season: 2020 Summer
     organizers:
@@ -74,25 +56,25 @@ content:
         name: 라라라
         school: 서강대
         address1: raararaara@gmail.com
-        address2: https://github.com/raararaara
+        address2: raararaara
         address3: raararaara
       - position: 임원진
         name: 이재열
         school: 홍익대
         address1: icpcsinchon@gmail.com
-        address2: https://github.com/malkoG
+        address2: malkoG
         address3: malkoring
       - position: 운영보조
         name: 남수연
         school: 숙명여대
         address1: kaithape@gmail.com
-        address2: https://github.com/mori8
+        address2: mori8
         address3: ccoco
       - position: 운영보조
         name: 김경근
         school: 홍익대
         address1: rlarudrms28@gmail.com
-        address2: https://github.com/juneK3
+        address2: juneK3
         address3: juneK3
   - season: 2020 Winter
     organizers:
@@ -100,18 +82,18 @@ content:
         name: 라라라
         school: 서강대
         address1: raararaara@gmail.com
-        address2: https://github.com/raararaara
+        address2: raararaara
         address3: raararaara
       - position: 임원진
         name: 이재열
         school: 홍익대
         address1: icpcsinchon@gmail.com
-        address2: https://github.com/malkoG
+        address2: malkoG
         address3: malkoring
       - position: 임원진
         name: 박수현
         school: 서강대
         address1: shiftpsh@gmail.com
-        address2: https://github.com/shiftpsh
+        address2: shiftpsh
         address3: shiftpsh
   

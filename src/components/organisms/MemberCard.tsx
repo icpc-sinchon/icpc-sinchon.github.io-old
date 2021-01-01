@@ -40,13 +40,13 @@ margin-right: 0.3rem;
 
 export default function MemberCard(props:MemberProps){
     return(
-    <a href={"https://www.acmicpc.net/user/" + props.address3} css={MemberCardStyle}>
-        <img css={imgStyle} alt={props.name} src={props.image}/>
+    <a className="userAtag" href={"https://www.acmicpc.net/user/" + props.address3} css={MemberCardStyle}>
+        <img className="userImg" css={imgStyle} alt={props.name} src={props.image}/>
         <div css={{width:"95%"}}>
             <div css={{fontSize:"20px", fontWeight:"bold"}}>{props.name}<sub css={{fontWeight:"normal"}}>{props.school}</sub></div>
             <div css={{fontSize:"14px"}}>{props.position}</div>
             <div css={addrStyle}>
-                <FontAwesomeIcon css={addrIconStyle} icon={faAt} />
+                <FontAwesomeIcon className="at--icon" css={addrIconStyle} icon={faAt} />
                 {props.address1}
             </div>
             {props.address2 &&

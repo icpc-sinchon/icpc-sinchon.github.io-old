@@ -37,12 +37,12 @@ object-fit:contain;
 
 const evenContentStyle=css`
 display:block;
-padding: 1rem 1rem 2rem 1rem;
+padding: 1rem 5rem 2rem 7rem;
 width: 100%;
 `
 const oddContentStyle=css`
 display:block;
-padding: 1rem 1rem 2rem 1rem;
+padding: 1rem 7rem 2rem 5rem;
 width: 100%;
 text-align:right;
 `
@@ -53,12 +53,13 @@ justify-content:center;
 `
 
 const nameStyle = css`
-font-size:0.9rem;
-font-weight:bold;
-padding: 0.5rem 0.5rem;
+font-family: "appleneoB";
+font-size:1.4rem;
+padding: 0.5rem 0;
 `
 const paragraphStyle = css`
-font-size:0.7rem;
+font-family: "appleneoR";
+font-size: 1rem;
 `
 
 
@@ -88,7 +89,7 @@ export default function Activity(props:ActivityProps){
       <MediaQuery maxWidth={915}>
         <div css={mobileActivityStyle}>
           <img css={mobileImgStyle} alt={props.name} src={props.image}/>
-          <div css={mobileContentStyle}>
+          <div className="activity--mobile--content" css={mobileContentStyle}>
             <div css={nameStyle}>{props.name}</div>
             <p css={paragraphStyle} style={{maxWidth:"70vh"}}>{props.content}</p> 
           </div>
