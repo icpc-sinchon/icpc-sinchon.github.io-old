@@ -45,7 +45,8 @@ const ProbPickCss = css`
   padding-bottom: 0;
   padding-top: 0;
 `
-const Test: React.FC<{ contests: IContest }> = (props:TestProps) => (
+export default function Test(props: TestProps) {
+  return(
   <Fragment>
     {props.contests.map(contest => {
       return (
@@ -98,5 +99,5 @@ const Test: React.FC<{ contests: IContest }> = (props:TestProps) => (
       )
     })}
   </Fragment>
-)
-export default Test
+  )
+}
