@@ -21,20 +21,7 @@ type DataProps = {
 }
 
 const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
-  const renderActivity = activity => {
-    if (activity.activity_type === "study") {
-      return (
-        <StudyCard
-          key={`${activity.activity_type}-${activity.year.toString()}-${
-            activity.semester
-          }`}
-          studies={activity.studies}
-        />
-      )
-    } else {
-      return <></>
-    }
-  }
+  
   const getData = e => {
     const arr = e.target.innerHTML.split(" ")
     const name = arr[0] + "--" + arr[1]
@@ -69,37 +56,38 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
   return (
     <Layout>
       <SEO title="ICPC Sinchon - Hall Of Fame" />
-      <div className="wrapper">
+      <div className="hof--wrapper">
         {/* 상단 소개 head */}
         <div className="head">
-          <div className="title--wrapper">
-            <div className="title">HALL OF FAME</div>
-            <div className="sub--title">
-              <div className="sub--title--split">
+          <div className="logo--info--wrapper">
+            <div className="logo--wrapper">HALL OF FAME</div>
+            <div className="info--wrapper">
+              <span className="info--part">
                 ICPC 신촌 연합 활동에 기여를 해주신 분들과,&nbsp;
-              </div>
-              <div className="sub--title--split">
+              </span>
+              <span className="info--part">
                 열심히 활동하여 우수한 성적을 거둔 사람들을 기립니다
-              </div>
+              </span>
             </div>
           </div>
         </div>
         {/* 탭 모음 */}
-        <div className="tab--wrapper">
-          <div className="season--tab show--tab" onClick={e => getData(e)}>
-            2020 Winter
+        <div className="content-wrapper">
+          <div className="season--wrapper">
+            <div className="season show--tab" onClick={e => getData(e)}>
+              2020 Winter
+            </div>
+            <div className="season hide--tab" onClick={e => getData(e)}>
+              2020 Summer
+            </div>
+            <div className="season hide--tab" onClick={e => getData(e)}>
+              2021 Winter
+            </div>
+            <div className="season hide--tab" onClick={e => getData(e)}>
+              2021 Summer
+            </div>
           </div>
-          <div className="season--tab hide--tab" onClick={e => getData(e)}>
-            2020 Summer
-          </div>
-          <div className="season--tab hide--tab" onClick={e => getData(e)}>
-            2021 Winter
-          </div>
-          <div className="season--tab hide--tab" onClick={e => getData(e)}>
-            2021 Summer
-          </div>
-        </div>
-        {HallOfFameData.content.map(val => {
+          {HallOfFameData.content.map(val => {
           {
             /* data명 + show/hide 표시 : 2020 Winter */
           }
@@ -162,6 +150,9 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
               </div>
             )
         })}
+        </div>
+        
+
       </div>
     </Layout>
   )

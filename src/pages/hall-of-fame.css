@@ -1,72 +1,53 @@
+.hof--wrapper{
+  width:100vw;
+  margin: 5rem auto 0 auto;
+}
 .head {
   width: 100%;
   height: 9rem;
-  text-align: center;
-
   position: relative;
   margin-top: 0rem;
-  box-shadow: 0 0 64px 1px rgba(51, 149, 61, 0.2);
 }
-.head .title--wrapper {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.head .title {
-  font-family: "segoeui";
-  font-size: 48px;
-  letter-spacing: 30px;
-  text-indent: 30px;
-}
-.head .sub--title {
-  font-family: "appleNeoUL";
-  font-size: 1.3rem;
-  margin-top: 1.1rem;
-}
-.sub--title--split {
-  display: inline-block;
-}
-.tab--wrapper {
-  width: 100%;
-  height: 3rem;
-  margin: 3rem auto 0 auto;
-  text-align: center;
-  line-height: 3rem;
-  /* -ms-overflow-style: none; /* IE and Edge */
-  /* scrollbar-width: none; Firefox */
-}
-/* .tab--wrapper::-webkit-scrollbar {
-  display: none;
-} */
-.season--tab {
-  font-family: "appleNeoB";
-  font-size: 1.2rem;
-  line-height: 2rem;
-  letter-spacing: 6px;
-  text-indent: 6px;
-  border-bottom: 0.2rem solid black;
 
+.logo--info--wrapper {
   display: inline-block;
-  margin-left: 10%;
-  cursor: pointer;
+  padding-right: 14.4rem;
+}
+.logo--wrapper {
+  font-family: "segoeuib";
+  font-size: 4.3rem;
+  color: #539a50;
+  display: inline-block;
+}
+.info--wrapper {
+  margin-top: 1rem;
+}
+.info--part {
+  display: block;
+  font-family: "appleNeoB";
+  color: #666666;
+  line-height: 1.3rem;
+}
+
+.content-wrapper{
+  width: 100%;
+  margin-top: 6rem;
 }
 .hide--tab {
   border: unset;
   color: silver;
 }
 .show--tab {
-  border-bottom: 0.2rem solid black;
-  color: black;
+  border-bottom: 0.2rem solid   rgba(83, 154, 80, 0.3);
+  color:   rgba(83, 154, 80, 0.3);
 }
 .season--tab:first-child {
   margin: unset;
 }
-.season--wrap {
+.season--wrapper {
   margin: 7rem auto 0;
-  width: 92%;
   max-width: 1705px;
+  display:flex;
 }
 .season--wrap .season--name {
   font-size: 2.3rem;
