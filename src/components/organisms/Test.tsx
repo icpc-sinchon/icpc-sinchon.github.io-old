@@ -99,6 +99,6 @@ const Test: React.FC<{ contests:IContest }> = ({ contests }) => (
         </div>
       )
     })}
-  </>
+  </Fragment>
 )
 export default Test
