@@ -6,10 +6,16 @@
   position: relative;
   width: 100%;
   height: 13rem;
+  display: flex;
+}
+.grower1 {
+  flex-grow: 1;
+}
+.grower2 {
+  flex-grow: 1;
 }
 .logo--info--wrapper {
   display: inline-block;
-  padding-right: 14.4rem;
 }
 .logo--wrapper {
   font-family: "segoeuib";
@@ -26,22 +32,18 @@
   color: #666666;
   line-height: 1.3rem;
 }
+.info--wrapper--mobile {
+  display: none;
+}
 hr {
   width: 0.1rem;
   height: 11rem;
-  position: absolute;
-  top: -2.1rem;
-  left: 54.4rem;
 }
 .sponser--wrapper {
   width: 23rem;
-  position: absolute;
-  right: 0;
-  top: -1.7rem;
 }
 .sponser--wrapper img {
   width: 100%;
-  height: 100%;
 }
 .content--wrapper {
   width: 100%;
@@ -73,7 +75,6 @@ hr {
 .result--wrapper {
   width: calc(100% - 24rem);
   height: 100%;
-  margin-right: 5rem;
 }
 
 .result--wrapper > div {
@@ -95,4 +96,83 @@ hr {
 
 .organizer--table--wrapper > div:first-child {
   margin: 0 2rem;
+}
+
+.season--wrapper--mobile {
+  display: none;
+}
+.season--mobile {
+  padding-bottom: 0.5rem;
+  color: rgba(83, 154, 80, 0.3);
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 1.7rem;
+  margin-left: 7.9vw;
+}
+.season--mobile:first-child {
+  margin-left: unset;
+}
+.selected--mobile {
+  border-bottom: 0.28rem solid#539a50;
+  color: #539a50;
+}
+
+@media (max-width: 1766px) {
+  .wrapper {
+    width: 80vw;
+  }
+  .content--wrapper {
+    display: block;
+  }
+  .season--wrapper {
+    display: none;
+  }
+  .season--wrapper--mobile {
+    display: flex;
+    margin-bottom: 3vw;
+  }
+  .result--wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 1543px) {
+  .wrapper {
+    width: 80vw;
+  }
+}
+@media (max-width: 1510px) {
+  .sponser--wrapper {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+  .grower1,
+  .grower2 {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .suapc--wrapper{
+    display:inline-block;
+    height:unset;
+  }
+  .info--wrapper {
+    display: none;
+  }
+  .info--wrapper--mobile {
+    display: block;
+    font-family: "segoeuisb";
+    color: #539a50;
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+  }
+  .season--mobile{
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 618px) {
+  .wrapper {
+    margin: 26vw auto 0 auto;
+  }
 }

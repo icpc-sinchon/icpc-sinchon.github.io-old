@@ -57,6 +57,44 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
       }
     }
   }
+  const getDataMobile = e => {
+    // 클릭한 대회 "연도--시즌"을 name에 담음
+    let arr = e.target.innerHTML.split(" ")
+    let name = arr[0] + "--" + arr[1]
+    let target = e.target
+
+    // 클릭한 대회가 이미 선택된 대회가 아닐 경우, selected class 추가
+    if (!target.classList.contains("selected--mobile")) target.classList.add("selected--mobile")
+
+    // 클릭한 대회가 아닌 다른 대회가 선택되어 있을 경우, 선택 해제함
+    let season = document.getElementsByClassName("selected--mobile")
+    for (let i = 0; i < season.length; i++) {
+      console.log(season[i])
+      if (season[i] != e.target) {
+        if (season[i].classList.contains("selected--mobile"))
+          season[i].classList.remove("selected--mobile")
+      }
+    }
+
+    // 클릭한 대회로 DATA 변경
+    let selected = document.getElementsByClassName(name)[0]
+
+    let toInspect = document.getElementsByClassName("result--wrapper")
+    for (let i = 0; i < toInspect.length; i++) {
+      // 선택한 대회
+      if (toInspect[i] == selected) {
+        if (selected.classList.contains("hide"))
+          selected.classList.remove("hide")
+        if (!selected.classList.contains("show")) selected.classList.add("show")
+      } else {
+        // 선택하지 않은 대회가 보여지고 있는 상태일 경우
+        if (toInspect[i].classList.contains("show")) {
+          toInspect[i].classList.remove("show")
+          toInspect[i].classList.add("hide")
+        }
+      }
+    }
+  }
   return (
     <Layout>
       <SEO title="ICPC Sinchon - Members" />
@@ -64,6 +102,7 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
         <div className="suapc--wrapper">
           <div className="logo--info--wrapper">
             <div className="logo--wrapper">SUAPC</div>
+
             <div className="info--wrapper">
               <span className="info--part">
                 SUAPC는 신촌지역 5개 대학(연세, 서강, 이화, 홍익, 숙명)의 학부생
@@ -77,13 +116,29 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                 문제를 정확하게 풀 수 있는지를 평가하여 순위를 결정합니다.
               </span>
             </div>
+
+            <div className="info--wrapper--mobile">
+            Sinchon  University  Association  Programming  Contest
+            </div>
           </div>
+          <div className="grower1"></div>
           <hr />
+          <div className="grower2"></div>
           <div className="sponser--wrapper">
             <img src={sponser}></img>
           </div>
         </div>
         <div className="content--wrapper">
+
+          <div className="season--wrapper--mobile">
+          <div className="season--mobile" onClick={e => getDataMobile(e)}>
+              2021 Winter
+            </div>
+            <div className="season--mobile selected--mobile" onClick={e => getDataMobile(e)}>
+              2020 Summer
+            </div>
+          </div>
+
           <div className="season--wrapper">
             <div className="season" onClick={e => getData(e)}>
               2021 Winter
@@ -91,6 +146,7 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
             <div className="season selected" onClick={e => getData(e)}>
               2020 Summer
             </div>
+
           </div>
           <ResultWrapper
             season={Object.values(suapc2020Summer)}
