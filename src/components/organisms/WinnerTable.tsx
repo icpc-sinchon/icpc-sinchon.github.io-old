@@ -22,7 +22,6 @@ const theadBorder = css`
 `;
 
 export default function WinnerTable(props: infoProps) {
-  console.log(props.info)
   return (
     <div className="test" css={flexStyle}>
         <div css={description}>
