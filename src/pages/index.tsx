@@ -7,7 +7,7 @@ import Layout from "@components/layout"
 import SEO from "@components/seo"
 import LogoScreen from "@components/organisms/logoscreen.tsx"
 import Club from "@components/molecules/club.tsx"
-import ActivitiesSlider from "@components/organisms/slider.tsx"
+import Activities from "@components/organisms/activities.tsx"
 import StyledTitle from "@components/molecules/title.tsx"
 import "../fonts/fonts.css"
 import "./index.css"
@@ -37,7 +37,7 @@ const IndexPage = () => (
       </div>
     </div>
     <StyledTitle title="Activities" />
-    <ActivitiesSlider />
+    <Activities/>
     <Link to="/page-2/">Go to page 2</Link>
     <br />
     <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
