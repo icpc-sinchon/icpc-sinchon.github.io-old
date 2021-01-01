@@ -7,6 +7,7 @@ import SEO from "@components/seo"
 import { IStudy, ILecturer } from "@models/study.d.ts"
 import StudyTitle from "@components/molecules/StudyTitle"
 import Test from "@components/organisms/Test"
+import LecturerMobileTable from "@components/organisms/LecturerMobileTable"
 import "../fonts/fonts.css"
 import "./index.css"
 import "./hall-of-fame.css"
@@ -21,7 +22,6 @@ type DataProps = {
 }
 
 const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
-  
   const getData = e => {
     const arr = e.target.innerHTML.split(" ")
     const name = arr[0] + "--" + arr[1]
@@ -44,7 +44,7 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
       if (tabs[i] == e.target) {
         if (tabs[i].classList.contains("hide--tab"))
           tabs[i].classList.remove("hide--tab")
-        if(!tabs[i].classList.contains("show--tab"))
+        if (!tabs[i].classList.contains("show--tab"))
           tabs[i].classList.add("show--tab")
       } else {
         if (!tabs[i].classList.contains("hide--tab"))
@@ -90,71 +90,74 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
             </div>
           </div>
           {HallOfFameData.content.map(val => {
-          {
-            /* data명 + show/hide 표시 : 2020 Winter */
-          }
-          let data
-          if (val.year + "--" + val.semester == "2020--Winter")
-            data = val.year + "--" + val.semester + " season--wrap show"
-          else data = val.year + "--" + val.semester + " season--wrap hide"
-          
-          // 시행되지 않은 알고리즘 캠프
-          if (val.studies == undefined) {
-            return (
-              <div className={data}>
-                <div className="season--name">
-                  {val.year + " " + val.semester}
-                </div>
-                <div className="no--test">
-                  아직 시행되지 않은 Algorithm Camp 입니다
-                </div>
-              </div>
-            )
-            
-            // 시행된 알고리즘 캠프
-          } else
-            return (
-              <div className={data}>
-                {/* 탭 아래 알고리즘 캠프 이름 */}
-                <div className="season--name">
-                  {val.year + " " + val.semester}
-                </div>
-                {val.studies.map((study: IStudy) => {
-                  //스터디 이름과 강사진
-                  return (
-                    <div className="study--wrap">
-                      <div className="title--wrap">
-                        <div className="study--title">{study.topic}</div>
-                        <div className="lecturer--wrap">
-                          <span className="lecturer">강사진</span>
-                          <span className="lecturer--list">
-                            {study.lecturers
-                              .map(
-                                (lecturer: ILecturer) =>
-                                  `${lecturer.name} ${lecturer.school}`
-                              )
-                              .join(" | ")}
-                          </span>
-                        </div>
-                      </div>
-                      {study.contests == undefined ? (
-                        <div className="no--contest">
-                          모의고사가 진행되지 않았습니다
-                        </div>
-                      ) : (
-                        <div className="contest--wrap">
-                          <Test contests={Object.values(study.contests)} />
-                        </div>
-                      )}
-                    </div>
-                  )
-                })}
-              </div>
-            )
-        })}
-        </div>
-        
+            {
+              /* data명 + show/hide 표시 : 2020 Winter */
+            }
+            let data
+            if (val.year + "--" + val.semester == "2020--Winter")
+              data = val.year + "--" + val.semester + " season--wrap show"
+            else data = val.year + "--" + val.semester + " season--wrap hide"
 
+            // 시행되지 않은 알고리즘 캠프
+            if (val.studies == undefined) {
+              return (
+                <div className={data}>
+                  <div className="season--name">
+                    {val.year + " " + val.semester}
+                  </div>
+                  <div className="no--test">
+                    아직 시행되지 않은 Algorithm Camp 입니다
+                  </div>
+                </div>
+              )
+
+              // 시행된 알고리즘 캠프
+            } else
+              return (
+                <div className={data}>
+                  {/* 탭 아래 알고리즘 캠프 이름 */}
+                  <div className="season--name">
+                    {val.year + " " + val.semester}
+                  </div>
+                  {val.studies.map((study: IStudy) => {
+                    //스터디 이름과 강사진
+                    return (
+                      <div className="study--wrap">
+                        <div className="title--wrap">
+                          <div className="study--title">{study.topic}</div>
+                          <div className="lecturer--wrap">
+                            <span className="lecturer">강사진</span>
+                            <span className="lecturer--list">
+                              {study.lecturers
+                                .map(
+                                  (lecturer: ILecturer) =>
+                                    `${lecturer.name} ${lecturer.school}`
+                                )
+                                .join(" | ")}
+                            </span>
+                          </div>
+                        </div>
+
+                        <LecturerMobileTable
+                          lecturers={Object.values(study.lecturers)}
+                        ></LecturerMobileTable>
+
+                        {study.contests == undefined ? (
+                          <div className="no--contest">
+                            모의고사가 진행되지 않았습니다
+                          </div>
+                        ) : (
+                          <div className="contest--wrap">
+                            <Test contests={Object.values(study.contests)} />
+                          </div>
+                        )}
+                      </div>
+                    )
+                  })}
+                </div>
+              )
+          })}
+        </div>
       </div>
     </Layout>
   )
