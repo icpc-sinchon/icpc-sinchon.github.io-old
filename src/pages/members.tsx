@@ -4,7 +4,7 @@ import {jsx,css} from '@emotion/core'
 import { PageProps, Link, graphql } from "gatsby"
 import Layout from "@components/layout"
 import SEO from "@components/seo"
-
+import "./members.css"
 import MemberCardProps from "@components/organisms/MemberCardWrapper"
 import MemberCardWrapper from "@components/organisms/MemberCardWrapper"
 import StyledTitle from "@components/molecules/title.tsx"
@@ -25,17 +25,17 @@ const Members:React.FC<PageProps<DataProps>> = ({data,path})=>{
     return(
         <Layout>
             <SEO title="ICPC Sinchon - Members"/>
-            <div className="head" css={{margin: "5rem"}}>
+            <div className="org--head">
                 <div className="logo--info--wrapper">
-                    <div className="hof--logo--wrapper">Organizers</div>
-                    <div className="hof--info--wrapper">
-                    <span className="hof--info--part">
+                        <div className="org--logo--wrapper">Organizers</div>
+                    <div className="org--info--wrapper">
+                    <span className="org--info--part">
                         ICPC Sinchon을 이끄는 운영진입니다.&nbsp;
                     </span>
                     </div>
                 </div>
                 </div>
-            <div>
+            <div className="member--wrapper">
                 {MembersData.content.map((memberCard:MemberCardProps)=>renderMemberWrapper(memberCard))}
             </div>
         </Layout>

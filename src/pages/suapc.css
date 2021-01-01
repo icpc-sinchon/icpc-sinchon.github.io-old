@@ -113,8 +113,8 @@ hr {
   border-bottom: 0.28rem solid#539a50;
   color: #539a50;
 }
-.no--contest{
-  margin:0 0 13rem 0;
+.no--contest {
+  margin: 0 0 13rem 0;
 }
 @media (max-width: 1766px) {
   .wrapper {
@@ -138,8 +138,8 @@ hr {
   .result--wrapper {
     width: 100%;
   }
-  .no--contest{
-    margin:6rem 0 13rem 0;
+  .no--contest {
+    margin: 6rem 0 13rem 0;
   }
 }
 @media (max-width: 1543px) {
@@ -166,6 +166,10 @@ hr {
   .organizer--table--wrapper {
     display: block;
   }
+  .organizer--table--wrapper div:nth-child(3) {
+    margin-top: 5rem;
+  }
+
   .organizer--table--wrapper div {
     display: block;
   }

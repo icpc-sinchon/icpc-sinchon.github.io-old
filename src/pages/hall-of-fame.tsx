@@ -102,9 +102,6 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
             if (val.studies == undefined) {
               return (
                 <div className={data}>
-                  <div className="season--name">
-                    {val.year + " " + val.semester}
-                  </div>
                   <div className="no--test">
                     아직 시행되지 않은 Algorithm Camp 입니다
                   </div>
@@ -116,9 +113,6 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
               return (
                 <div className={data}>
                   {/* 탭 아래 알고리즘 캠프 이름 */}
-                  <div className="season--name">
-                    {val.year + " " + val.semester}
-                  </div>
                   {val.studies.map((study: IStudy) => {
                     //스터디 이름과 강사진
                     return (
@@ -143,7 +137,7 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
                         ></LecturerMobileTable>
 
                         {study.contests == undefined ? (
-                          <div className="no--contest">
+                          <div className="hof--no--contest">
                             모의고사가 진행되지 않았습니다
                           </div>
                         ) : (

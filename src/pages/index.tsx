@@ -25,19 +25,27 @@ import yonsei from "../images/logos/yonsei.jpg"
 const IndexPage = () => (
   <Layout>
     <SEO title="ICPC Sinchon" />
-    <LogoScreen/>
+    <LogoScreen />
     <StyledTitle title="Groups" />
     <div className="clubs--wrapper">
       <div className="clubs--row">
-        <Club image={sogang} name="Sogang<br/>ICPC Team" content="Sogang Univ." />
-        <Club image={sookmyung} name="Algos" content="Sookmyung Women's Univ." />
+        <Club
+          image={sogang}
+          name="Sogang<br/>ICPC Team"
+          content="Sogang Univ."
+        />
+        <Club
+          image={sookmyung}
+          name="Algos"
+          content="Sookmyung Women's Univ."
+        />
         <Club image={yonsei} name="Morgorithm" content="Yonsei Univ." />
         <Club image={ewha} name="EDOC" content="Ewha Womans Univ." />
         <Club image={hongik} name="HI-ARC" content="Hongik Univ." />
       </div>
     </div>
     <StyledTitle title="Activities" />
-    <Activities/>
+    <Activities />
   </Layout>
 )
 
