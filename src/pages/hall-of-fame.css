@@ -170,6 +170,9 @@
   .head .sub--title div {
     font-size: 0.9rem;
   }
+  .hof--season--wrapper::-webkit-scrollbar{
+    display:none;
+  }
   .hof--season--wrapper{
     white-space: nowrap;
     overflow-x: scroll;

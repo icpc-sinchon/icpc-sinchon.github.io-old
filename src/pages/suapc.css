@@ -2,7 +2,7 @@ td,
 th {
   text-align: center;
 }
-p{
+p {
   text-align: left;
 }
 .wrapper {
@@ -124,6 +124,9 @@ hr {
   .season--wrapper {
     display: none;
   }
+  .season--wrapper--mobile::-webkit-scrollbar {
+    display: none;
+  }
   .season--wrapper--mobile {
     white-space: nowrap;
     overflow-x: scroll;
@@ -158,13 +161,13 @@ hr {
   .organizer--table--wrapper {
     display: block;
   }
-  .organizer--table--wrapper div{
+  .organizer--table--wrapper div {
     display: block;
   }
-  .organizer--table--wrapper .organizer--title{
-    display:block;
+  .organizer--table--wrapper .organizer--title {
+    display: block;
   }
-  .organizer--table--name{
+  .organizer--table--name {
     width: 10.2rem;
   }
   .result--wrapper > div {
@@ -178,7 +181,6 @@ hr {
     white-space: nowrap;
     overflow-x: scroll;
   }
-  
 }
 @media (max-width: 900px) {
   .suapc--wrapper {
