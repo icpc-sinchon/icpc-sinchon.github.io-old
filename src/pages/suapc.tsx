@@ -125,7 +125,8 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
           <hr />
           <div className="grower2"></div>
           <div className="sponser--wrapper">
-            <img src={sponser}></img>
+            <img src={sponser}
+              draggable="false"></img>
           </div>
         </div>
         <div className="content--wrapper">
