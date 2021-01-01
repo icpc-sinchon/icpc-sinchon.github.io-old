@@ -39,11 +39,13 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
           season[i].classList.remove("show")
       }
     }
-    var tabs = document.getElementsByClassName("season--tab")
+    var tabs = document.getElementsByClassName("hof--season")
     for (var i = 0; i < tabs.length; i++) {
       if (tabs[i] == e.target) {
         if (tabs[i].classList.contains("hide--tab"))
           tabs[i].classList.remove("hide--tab")
+        if(!tabs[i].classList.contains("show--tab"))
+          tabs[i].classList.add("show--tab")
       } else {
         if (!tabs[i].classList.contains("hide--tab"))
           tabs[i].classList.add("hide--tab")
@@ -60,12 +62,12 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
         {/* 상단 소개 head */}
         <div className="head">
           <div className="logo--info--wrapper">
-            <div className="logo--wrapper">HALL OF FAME</div>
-            <div className="info--wrapper">
-              <span className="info--part">
+            <div className="hof--logo--wrapper">HALL OF FAME</div>
+            <div className="hof--info--wrapper">
+              <span className="hof--info--part">
                 ICPC 신촌 연합 활동에 기여를 해주신 분들과,&nbsp;
               </span>
-              <span className="info--part">
+              <span className="hof--info--part">
                 열심히 활동하여 우수한 성적을 거둔 사람들을 기립니다
               </span>
             </div>
@@ -73,17 +75,17 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
         </div>
         {/* 탭 모음 */}
         <div className="content-wrapper">
-          <div className="season--wrapper">
-            <div className="season show--tab" onClick={e => getData(e)}>
+          <div className="hof--season--wrapper">
+            <div className="hof--season show--tab" onClick={e => getData(e)}>
               2020 Winter
             </div>
-            <div className="season hide--tab" onClick={e => getData(e)}>
+            <div className="hof--season hide--tab" onClick={e => getData(e)}>
               2020 Summer
             </div>
-            <div className="season hide--tab" onClick={e => getData(e)}>
+            <div className="hof--season hide--tab" onClick={e => getData(e)}>
               2021 Winter
             </div>
-            <div className="season hide--tab" onClick={e => getData(e)}>
+            <div className="hof--season hide--tab" onClick={e => getData(e)}>
               2021 Summer
             </div>
           </div>
