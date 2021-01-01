@@ -7,6 +7,10 @@
   src: url("./segoeuib.woff") format("woff");
 }
 @font-face {
+  font-family: "segoeuisb";
+  src: url("./segoeuisb.woff") format("woff");
+}
+@font-face {
   font-family: "appleNeoUL";
   src: url("./AppleSDGothicNeoUL.woff") format("woff");
 }
@@ -30,4 +34,4 @@
   font-family: "TheMpgtM";
   src: url("./THEmpgtM.woff") format("woff");
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
