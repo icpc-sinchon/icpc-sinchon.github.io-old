@@ -11,7 +11,8 @@ import { render } from "react-dom"
 
 type MemberCardProps = {
     season: string,
-    organizer: Array<any>
+    organizer: Array<any>,
+    cache: string
 };
 
 const MembersWrapperStyle=css`
@@ -29,9 +30,8 @@ const SeasonTitleStyle = css`
 `;
 
 export default function MemberCardWrapper(props:MemberCardProps) {
-    let cache = new Date().getTime();
     const renderMember = (member:MemberProps) =>
-        <MemberCard position={member.position} image={"https://github.com/"+member.address2+".png?cache="+cache} name={member.name} school={member.school} address1={member.address1} address2={member.address2} address3={member.address3}/>;
+        <MemberCard position={member.position} image={"https://github.com/"+member.address2+".png?cache="+props.cache} name={member.name} school={member.school} address1={member.address1} address2={member.address2} address3={member.address3}/>;
     return(
         <div css={{textAlign:"center"}}>
             <h1 css={SeasonTitleStyle}>{props.season}</h1>

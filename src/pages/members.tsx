@@ -21,7 +21,7 @@ type DataProps = {
 
 const Members:React.FC<PageProps<DataProps>> = ({data,path})=>{
     const renderMemberWrapper = (memberCard:MemberCardProps) =>
-        <MemberCardWrapper season={memberCard.season} organizer={Object.values(memberCard.organizers)}/>;
+        <MemberCardWrapper cache={new Date().getTime()} season={memberCard.season} organizer={Object.values(memberCard.organizers)}/>;
     return(
         <Layout>
             <SEO title="ICPC Sinchon - Members"/>
