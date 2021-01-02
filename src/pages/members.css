@@ -32,6 +32,9 @@
     width: 9rem !important;
     height: 9rem !important;
   }
+    .at--icon{
+      display:none;
+  }
 }
 @media (max-width: 420px) {
   .org--logo--wrapper {
@@ -40,12 +43,16 @@
   .org--info--part {
     font-size: 0.8rem;
   }
-  .at--icon{
-      display:none;
-  }
 }
 
 @media (max-width: 1543px) {
+  /* 경근님 이메일이 삐져나와서 InfoWrapper를 고정시켰음 */
+  .memberInfo--wrapper{
+    width:10rem;
+  }
+  .memberInfo--mail{
+    font-size: 13px !important;
+  }
   .org--head {
     width: 84vw;
   }

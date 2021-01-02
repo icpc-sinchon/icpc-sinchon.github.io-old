@@ -37,15 +37,22 @@ font-size:14px;
 const addrIconStyle=css`
 margin-right: 0.3rem;
 `
+const memberInfoStyle=css`
+width: 10rem;
+`;
 
 export default function MemberCard(props:MemberProps){
     return(
     <a className="userAtag" href={"https://www.acmicpc.net/user/" + props.address3} css={MemberCardStyle}>
         <img className="userImg" css={imgStyle} alt={props.name} src={props.image}/>
-        <div css={{width:"95%"}}>
+        <div 
+        className="memberInfo--wrapper"
+        css={memberInfoStyle}>
             <div css={{fontSize:"20px", fontWeight:"bold"}}>{props.name}<sub css={{fontWeight:"normal"}}>{props.school}</sub></div>
             <div css={{fontSize:"14px"}}>{props.position}</div>
-            <div css={addrStyle}>
+            <div 
+            className="memberInfo--mail"
+            css={addrStyle}>
                 <FontAwesomeIcon className="at--icon" css={addrIconStyle} icon={faAt} />
                 {props.address1}
             </div>
