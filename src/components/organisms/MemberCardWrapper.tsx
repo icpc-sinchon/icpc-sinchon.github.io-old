@@ -19,7 +19,7 @@ display:flex;
 flex-wrap:wrap;
 justify-content:space-evenly;
 margin-bottom: 8rem;
-padding: 0 3rem;
+padding: 0 0 0 1rem;
 `
 
 const SeasonTitleStyle = css`
