@@ -23,6 +23,7 @@ p {
 }
 .logo--info--wrapper {
   display: inline-block;
+  margin-top: 1rem;
 }
 .logo--wrapper {
   font-family: "segoeuib";
@@ -47,6 +48,7 @@ hr {
   height: 11rem;
 }
 .sponser--wrapper {
+  margin-top: -0.7rem;
   width: 23rem;
 }
 .sponser--wrapper img {
