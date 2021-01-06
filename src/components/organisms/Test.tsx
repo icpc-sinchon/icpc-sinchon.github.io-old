@@ -16,7 +16,6 @@ const TitleCss = css`
   font-family: "appleNeoR";
   margin-bottom: 0.7rem;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
-  width: 6.3rem;
   padding-bottom: 0.6rem;
   padding-left: 0.4rem;
   text-align: left;
