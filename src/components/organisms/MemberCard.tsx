@@ -32,7 +32,7 @@ margin-right: 2rem;
 border-radius: 50%;
 `
 const addrStyle=css`
-font-size:14px;
+font-size:13px;
 `
 const addrIconStyle=css`
 margin-right: 0.3rem;
