@@ -1,0 +1,219 @@
+td,
+th {
+  text-align: center;
+}
+p {
+  text-align: left;
+}
+.wrapper {
+  margin: 5rem auto 0 auto;
+  width: 85rem;
+}
+.suapc--wrapper {
+  position: relative;
+  width: 100%;
+  height: 13rem;
+  display: flex;
+}
+.grower1 {
+  flex-grow: 1;
+}
+.grower2 {
+  flex-grow: 1;
+}
+.logo--info--wrapper {
+  display: inline-block;
+  margin-top: 1rem;
+}
+.logo--wrapper {
+  font-family: "segoeuib";
+  font-size: 4.3rem;
+  color: #539a50;
+  display: inline-block;
+}
+.info--wrapper {
+  margin-top: 1rem;
+}
+.info--part {
+  display: block;
+  font-family: "appleNeoB";
+  color: #666666;
+  line-height: 1.3rem;
+}
+.info--wrapper--mobile {
+  display: none;
+}
+hr {
+  width: 0.1rem;
+  height: 11rem;
+}
+.sponser--wrapper {
+  margin-top: -0.7rem;
+  width: 23rem;
+}
+.sponser--wrapper img {
+  width: 100%;
+}
+.content--wrapper {
+  width: 100%;
+  margin-top: 6rem;
+  display: flex;
+}
+
+.season--wrapper {
+  width: 24rem;
+  height: 100%;
+}
+.season {
+  color: rgba(83, 154, 80, 0.3);
+  font-size: 2rem;
+  font-family: "Inter";
+  font-weight: 900;
+  line-height: 2.7rem;
+  cursor: pointer;
+}
+.selected {
+  color: #539a50;
+}
+
+.result--wrapper {
+  width: calc(100% - 24rem);
+  height: 100%;
+}
+
+.result--wrapper > div {
+  padding: 1.65rem 0;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.organizer--table--wrapper {
+  display: flex;
+}
+
+.organizer--table--wrapper > div {
+  flex-grow: 1;
+}
+.season--wrapper--mobile {
+  display: none;
+}
+.season--mobile {
+  padding-bottom: 0.5rem;
+  color: rgba(83, 154, 80, 0.3);
+  font-family: "Inter";
+  font-weight: 900;
+  font-size: 1.7rem;
+  margin-left: 7.9vw;
+}
+.season--mobile:first-child {
+  margin-left: unset;
+}
+.selected--mobile {
+  border-bottom: 0.28rem solid#539a50;
+  color: #539a50;
+}
+.no--contest {
+  margin: 0 0 13rem 0;
+}
+@media (max-width: 1766px) {
+  .wrapper {
+    width: 80vw;
+  }
+  .content--wrapper {
+    display: block;
+  }
+  .season--wrapper {
+    display: none;
+  }
+  .season--wrapper--mobile::-webkit-scrollbar {
+    display: none;
+  }
+  .season--wrapper--mobile {
+    white-space: nowrap;
+    overflow-x: scroll;
+    display: flex;
+    margin-bottom: 3vw;
+  }
+  .result--wrapper {
+    width: 100%;
+  }
+  .no--contest {
+    margin: 6rem 0 13rem 0;
+  }
+}
+@media (max-width: 1543px) {
+  .wrapper {
+    width: 80vw;
+  }
+}
+@media (max-width: 1510px) {
+  .sponser--wrapper {
+    display: none;
+  }
+  hr {
+    display: none;
+  }
+  .grower1,
+  .grower2 {
+    display: none;
+  }
+}
+@media (max-width: 1238px) {
+  .organizer--table--wrapper > div:first-child {
+    margin: unset;
+  }
+  .organizer--table--wrapper {
+    display: block;
+  }
+  .organizer--table--wrapper div:nth-child(3) {
+    margin-top: 5rem;
+  }
+
+  .organizer--table--wrapper div {
+    display: block;
+  }
+  .organizer--table--wrapper .organizer--title {
+    display: block;
+  }
+  .organizer--table--name {
+    width: 10.2rem;
+  }
+  .result--wrapper > div {
+    display: block;
+  }
+  .result--wrapper > .test--title {
+    display: block;
+  }
+  .test .rank {
+    display: block;
+    white-space: nowrap;
+    overflow-x: scroll;
+  }
+}
+@media (max-width: 900px) {
+  .suapc--wrapper {
+    display: inline-block;
+    height: unset;
+  }
+  .info--wrapper {
+    display: none;
+  }
+  .info--wrapper--mobile {
+    display: block;
+    font-family: "segoeuisb";
+    color: #539a50;
+    line-height: 1.3rem;
+    font-size: 0.9rem;
+  }
+  .season--mobile {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 618px) {
+  .wrapper {
+    margin: 26vw auto 0 auto;
+  }
+}

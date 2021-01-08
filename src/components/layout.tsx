@@ -31,10 +31,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <React.Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
-        <main
-        style={{
-          paddingTop:`50px` //header크기만큼
-        }}>{children}</main>
+        <main>{children}</main>
         <footer >
           <div className="footer-content">
             <div className="footer-content--title">ICPC Sinchon</div>
@@ -46,12 +43,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="footer-content--title">Contributors</div>
             <div className="footer-content--items">
               <div className="footer-items--content-column">
-                <Address name="이재열" github="https://github.com/icpc-sinchon" email="icpc.sinchon@gmail.com"/>
-                <Address name="서연주" github="https://github.com/icpc-sinchon" email="icpc.sinchon@gmail.com"/>
+                <Address name="이재열" github="https://github.com/malkoG" email="rijgndqw012@gmail.com"/>
+                <Address name="서연주" github="https://github.com/YeonjuSeo" email="tjduswn1219@gmail.com"/>
               </div>
               <div className="footer-items--content-column">
-                <Address name="남수연" github="https://github.com/icpc-sinchon" email="icpc.sinchon@gmail.com"/>
-                <Address name="황준혁" github="https://github.com/icpc-sinchon" email="icpc.sinchon@gmail.com"/>
+                <Address name="남수연" github="https://github.com/mori8" email="kaithape@gmail.com"/>
+                <Address name="이동주" github="https://github.com/nant0313" email="nant0313@gmail.com"/>
               </div>
             </div>
           </div>

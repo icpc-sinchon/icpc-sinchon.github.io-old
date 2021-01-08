@@ -5,9 +5,11 @@ body{
   font-size: 3rem;
   margin: 1.6rem 0;
 }
-p {
-  font-size: 0.8rem;
+
+table {
+  text-align: center;
 }
+
 .clubs--wrapper {
   width: 100%;
   margin: 2rem 0rem 5rem 0;
@@ -72,5 +74,15 @@ h1 {
   }
   .balloon{
     background-size: auto 100%;
+  }
+}
+@media(max-width:600px){
+  .activity--wrapper{
+    margin: 0 0 2rem 0 !important;
+  }
+  .activity--mobile--content{
+    margin-top: -0.8rem;
+    margin-bottom: 1rem;
+    padding: 1rem 0rem 2rem 0rem !important;
   }
 }

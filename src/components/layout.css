@@ -241,7 +241,6 @@ img {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
 }
 h1 {
   margin-left: 0;
@@ -499,7 +498,7 @@ iframe {
 hr {
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0;
+  margin-top: -1.8rem;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
@@ -588,11 +587,11 @@ abbr[title] {
   text-decoration: none;
 }
 thead {
-  text-align: left;
+  text-align: center;
 }
 td,
 th {
-  text-align: left;
+  text-align: center;
   border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
   font-feature-settings: "tnum";
   -moz-font-feature-settings: "tnum";

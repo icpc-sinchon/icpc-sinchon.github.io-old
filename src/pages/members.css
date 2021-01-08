@@ -1,0 +1,56 @@
+.org--head {
+  height: 9rem;
+  position: relative;
+  margin: 5rem;
+}
+.org--logo--wrapper {
+  line-height: 3.8rem;
+  font-family: "segoeuib";
+  font-size: 4.3rem;
+  color: #539a50;
+  display: inline-block;
+}
+.org--info--wrapper {
+  margin-top: 1rem;
+}
+.org--info--part {
+  display: block;
+  font-family: "appleNeoB";
+  color: #666666;
+  line-height: 1.3rem;
+}
+.member--wrapper {
+}
+@media (max-width: 618px) {
+  .org--head {
+    margin: 21vw auto 17vw auto;
+  }
+  .userAtag{
+    padding: 2rem 0 !important;
+  }
+  .userImg {
+    width: 9rem !important;
+    height: 9rem !important;
+  }
+    .at--icon{
+      display:none;
+  }
+}
+@media (max-width: 420px) {
+  .org--logo--wrapper {
+    font-size: 3.4rem;
+  }
+  .org--info--part {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 1543px) {
+  /* 경근님 이메일이 삐져나와서 InfoWrapper를 고정시켰음 */
+  .memberInfo--wrapper{
+    width:10rem;
+  }
+  .org--head {
+    width: 84vw;
+  }
+}
