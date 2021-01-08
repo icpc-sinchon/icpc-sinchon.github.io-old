@@ -1,6 +1,7 @@
 /** @jsx jsx */
 import React from "react"
 import { jsx, css } from "@emotion/core"
+import { Helmet } from "react-helmet"
 import { PageProps, Link, graphql } from "gatsby"
 import Layout from "@components/layout"
 import SEO from "@components/seo"
@@ -97,6 +98,9 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
   }
   return (
     <Layout>
+      <Helmet>
+        <meta name="google-site-verification" content="5Ph0_m71cR-AlpUbNuBAmu3IR6SaIdgioXEh6aFVP9w" />
+      </Helmet>
       <SEO title="ICPC Sinchon - Members" />
       <div className="wrapper">
         <div className="suapc--wrapper">
