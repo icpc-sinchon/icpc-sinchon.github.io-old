@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import { jsx, css } from "@emotion/core"
+import { Helmet } from "react-helmet"
 
 // FIXME : gatsby로 빌드 돌릴때는 문제가 없지만 VSCode에서는 빨간줄떠서 해결하긴 해야함.
 import Layout from "@components/layout"
@@ -24,6 +25,9 @@ import yonsei from "../images/logos/yonsei.jpg"
 
 const IndexPage = () => (
   <Layout>
+    <Helmet>
+        <meta name="google-site-verification" content="58UXeHIoaelb7ynLUFRruJMLccRexLVTwi2l0Cep-G8" />
+    </Helmet>
     <SEO title="ICPC Sinchon" />
     <LogoScreen />
     <StyledTitle title="Groups" />
