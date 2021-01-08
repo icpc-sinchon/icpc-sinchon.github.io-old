@@ -22,10 +22,12 @@ import sookmyung from "../images/logos/sookmyung.png"
 import hongik from "../images/logos/hongik.png"
 import ewha from "../images/logos/ewha.png"
 import yonsei from "../images/logos/yonsei.jpg"
+import sitemap from "../images/sitemap.xml"
 
 const IndexPage = () => (
   <Layout>
     <Helmet>
+        <meta name="sitemap.xml" content={{sitemap}} />
         <meta name="google-site-verification" content="58UXeHIoaelb7ynLUFRruJMLccRexLVTwi2l0Cep-G8" />
     </Helmet>
     <SEO title="ICPC Sinchon" />
