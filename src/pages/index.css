@@ -1,5 +1,5 @@
-body{
-    padding-top:50px;
+body {
+  padding-top: 50px;
 }
 .main--title {
   font-size: 3rem;
@@ -41,9 +41,9 @@ table {
   height: 19rem;
   margin: 0 4% 0 0;
 }
-.club:hover{
-    transform: scale(1.05);
-    transition: transform .4s;
+.club:hover {
+  transform: scale(1.05);
+  transition: transform 0.4s;
 }
 .club img {
   border-radius: 50%;
@@ -62,18 +62,41 @@ h1 {
   font-family: "Noto Sans KR";
   margin-bottom: 0.2rem;
 }
-#sogang--id{
-    top: -22px;
+#sogang--id {
+  top: -22px;
 }
-.balloon--text{
-
+.balloon--text {
 }
 @media (max-width: 1012px) {
   .club {
     margin-bottom: 2rem;
   }
-  .balloon{
+  .balloon {
+    padding: 3.9rem 1rem 7.1rem 0 !important;
     background-size: auto 100%;
+  }
+  .balloon--text {
+    padding-right: 0rem !important;
+  }
+  .balloon--text--whiteback {
+    padding-right: 1.1rem !important;
+  }
+  .balloon--240 {
+    top: 1.1rem !important;
+    right: 0.9rem !important;
+    font-size: 1rem !important;
+  }
+  .main--title {
+    font-size: 1.9rem !important;
+  }
+  .balloon--title--sin {
+    line-height: 2.2rem !important;
+    font-size: 2.4rem !important;
+  }
+  .balloon--title--pmg {
+    font-size: 2.4rem !important;
+    line-height: 2.8rem !important;
+    word-break: keep-all;
   }
 }
 @media(max-width:600px){
