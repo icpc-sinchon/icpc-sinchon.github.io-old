@@ -50,6 +50,9 @@
   .memberInfo--wrapper{
     width:10rem;
   }
+  .memberInfo--mail{
+    font-size: 13px !important;
+  }
   .org--head {
     width: 84vw;
   }
