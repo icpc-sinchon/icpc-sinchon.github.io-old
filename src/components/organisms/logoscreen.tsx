@@ -38,7 +38,7 @@ font-size: 3rem;
 margin: 1.6rem 0;
 `
 const logoContentStyle=css`
-font-family: "TheMpgtM"; 
+font-family: "appleNeoR";
 font-size: 3.4em; 
 color: black;
 `
