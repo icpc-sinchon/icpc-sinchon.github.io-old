@@ -18,9 +18,9 @@ import "slick-carousel/slick/slick-theme.css"
 // images
 // import Image from "@components/image"
 import sogang from "../images/logos/sogang.jpg"
-import sookmyung from "../images/logos/sookmyung.png"
-import hongik from "../images/logos/hongik.png"
-import ewha from "../images/logos/ewha.png"
+import sookmyung from "../images/logos/sookmyung.jpg"
+import hongik from "../images/logos/hongik.jpg"
+import ewha from "../images/logos/ewha.jpg"
 import yonsei from "../images/logos/yonsei.jpg"
 
 const IndexPage = () => (
