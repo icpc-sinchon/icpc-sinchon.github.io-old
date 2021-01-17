@@ -26,12 +26,4 @@
   font-family: "appleNeoR";
   src: url("./AppleSDGothicNeoR.woff") format("woff");
 }
-@font-face {
-  font-family: "TheMpgtL";
-  src: url("./THEmpgtL.woff") format("woff");
-}
-@font-face {
-  font-family: "TheMpgtM";
-  src: url("./THEmpgtM.woff") format("woff");
-}
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
