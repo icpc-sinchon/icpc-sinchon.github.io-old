@@ -3,7 +3,7 @@ import React,{Component,HTMLAttributes} from "react";
 import {jsx,css} from '@emotion/core';
 
 // images
-import mainImage from "../../images/suapc2020.png"
+import mainImage from "../../images/suapc2020.jpg"
 
 const logoScreenWrapperStyle = css`
 padding: 7.1rem 1rem;
