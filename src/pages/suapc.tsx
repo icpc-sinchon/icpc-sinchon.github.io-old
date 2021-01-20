@@ -100,6 +100,7 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
     <Layout>
       <Helmet>
         <meta name="google-site-verification" content="5Ph0_m71cR-AlpUbNuBAmu3IR6SaIdgioXEh6aFVP9w" />
+        <meta name="naver-site-verification" content="fcb10e2391d27964e9d52812543f1bbe401542fb" />
       </Helmet>
       <SEO title="ICPC Sinchon - Members" />
       <div className="wrapper">
