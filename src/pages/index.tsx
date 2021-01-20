@@ -30,6 +30,7 @@ const IndexPage = () => (
         name="description"
         content="ICPC Sinchon은 서강대학교, 숙명여자대학교, 연세대학교, 이화여자대학교, 홍익대학교 컴퓨터공학과 학생들로 구성된 신촌지역 대학교 프로그래밍 대회 동아리 연합입니다"
       />
+      <meta name="naver-site-verification" content="24c4543e561d2294f20783f8543be49f7a80bfa8" />
       <meta
         name="google-site-verification"
         content="58UXeHIoaelb7ynLUFRruJMLccRexLVTwi2l0Cep-G8"
