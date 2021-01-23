@@ -23,9 +23,6 @@ table {
   width: 90%;
   height: auto;
 }
-.clubs--row {
-  flex-wrap: wrap;
-}
 .club--img {
   position: absolute;
   left: -30px;
@@ -59,13 +56,18 @@ table {
 }
 
 h1 {
-  font-family: 'appleNeoM',sans-serif;
+  font-family: "appleNeoM", sans-serif;
   margin-bottom: 0.2rem;
 }
 #sogang--id {
   top: -22px;
 }
 .balloon--text {
+}
+@media (max-width: 1209px) {
+  .clubs--row {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 1012px) {
   .club {
@@ -99,11 +101,11 @@ h1 {
     word-break: keep-all;
   }
 }
-@media(max-width:600px){
-  .activity--wrapper{
+@media (max-width: 600px) {
+  .activity--wrapper {
     margin: 0 0 2rem 0 !important;
   }
-  .activity--mobile--content{
+  .activity--mobile--content {
     margin-top: -0.8rem;
     margin-bottom: 1rem;
     padding: 1rem 0rem 2rem 0rem !important;
