@@ -1,6 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
-import './header.css'
+import "./header.css"
 type HeaderProps = {
   siteTitle: string
 }
@@ -21,6 +21,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
       style={{
         margin: `0 auto`,
         display: `flex`,
+        fontFamily: "appleNeoM",
       }}
     >
       <Link
@@ -35,6 +36,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
           lineHeight: `50px`,
           display: `inline-block`,
           verticalAlign: `middle`,
+          fontFamily: "appleNeoM",
         }}
       >
         {siteTitle}
@@ -51,13 +53,15 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
           lineHeight: `50px`,
           display: `inline-block`,
           verticalAlign: `middle`,
-          fontWeight: `700`,
+          fontWeight: 700,
+          fontFamily: "appleNeoM",
         }}
       >
         SUAPC{" "}
         <span
           style={{
             fontSize: `0.7em`,
+            fontFamily: "appleNeoM",
           }}
         >
           2021
@@ -74,7 +78,8 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
           lineHeight: `50px`,
           display: `inline-block`,
           verticalAlign: `middle`,
-          fontWeight: `700`,
+          fontWeight: 700,
+          fontFamily: "appleNeoM",
         }}
       >
         Hall of Fame
@@ -90,7 +95,8 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
           lineHeight: `50px`,
           display: `inline-block`,
           verticalAlign: `middle`,
-          fontWeight: `700`,
+          fontWeight: 700,
+          fontFamily: "appleNeoM",
         }}
       >
         Organizers
