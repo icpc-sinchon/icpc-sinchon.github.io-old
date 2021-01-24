@@ -77,16 +77,13 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
         <div className="content-wrapper">
           <div className="hof--season--wrapper">
             <div className="hof--season show--tab" onClick={e => getData(e)}>
-              2020 Winter
+              2021 Winter
             </div>
             <div className="hof--season hide--tab" onClick={e => getData(e)}>
               2020 Summer
             </div>
             <div className="hof--season hide--tab" onClick={e => getData(e)}>
-              2021 Winter
-            </div>
-            <div className="hof--season hide--tab" onClick={e => getData(e)}>
-              2021 Summer
+              2020 Winter
             </div>
           </div>
           {HallOfFameData.content.map(val => {
@@ -94,7 +91,7 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
               /* data명 + show/hide 표시 : 2020 Winter */
             }
             let data
-            if (val.year + "--" + val.semester == "2020--Winter")
+            if (val.year + "--" + val.semester == "2021--Winter")
               data = val.year + "--" + val.semester + " season--wrap show"
             else data = val.year + "--" + val.semester + " season--wrap hide"
 
