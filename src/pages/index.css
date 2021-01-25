@@ -37,10 +37,10 @@ table {
   width: 15.2rem;
   height: 19rem;
   margin: 0 4% 0 0;
+  transition: transform 0.4s;
 }
 .club:hover {
   transform: scale(1.05);
-  transition: transform 0.4s;
 }
 .club img {
   border-radius: 50%;
