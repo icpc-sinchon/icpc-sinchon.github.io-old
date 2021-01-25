@@ -6,7 +6,7 @@ import { jsx, css } from "@emotion/core"
 import mainImage from "../../images/suapc2020.jpg"
 
 const logoScreenWrapperStyle = css`
-  padding: 4.1rem 1rem;
+  padding: 6.7rem 0.7rem 4.3rem 1rem;
   margin: 1rem auto 3rem auto;
   background-image: url(${mainImage});
   background-repeat: no-repeat;
@@ -27,19 +27,19 @@ const logoNumStyle = css`
   color: rgb(0, 132, 13);
   font-family: appleNeoB;
   position: absolute;
-  top: 1rem;
-  right: 2.4rem;
-  font-size: 1.1rem;
+  top: 0.5rem;
+  right: 2.6rem;
+  font-size: 1rem;
 `
 const logoTitleStyle = css`
   font-family: segoeuib;
   color: #00840d;
-  font-size: 2.2rem;
-  margin: 1.6rem 0;
+  font-size: 1.9rem;
+  margin: 1.1rem 0;
 `
 const logoContentStyle = css`
   font-family: "appleNeoR";
-  font-size: 3.1em;
+  font-size: 2.8em;
   color: black;
 `
 
@@ -59,10 +59,7 @@ export default function LogoScreen() {
               신촌지역 대학교
             </span>
             <br />
-            <span
-              className="balloon--title--pmg"
-              css={{ lineHeight: `5.7rem` }}
-            >
+            <span className="balloon--title--pmg" css={{ lineHeight: `5rem` }}>
               프로그래밍 대회 동아리 연합
             </span>
           </div>
