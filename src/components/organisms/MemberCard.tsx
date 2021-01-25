@@ -17,22 +17,22 @@ type MemberProps = {
 
 const MemberCardStyle=css`
 margin: 1rem 0rem;
-padding: 2rem 3rem;
+padding: 1rem 1.5rem 1rem 0;
 display: flex;
-align-items:center;
-justify-content:center;
-text-decoration:none;
-color:black;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+color: black;
 text-align: left;
 `
 const imgStyle=css`
-width:180px;
-height:180px;
-margin-right: 2rem;
+width: 150px;
+height: 150px;
+margin-right: 1.5rem;
 border-radius: 50%;
 `
 const addrStyle=css`
-font-size:13px;
+font-size: 13px;
 `
 const addrIconStyle=css`
 margin-right: 0.3rem;
