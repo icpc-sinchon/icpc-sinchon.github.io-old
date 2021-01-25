@@ -7,7 +7,7 @@ import mainImage from "../../images/suapc2020.jpg"
 
 const logoScreenWrapperStyle = css`
   padding: 6.7rem 0.7rem 4.3rem 1rem;
-  margin: 1rem auto 3rem auto;
+  margin: 1rem auto 5rem auto;
   background-image: url(${mainImage});
   background-repeat: no-repeat;
   background-position: center center;
