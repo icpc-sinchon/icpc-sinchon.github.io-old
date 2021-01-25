@@ -12,7 +12,7 @@ const hightlightStyle = css`
   display:inline-block;
   border-bottom: 0.3rem solid rgba(161, 203, 149, 0.5);
   font-family: 'appleNeoR';
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   color: #489A02;
 `
