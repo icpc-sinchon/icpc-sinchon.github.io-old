@@ -31,7 +31,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
           color: `#33a23d`,
           textDecoration: `none`,
           marginLeft: `1.2rem`,
-          fontSize: `1.1em`,
+          fontSize: `1em`,
           fontWeight: "bold",
           lineHeight: `50px`,
           display: `inline-block`,
@@ -49,7 +49,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
           color: `#33A23D`,
           textDecoration: `none`,
           marginRight: `1.5rem`,
-          fontSize: `0.9em`,
+          fontSize: `0.8em`,
           lineHeight: `50px`,
           display: `inline-block`,
           verticalAlign: `middle`,
@@ -60,7 +60,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
         SUAPC{" "}
         <span
           style={{
-            fontSize: `0.7em`,
+            fontSize: `0.6em`,
             fontFamily: "appleNeoM",
           }}
         >
@@ -74,7 +74,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
           color: `#333333`,
           textDecoration: `none`,
           marginRight: `1.5rem`,
-          fontSize: `0.8em`,
+          fontSize: `0.7em`,
           lineHeight: `50px`,
           display: `inline-block`,
           verticalAlign: `middle`,
@@ -91,7 +91,7 @@ const Header: React.FC<HeaderProps> = ({ siteTitle = "" }) => (
           color: `#333333`,
           textDecoration: `none`,
           marginRight: `2rem`,
-          fontSize: `0.8em`,
+          fontSize: `0.7em`,
           lineHeight: `50px`,
           display: `inline-block`,
           verticalAlign: `middle`,
