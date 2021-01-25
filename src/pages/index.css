@@ -1,6 +1,10 @@
 body {
   padding-top: 50px;
 }
+main{
+  max-width: 1800px;
+  margin: 0 auto;
+}
 .main--title {
   font-size: 3rem;
   margin: 1.6rem 0;

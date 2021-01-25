@@ -6,7 +6,7 @@ import { jsx, css } from "@emotion/core"
 import mainImage from "../../images/suapc2020.jpg"
 
 const logoScreenWrapperStyle = css`
-  padding: 7.1rem 1rem;
+  padding: 4.1rem 1rem;
   margin: 1rem auto 3rem auto;
   background-image: url(${mainImage});
   background-repeat: no-repeat;
