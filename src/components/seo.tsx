@@ -16,7 +16,7 @@ type MetaTagProps = {
   title: string;
 }
 
-const SEO : React.FC<MetaTagProps> = ({ description = '', lang = 'en', meta = [], title }) => {
+const SEO : React.FC<MetaTagProps> = ({ description = '', lang = 'ko', meta = [], title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {

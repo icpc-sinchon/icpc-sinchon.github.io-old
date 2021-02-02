@@ -102,7 +102,11 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
         <meta name="google-site-verification" content="5Ph0_m71cR-AlpUbNuBAmu3IR6SaIdgioXEh6aFVP9w" />
         <meta name="naver-site-verification" content="fcb10e2391d27964e9d52812543f1bbe401542fb" />
       </Helmet>
-      <SEO title="ICPC Sinchon - Members" />
+      <SEO 
+      title="SUAPC 2021"
+      description='SUAPC는 신촌지역 5개 대학(서강, 숙명, 연세, 이화, 홍익)의 학부생 및 대학원 1년차를 대상으로 하는
+      프로그래밍 대회입니다.'
+       />
       <div className="wrapper">
         <div className="suapc--wrapper">
           <div className="logo--info--wrapper">

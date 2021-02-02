@@ -24,7 +24,10 @@ const Members:React.FC<PageProps<DataProps>> = ({data,path})=>{
         <MemberCardWrapper cache={new Date().getTime()} season={memberCard.season} organizer={Object.values(memberCard.organizers)}/>;
     return(
         <Layout>
-            <SEO title="ICPC Sinchon - Members"/>
+      <SEO 
+      title="ICPC Sinchon 운영진"
+      description='ICPC Sinchon을 이끄는 운영진입니다.'
+       />
             <div className="org--head">
                 <div className="logo--info--wrapper">
                         <div className="org--logo--wrapper">Organizers</div>
