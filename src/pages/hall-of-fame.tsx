@@ -57,7 +57,11 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
 
   return (
     <Layout>
-      <SEO title="ICPC Sinchon - Hall Of Fame" />
+      <SEO 
+      title="ICPC Sinchon - Hall Of Fame"
+      description='ICPC Sinchon에 기여를 해주신 분들과,
+      열심히 활동하여 우수한 성적을 거둔 사람들을 기립니다'
+       />
       <div className="hof--wrapper">
         {/* 상단 소개 head */}
         <div className="head">
