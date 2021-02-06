@@ -110,9 +110,9 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
       <div className="wrapper">
         <div className="suapc--wrapper">
           <div className="logo--info--wrapper">
-            <div className="logo--wrapper">SUAPC</div>
+            <h1 className="logo--wrapper">SUAPC</h1>
 
-            <div className="info--wrapper">
+            <p className="info--wrapper">
               <span className="info--part">
                 SUAPC는 신촌지역 5개 대학(연세, 서강, 이화, 홍익, 숙명)의 학부생
                 및 대학원 1년차를 대상으로 하는
@@ -124,7 +124,7 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
               <span className="info--part">
                 문제를 정확하게 풀 수 있는지를 평가하여 순위를 결정합니다.
               </span>
-            </div>
+            </p>
 
             <div className="info--wrapper--mobile">
             Sinchon  University  Association  Programming  Contest
