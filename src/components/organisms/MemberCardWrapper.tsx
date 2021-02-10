@@ -19,8 +19,9 @@ const MembersWrapperStyle=css`
 display:flex;
 flex-wrap:wrap;
 justify-content:space-evenly;
-margin-bottom: 8rem;
+margin: 0 auto 8rem;
 padding: 0 0 0 1rem;
+max-width: 1800px;
 `
 
 const SeasonTitleStyle = css`

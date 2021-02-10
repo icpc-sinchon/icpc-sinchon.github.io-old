@@ -3,6 +3,7 @@
   position: relative;
   margin: 5rem;
 }
+
 .org--logo--wrapper {
   line-height: 3.8rem;
   font-family: "segoeuib";
@@ -10,17 +11,18 @@
   color: #539a50;
   display: inline-block;
 }
+
 .org--info--wrapper {
   margin-top: 1rem;
 }
+
 .org--info--part {
   display: block;
   font-family: "appleNeoB";
   color: #666666;
   line-height: 1.3rem;
 }
-.member--wrapper {
-}
+
 @media (max-width: 618px) {
   .org--head {
     margin: 21vw auto 17vw auto;
