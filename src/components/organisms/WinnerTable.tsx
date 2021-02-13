@@ -33,6 +33,7 @@ export default function WinnerTable(props: infoProps) {
         <thead>
             <tr>
                 <th css={theadBorder}>순위</th>
+                <th css={theadBorder}>푼 문제 수</th>
                 <th css={theadBorder}>팀명</th>
                 <th css={theadBorder}>구성원</th>
                 <th css={theadBorder}>소속</th>
@@ -44,6 +45,7 @@ export default function WinnerTable(props: infoProps) {
                     return (
                         <tr>
                             <td>{data["prize"]}</td>
+                            <td>{data["solved"]}</td>
                             <td css={{width: "26rem"}}>{data["team"]}</td>
                             <td>{data["member"]}</td>
                             <td>{data["school"]}</td>
