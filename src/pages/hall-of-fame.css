@@ -1,6 +1,7 @@
 .hof--wrapper {
   width: 86.1vw;
   margin: 5rem auto 0 auto;
+  max-width: 2200px;
 }
 .head {
   width: 100%;
