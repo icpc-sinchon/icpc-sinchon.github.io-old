@@ -204,6 +204,31 @@ content:
             school: 서강대
           - name: 김기선
             school: 홍익대
+        contests:
+          - contest_name: Algorithm Contest
+            problem_picker:
+              - name: 김도은
+                school: 숙명여대
+              - name: 김도현
+                school: 홍익대
+              - name: 백성익
+                school: 홍익대
+              - name: 이국렬
+                school: 연세대
+              - name: 이상원
+                school: 서강대
+              - name: 정기웅
+                school: 연세대
+            awards:
+              - prize: 1
+                member: 강민서
+                school: 연세대
+              - prize: 2
+                member: 정영우
+                school: 연세대
+              - prize: 3
+                member: 오재석
+                school: 서강대
 
       - topic: 중급 알고리즘 스터디
         lecturers:
@@ -211,7 +236,28 @@ content:
             school: 연세대
           - name: 한동규
             school: UNIST
-  
+        contests:
+          - contest_name: Algorithm Contest
+            problem_picker:
+              - name: 김주현
+                school: 서강대
+              - name: 이국렬
+                school: 연세대
+              - name: 정기웅
+                school: 연세대
+              - name: 정연두
+                school: 홍익대
+            awards:
+              - prize: 1
+                member: 조원빈
+                school: 서강대
+              - prize: 2
+                member: 박재형
+                school: 서강대
+              - prize: 3
+                member: 김태윤
+                school: 연세대
+
       - topic: 고급 알고리즘 스터디
         lecturers:
           - name: 전해성
