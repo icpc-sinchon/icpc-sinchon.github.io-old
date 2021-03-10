@@ -11,7 +11,7 @@ import sponser from "../images/sponser.png"
 import ResultWrapper from "@components/organisms/ResultWrapper"
 import OrganizerTable from "@components/organisms/OrganizerTable"
 import suapc2020Summer from "@content/yaml/SUAPC 2020 Summer.yaml"
-import supac2021Winter from "@content/yaml/SUAPC 2021 Winter.yaml"
+import suapc2021Winter from "@content/yaml/SUAPC 2021 Winter.yaml"
 
 type DataProps = {
   site: {
@@ -150,21 +150,25 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
           </div>
 
           <div className="season--wrapper">
-            <div className="season" onClick={e => getData(e)}>
+            <div className="season selected" onClick={e => getData(e)}>
               2021 Winter
             </div>
-            <div className="season selected" onClick={e => getData(e)}>
+            <div className="season" onClick={e => getData(e)}>
               2020 Summer
             </div>
 
           </div>
           <ResultWrapper
             season={Object.values(suapc2020Summer)}
-            seasonName="2020--Summer show"
+            seasonName="2020--Summer hide"
           />
-          <div className="result--wrapper no--contest 2021--Winter hide">
+          <ResultWrapper
+            season={Object.values(suapc2021Winter)}
+            seasonName="2021--Winter show"
+          />
+          {/* <div className="result--wrapper no--contest 2021--Winter hide">
             아직 시행되지 않은 SUAPC 입니다.
-          </div>
+          </div> */}
         </div>
       </div>
     </Layout>
