@@ -27,15 +27,15 @@ const logoNumStyle = css`
   color: rgb(0, 132, 13);
   font-family: appleNeoB;
   position: absolute;
-  top: 0.7rem;
+  top: 0.4rem;
   right: 2.6rem;
-  font-size: 1rem;
+  font-size: 0.85rem;
 `
 const logoTitleStyle = css`
   font-family: segoeuib;
   color: #00840d;
-  font-size: 1.9rem;
-  margin: 1.5rem 0;
+  font-size: 1.6rem;
+  margin: 1.2rem 0;
 `
 const logoContentStyle = css`
   font-family: "appleNeoM";
@@ -58,7 +58,7 @@ export default function LogoScreen() {
             <div className="balloon--title--sin" css={{ lineHeight: `` }}>
               신촌지역 대학교
             </div>
-            <div className="balloon--title--pmg" css={{ lineHeight: `4.4rem` }}>
+            <div className="balloon--title--pmg" css={{ lineHeight: `3.8rem` }}>
               프로그래밍 대회 동아리 연합
             </div>
           </div>
