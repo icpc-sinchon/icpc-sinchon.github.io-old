@@ -38,7 +38,7 @@ const logoTitleStyle = css`
   margin: 1.3rem 0;
 `
 const logoContentStyle = css`
-  font-family: "appleNeoR";
+  font-family: "appleNeoM";
   font-size: 2.8em;
   color: black;
 `
