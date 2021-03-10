@@ -141,10 +141,10 @@ const SUAPC: React.FC<PageProps<DataProps>> = ({ data, path }) => {
         <div className="content--wrapper">
 
           <div className="season--wrapper--mobile">
-          <div className="season--mobile" onClick={e => getDataMobile(e)}>
+          <div className="season--mobile selected--mobile" onClick={e => getDataMobile(e)}>
               2021 Winter
             </div>
-            <div className="season--mobile selected--mobile" onClick={e => getDataMobile(e)}>
+            <div className="season--mobile" onClick={e => getDataMobile(e)}>
               2020 Summer
             </div>
           </div>
