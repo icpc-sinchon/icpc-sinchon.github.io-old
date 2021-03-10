@@ -39,7 +39,7 @@ const logoTitleStyle = css`
 `
 const logoContentStyle = css`
   font-family: "appleNeoM";
-  font-size: 2.8em;
+  font-size: 2.5em;
   color: black;
 `
 
