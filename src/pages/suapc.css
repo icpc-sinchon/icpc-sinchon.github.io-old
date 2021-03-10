@@ -69,8 +69,13 @@ hr {
   font-family: "Inter";
   font-weight: 900;
   line-height: 2.7rem;
+
+}
+
+.season:hover {
   cursor: pointer;
 }
+
 .selected {
   color: #539a50;
 }
@@ -106,7 +111,9 @@ hr {
   font-weight: 900;
   font-size: 1.7rem;
   margin-left: 7.9vw;
+  cursor: pointer;
 }
+
 .season--mobile:first-child {
   margin-left: unset;
 }
