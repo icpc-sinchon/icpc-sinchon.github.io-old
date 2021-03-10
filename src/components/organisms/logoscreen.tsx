@@ -58,7 +58,7 @@ export default function LogoScreen() {
             <div className="balloon--title--sin" css={{ lineHeight: `` }}>
               신촌지역 대학교
             </div>
-            <div className="balloon--title--pmg" css={{ lineHeight: `4.7rem` }}>
+            <div className="balloon--title--pmg" css={{ lineHeight: `4.4rem` }}>
               프로그래밍 대회 동아리 연합
             </div>
           </div>
