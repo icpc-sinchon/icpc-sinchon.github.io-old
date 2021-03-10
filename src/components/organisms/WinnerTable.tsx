@@ -29,24 +29,28 @@ export default function WinnerTable(props: infoProps) {
       </div>
       <table className="rank">
         <thead>
-          <tr>
-            <th css={theadBorder}>순위</th>
-            <th css={theadBorder}>팀명</th>
-            <th css={theadBorder}>구성원</th>
-            <th css={theadBorder}>소속</th>
-          </tr>
+            <tr>
+                <th css={theadBorder}>순위</th>
+                <th css={theadBorder}>푼 문제 수</th>
+                <th css={theadBorder}>팀명</th>
+                <th css={theadBorder}>구성원</th>
+                <th css={theadBorder}>소속</th>
+            </tr>
         </thead>
         <tbody>
-          {props.info.winner.map(data => {
-            return (
-              <tr>
-                <td>{data["prize"]}</td>
-                <td css={{ width: "26rem" }}>{data["team"]}</td>
-                <td>{data["member"]}</td>
-                <td>{data["school"]}</td>
-              </tr>
-            )
-          })}
+            {
+                props.info.winner.map((data) => {
+                    return (
+                        <tr>
+                            <td>{data["prize"]}</td>
+                            <td>{data["solved"]}</td>
+                            <td css={{width: "26rem"}}>{data["team"]}</td>
+                            <td>{data["member"]}</td>
+                            <td>{data["school"]}</td>
+                        </tr>
+                    )
+                })
+            }
         </tbody>
       </table>
     </div>
