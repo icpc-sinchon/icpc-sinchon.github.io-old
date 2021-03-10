@@ -35,10 +35,10 @@ const logoTitleStyle = css`
   font-family: segoeuib;
   color: #00840d;
   font-size: 1.9rem;
-  margin: 1.1rem 0;
+  margin: 1.3rem 0;
 `
 const logoContentStyle = css`
-  font-family: "appleNeoR";
+  font-family: "appleNeoM";
   font-size: 2.8em;
   color: black;
 `
