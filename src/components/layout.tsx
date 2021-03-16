@@ -8,7 +8,7 @@
 /** @jsx jsx */
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import {jsx,css} from '@emotion/core'
+import { jsx, css } from "@emotion/core"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -31,9 +31,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <React.Fragment>
       <Header siteTitle={data.site.siteMetadata.title} />
-        <main>{children}</main>
-        <Footer />
-      </React.Fragment>
+      <main>{children}</main>
+      <Footer />
+    </React.Fragment>
   )
 }
 
