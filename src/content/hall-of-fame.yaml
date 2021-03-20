@@ -14,7 +14,8 @@ content:
             school: 홍익대
         contests:
           - contest_name: 중간고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 이태한
                 school: 서강대
               - name: 이재열
@@ -33,7 +34,8 @@ content:
                 school: 서강대
 
           - contest_name: 기말고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 이태한
                 school: 서강대
               - name: 이재열
@@ -62,7 +64,8 @@ content:
             school: 서강대
         contests:
           - contest_name: 중간고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 임지환
                 school: 서강대
               - name: 이기현
@@ -78,7 +81,8 @@ content:
                 member: 강승구
                 school: 서강대
           - contest_name: 기말고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 임지환
                 school: 서강대
               - name: 이기현
@@ -113,7 +117,8 @@ content:
             school: 홍익대
         contests:
           - contest_name: 중간고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 이길원
                 school: 서강대
               - name: 전해성
@@ -131,7 +136,8 @@ content:
                 member: 윤이빈
                 school: 숙명여대
           - contest_name: 기말고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 백성익
                 school: 홍익대
               - name: 이재열
@@ -154,7 +160,8 @@ content:
             school: 서강대
         contests:
           - contest_name: 중간고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 이기현
                 school: 서강대
               - name: 최재민
@@ -170,7 +177,8 @@ content:
                 member: 박준성
                 school: 서강대
           - contest_name: 기말고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 백성익
                 school: 홍익대
               - name: 이국렬
@@ -206,7 +214,8 @@ content:
             school: 홍익대
         contests:
           - contest_name: Algorithm Contest
-            problem_picker:
+            organizer_type: 문항출제
+            organizer:
               - name: 김도은
                 school: 숙명여대
               - name: 김도현
@@ -238,7 +247,8 @@ content:
             school: UNIST
         contests:
           - contest_name: Algorithm Contest
-            problem_picker:
+            organizer_type: 문항출제
+            organizer:
               - name: 김주현
                 school: 서강대
               - name: 이국렬
