@@ -85,11 +85,11 @@ export default function Test(props: TestProps) {
                 &nbsp;
               </caption>
               <tbody>
-                {contest.problem_picker.map((picker, key) => {
+                {contest.organizer.map((picker, key) => {
                   if (key == 0)
                     return (
                       <tr>
-                        <td css={{padding: 0}}>문항선정</td>
+                        <td css={{padding: 0}}>{contest.organizer_type}</td>
                         <td className="name" css={NameCss}>
                           {picker.name}
                           <span className="school" css={{ fontSize: "0.8rem" }}>
