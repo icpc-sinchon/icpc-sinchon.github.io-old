@@ -133,7 +133,7 @@
   display: none;
 }
 .show {
-  display: block;
+  display: flex;
 }
 .season--wrap .study--wrap {
   margin-bottom: 6rem;

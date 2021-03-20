@@ -89,7 +89,7 @@ hr {
   padding: 1.65rem 0;
 }
 .show {
-  display: block;
+  display: flex;
 }
 .hide {
   display: none;
