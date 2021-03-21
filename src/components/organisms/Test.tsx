@@ -60,6 +60,7 @@ const RankingGrid = styled.div`
 `
 const ContestName = styled.div`
   width: 5.2rem;
+  height: 2rem;
   grid-row: 1/2;
   border-bottom: 1px solid #707070;
   text-align: center;
