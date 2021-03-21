@@ -6,7 +6,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 /** @jsx jsx */
-import React from "react"
+import React, { memo } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import { jsx, css } from "@emotion/core"
 
@@ -29,12 +29,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     }
   `)
   return (
-    <React.Fragment>
-      <Header siteTitle={data.site.siteMetadata.title} />
+    <>
+      <Header />
       <main>{children}</main>
       <Footer />
-    </React.Fragment>
+    </>
   )
 }
 
-export default Layout
+export default memo(Layout)
