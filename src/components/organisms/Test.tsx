@@ -52,8 +52,11 @@ const StCss = css`
 const WrapCss = css``
 
 const RankingGrid = styled.div`
+  margin-bottom: 1.9rem;
+
   display: grid;
-  width: 23rem;
+  width: 100%;
+  text-align: center;
   grid-gap: 0.7rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 2rem;
@@ -83,16 +86,15 @@ const RankingElemSchool = styled.span`
   font-size: 0.7rem;
 `
 const ProblemGrid = styled.div`
-  margin-top: 1.9rem;
   display: grid;
   grid-gap: 0.7rem;
 `
 export default function Test(props: TestProps) {
   return (
-    <>
+    <div className="test">
       {props.contests.map(contest => {
         return (
-          <div className="test">
+          <>
             {/* <table className="hof--rank" css={RankCss}>
               <caption className="title" css={TitleCss}>
                 {contest.contest_name}
@@ -143,36 +145,43 @@ export default function Test(props: TestProps) {
                 )
               })}
             </RankingGrid>
-            {
-              contest.organizer_type === "출제자" ?
-                <ProblemGrid>
+            {contest.organizer_type === "출제자" ? (
+              <ProblemGrid>
                 <ContestName>기출문제</ContestName>
                 <table>
                   <thead>
                     <tr>
                       <td>#</td>
-                      <td>문제</td>
+                      <td style={{ width: `15rem` }}>문제</td>
                       <td>출제자</td>
                     </tr>
                   </thead>
                   <tbody>
-                    {
-                    contest.problem_list.map((problem:any, idx:number) => {
-                      let index = "ABCDEFGHIJKLMNOP";
+                    {contest.problem_list.map((problem: any, idx: number) => {
+                      let index = "ABCDEFGHIJKLMNOP"
                       return (
                         <tr>
                           <td>{index[idx]}</td>
-                          <td><a href={problem.link}>{problem.problem_name}</a></td>
-                          <td>{problem.organizer.name}({problem.organizer.school})</td>
+                          <td>
+                            <a href={problem.link}>{problem.problem_name}</a>
+                          </td>
+                          <td>
+                            <RankingElemName>
+                              {problem.organizer.name}
+                            </RankingElemName>
+                            <RankingElemSchool>
+                              {problem.organizer.school}
+                            </RankingElemSchool>
+                          </td>
                         </tr>
                       )
                     })}
                   </tbody>
                 </table>
               </ProblemGrid>
-              : ""
-            }
-
+            ) : (
+              ""
+            )}
 
             {/* <table
               className="ProbPicker--wrap"
@@ -210,9 +219,9 @@ export default function Test(props: TestProps) {
                 })}
               </tbody>
             </table> */}
-          </div>
+          </>
         )
       })}
-    </>
+    </div>
   )
 }
