@@ -136,7 +136,7 @@
   display: none;
 }
 .show {
-  display: flex;
+  display: block;
 }
 .season--wrap .study--wrap {
   width: 26.5rem;
