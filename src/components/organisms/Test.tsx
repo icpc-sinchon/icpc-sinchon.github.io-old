@@ -1,6 +1,7 @@
 import { css } from "@emotion/core"
 import React, { Fragment } from "react"
 import { IAward, IContest } from "@models/contest.d.ts"
+import styled from "styled-components"
 
 type TestProps = {
   contests: Array<any>
@@ -45,17 +46,36 @@ const ProbPickCss = css`
   padding-bottom: 0;
   padding-top: 0;
 `
-const StCss=css`
-font-size: 0.7rem;
+const StCss = css`
+  font-size: 0.7rem;
 `
 const WrapCss = css``
+
+const RankingGrid = styled.div`
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 3rem;
+`
+const ContestName = styled.div`
+  width: 100px;
+  grid-row: 1/2;
+`
+const RankingElem = styled.div`
+  grid-row: 2/3;
+`
+const ProblemGrid = styled.div`
+  display: grid;
+  grid-gap: 1rem;
+  grid-auto-rows: 3rem;
+`
 export default function Test(props: TestProps) {
   return (
-    <Fragment>
+    <>
       {props.contests.map(contest => {
         return (
           <div className="test">
-            <table className="hof--rank" css={RankCss}>
+            {/* <table className="hof--rank" css={RankCss}>
               <caption className="title" css={TitleCss}>
                 {contest.contest_name}
               </caption>
@@ -76,8 +96,35 @@ export default function Test(props: TestProps) {
                   )
                 })}
               </tbody>
-            </table>
-            <table
+            </table> */}
+            <RankingGrid className="ranking--grid">
+              <ContestName>{contest.contest_name}</ContestName>
+              {contest.awards.map((award: IAward) => {
+                return (
+                  <RankingElem className="ranking--elem">
+                    <span>{award.prize}</span>
+                    <span>{award.member}</span>
+                    <span>{award.school}</span>
+                  </RankingElem>
+                )
+              })}
+            </RankingGrid>
+            <ProblemGrid>
+              <ContestName>기출문제</ContestName>
+              <table>
+                <thead>
+                  <tr>
+                    <td>#</td>
+                    <td>문제</td>
+                    <td>출제자</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+              </table>
+            </ProblemGrid>
+            {/* <table
               className="ProbPicker--wrap"
               css={{ display: "inline-block" }}
             >
@@ -89,7 +136,7 @@ export default function Test(props: TestProps) {
                   if (key == 0)
                     return (
                       <tr>
-                        <td css={{padding: 0}}>{contest.organizer_type}</td>
+                        <td css={{ padding: 0 }}>{contest.organizer_type}</td>
                         <td className="name" css={NameCss}>
                           {picker.name}
                           <span className="school" css={{ fontSize: "0.8rem" }}>
@@ -101,7 +148,7 @@ export default function Test(props: TestProps) {
                   else
                     return (
                       <tr>
-                        <td css={{border:"none"}}></td>
+                        <td css={{ border: "none" }}></td>
                         <td className="name" css={NameCss}>
                           {picker.name}
                           <span className="school" css={{ fontSize: "0.8rem" }}>
@@ -112,10 +159,10 @@ export default function Test(props: TestProps) {
                     )
                 })}
               </tbody>
-            </table>
+            </table> */}
           </div>
         )
       })}
-    </Fragment>
+    </>
   )
 }
