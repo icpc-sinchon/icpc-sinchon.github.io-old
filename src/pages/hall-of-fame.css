@@ -135,8 +135,8 @@
 .hide {
   display: none;
 }
-.show {
-  display: block;
+.hof--show {
+  display: flex;
 }
 .season--wrap .study--wrap {
   width: 26.5rem;
@@ -146,6 +146,8 @@
   margin-bottom: 6rem;
 }
 .lecturer--wrap--mobile {
+  width: 23rem;
+  justify-content: center;
   display: none;
 }
 .no--test {
@@ -163,7 +165,7 @@
     display: none !important;
   }
   .lecturer--wrap--mobile {
-    display: grid;
+    display: block;
   }
   .head .title {
     font-family: "segoeui";
@@ -301,4 +303,7 @@
   .contest--wrap {
     width: 100% !important;
   }
+}
+.lecturer--wrap--mobile {
+  margin: 2rem auto 0 auto;
 }

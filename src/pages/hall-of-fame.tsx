@@ -28,15 +28,15 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
 
     const target = document.getElementsByClassName(name)[0]
     if (target.classList.contains("hide")) target.classList.remove("hide")
-    if (!target.classList.contains("show")) target.classList.add("show")
+    if (!target.classList.contains("hof--show")) target.classList.add("hof--show")
 
     const season = document.getElementsByClassName("season--wrap")
     for (var i = 0; i < season.length; i++) {
       if (!season[i].classList.contains(name)) {
         if (!season[i].classList.contains("hide"))
           season[i].classList.add("hide")
-        if (season[i].classList.contains("show"))
-          season[i].classList.remove("show")
+        if (season[i].classList.contains("hof--show"))
+          season[i].classList.remove("hof--show")
       }
     }
     var tabs = document.getElementsByClassName("hof--season")
@@ -96,7 +96,7 @@ const HallOfFame: React.FC<PageProps<DataProps>> = ({ data, path }) => {
             }
             let data
             if (val.year + "--" + val.semester == "2021--Winter")
-              data = val.year + "--" + val.semester + " season--wrap show"
+              data = val.year + "--" + val.semester + " season--wrap hof--show"
             else data = val.year + "--" + val.semester + " season--wrap hide"
 
             // 시행되지 않은 알고리즘 캠프
