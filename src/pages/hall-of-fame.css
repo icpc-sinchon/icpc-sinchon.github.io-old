@@ -146,8 +146,6 @@
   margin-bottom: 6rem;
 }
 .lecturer--wrap--mobile {
-  width: 23rem;
-  justify-content: center;
   display: none;
 }
 .no--test {
@@ -165,7 +163,7 @@
     display: none !important;
   }
   .lecturer--wrap--mobile {
-    display: block;
+    display: grid;
   }
   .head .title {
     font-family: "segoeui";
@@ -303,7 +301,4 @@
   .contest--wrap {
     width: 100% !important;
   }
-}
-.lecturer--wrap--mobile {
-  margin: 2rem auto 0 auto;
 }

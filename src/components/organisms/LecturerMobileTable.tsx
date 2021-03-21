@@ -40,7 +40,7 @@ const SchoolCss = css`
 
 const RankingGrid = styled.div`
   margin-bottom: 1.9rem;
-  display: grid;
+  // display: grid;
   width: 100%;
   text-align: center;
   grid-gap: 0.7rem;
@@ -71,6 +71,7 @@ const RankingElemSchool = styled.span`
 export default function LecturerMobileTable(props: TestProps) {
   return (
     <RankingGrid
+      className="lecturer--wrap--mobile"
       style={{
         gridTemplateColumns:
           props.lecturers.length === 1
