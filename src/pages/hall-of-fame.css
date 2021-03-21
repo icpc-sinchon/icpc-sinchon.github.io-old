@@ -135,7 +135,7 @@
 .hide {
   display: none;
 }
-.show {
+.hof--show {
   display: flex;
 }
 .season--wrap .study--wrap {
