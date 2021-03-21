@@ -54,17 +54,17 @@ const WrapCss = css``
 const RankingGrid = styled.div`
   display: grid;
   width: 23rem;
-  grid-gap: 1rem;
+  grid-gap: 0.7rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 2rem;
 `
 const ContestName = styled.div`
-  width: 5.2rem;
-  height: 2rem;
+  width: 4.8rem;
+  height: 1.8rem;
   grid-row: 1/2;
   border-bottom: 1px solid #707070;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 `
 const RankingElem = styled.div`
   grid-row: 2/3;
@@ -75,7 +75,6 @@ const RankingElemPrize = styled.span`
 const RankinNameSchoolWrap = styled.div`
   display: inline-block;
   margin-left: 0.5rem;
-
 `
 const RankingElemName = styled.span`
   font-size: 1.1rem;
@@ -84,9 +83,9 @@ const RankingElemSchool = styled.span`
   font-size: 0.7rem;
 `
 const ProblemGrid = styled.div`
+  margin-top: 1.9rem;
   display: grid;
-  grid-gap: 1rem;
-  grid-auto-rows: 3rem;
+  grid-gap: 0.7rem;
 `
 export default function Test(props: TestProps) {
   return (
