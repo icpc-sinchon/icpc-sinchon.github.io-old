@@ -5,6 +5,12 @@ module.exports = {
     author: `@icpc_sinchon`,
   },
   plugins: [
+    {
+      resolve:`gatsby-plugin-styled-components`,
+      options: {
+        
+      }
+    },
     `gatsby-plugin-typescript`,
     `gatsby-plugin-react-helmet`,
     {
