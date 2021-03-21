@@ -59,9 +59,6 @@ const RankingGrid = styled.div`
   grid-gap: 0.7rem;
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 2rem;
-  &:first-child {
-    margin-top: 0.9rem;
-  }
 `
 const ContestName = styled.div`
   width: 4.8rem;
