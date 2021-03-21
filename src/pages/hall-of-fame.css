@@ -160,9 +160,6 @@
   }
 }
 @media (max-width: 1137px) {
-  .season--wrap {
-    display: block;
-  }
   .lecturer--wrap {
     display: none !important;
   }
