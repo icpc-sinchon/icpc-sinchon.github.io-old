@@ -97,28 +97,6 @@ export default function Test(props: TestProps) {
       {props.contests.map(contest => {
         return (
           <>
-            {/* <table className="hof--rank" css={RankCss}>
-              <caption className="title" css={TitleCss}>
-                {contest.contest_name}
-              </caption>
-              <tbody>
-                {contest.awards.map((award: IAward) => {
-                  return (
-                    <tr>
-                      <td className="sunwee" css={SunweeCss}>
-                        {award.prize == 1 ? [1,<span css={StCss}>st</span>] : (award.prize == 2 ? [2,<span css={StCss}>nd</span>] : [3,<span css={StCss}>rd</span>])}
-                      </td>
-                      <td className="name" css={NameCss}>
-                        {award.member}
-                        <span className="school" css={{ fontSize: "0.8rem" }}>
-                          {award.school}
-                        </span>
-                      </td>
-                    </tr>
-                  )
-                })}
-              </tbody>
-            </table> */}
             <RankingGrid className="ranking--grid">
               <ContestName>{contest.contest_name}</ContestName>
               {contest.awards.map((award: IAward) => {
@@ -184,43 +162,6 @@ export default function Test(props: TestProps) {
             ) : (
               ""
             )}
-
-            {/* <table
-              className="ProbPicker--wrap"
-              css={{ display: "inline-block" }}
-            >
-              <caption className="title" css={TitleProbPickCss}>
-                &nbsp;
-              </caption>
-              <tbody>
-                {contest.organizer.map((picker, key) => {
-                  if (key == 0)
-                    return (
-                      <tr>
-                        <td css={{ padding: 0 }}>{contest.organizer_type}</td>
-                        <td className="name" css={NameCss}>
-                          {picker.name}
-                          <span className="school" css={{ fontSize: "0.8rem" }}>
-                            {picker.school}
-                          </span>
-                        </td>
-                      </tr>
-                    )
-                  else
-                    return (
-                      <tr>
-                        <td css={{ border: "none" }}></td>
-                        <td className="name" css={NameCss}>
-                          {picker.name}
-                          <span className="school" css={{ fontSize: "0.8rem" }}>
-                            {picker.school}
-                          </span>
-                        </td>
-                      </tr>
-                    )
-                })}
-              </tbody>
-            </table> */}
           </>
         )
       })}
