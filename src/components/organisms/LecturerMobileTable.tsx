@@ -1,5 +1,7 @@
 import { css } from "@emotion/core"
 import React from "react"
+import styled from "styled-components"
+
 type TestProps = {
   lecturers: Array<any>
   name: string
@@ -35,9 +37,61 @@ const TableCss = css`
 const SchoolCss = css`
   font-size: 0.8rem;
 `
+
+const RankingGrid = styled.div`
+  margin-bottom: 1.9rem;
+  // display: grid;
+  width: 100%;
+  text-align: center;
+  grid-gap: 0.7rem;
+  // grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 2rem;
+  &:first-child {
+    margin-top: 0.9rem;
+  }
+`
+const ContestName = styled.div`
+  width: 4.8rem;
+  height: 1.8rem;
+  grid-row: 1/2;
+  border-bottom: 1px solid #707070;
+  text-align: center;
+  font-size: 1.2rem;
+`
+const RankingElem = styled.div`
+  grid-row: 2/3;
+`
+const RankingElemName = styled.span`
+  font-size: 1.1rem;
+`
+const RankingElemSchool = styled.span`
+  font-size: 0.7rem;
+`
+
 export default function LecturerMobileTable(props: TestProps) {
   return (
-    <div className="lecturer--wrap--mobile">
+    <RankingGrid
+      className="lecturer--wrap--mobile"
+      style={{
+        gridTemplateColumns:
+          props.lecturers.length === 1
+            ? "1fr"
+            : props.lecturers.length === 2
+            ? "1fr 1fr"
+            : "1fr 1fr 1fr",
+      }}
+    >
+      <ContestName>강사진</ContestName>
+      {props.lecturers.map((item, key) => {
+        return (
+          <RankingElem>
+            <RankingElemName>{item.name}</RankingElemName>
+            <RankingElemSchool>{item.school}</RankingElemSchool>
+          </RankingElem>
+        )
+      })}
+    </RankingGrid>
+    /*<div className="lecturer--wrap--mobile">
       <table css={TableCss}>
         <caption css={TitleCss}>강사진</caption>
         <tbody>
@@ -60,6 +114,6 @@ export default function LecturerMobileTable(props: TestProps) {
           })}
         </tbody>
       </table>
-    </div>
+    </div>*/
   )
 }

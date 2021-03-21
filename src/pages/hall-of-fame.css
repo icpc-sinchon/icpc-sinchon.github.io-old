@@ -99,7 +99,7 @@
 }
 .study--wrap .contest--wrap {
   width: 96%;
-  margin: 4.6rem auto 0 auto;
+  margin: 1.9rem auto 0 auto;
   position: relative;
   min-height: 12rem;
   display: flex;
@@ -139,14 +139,13 @@
   display: block;
 }
 .season--wrap .study--wrap {
+  width: 26.5rem;
   margin-bottom: 6rem;
 }
 .season--wrap .study--wrap:last-child {
   margin-bottom: 6rem;
 }
 .lecturer--wrap--mobile {
-  width: 23rem;
-  justify-content: center;
   display: none;
 }
 .no--test {
@@ -160,14 +159,11 @@
   }
 }
 @media (max-width: 1137px) {
-  .season--wrap {
-    display: block;
-  }
   .lecturer--wrap {
     display: none !important;
   }
   .lecturer--wrap--mobile {
-    display: block;
+    display: grid;
   }
   .head .title {
     font-family: "segoeui";
@@ -305,7 +301,4 @@
   .contest--wrap {
     width: 100% !important;
   }
-}
-.lecturer--wrap--mobile {
-  margin: 2rem auto 0 auto;
 }
