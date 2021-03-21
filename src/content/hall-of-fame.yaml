@@ -131,11 +131,48 @@ content:
                 member: 윤이빈
                 school: 숙명여대
           - contest_name: 기말고사
-            problem_picker:
-              - name: 백성익
-                school: 홍익대
-              - name: 이재열
-                school: 홍익대
+            organizer_type: 출제자
+            problem_list:
+              - problem_name: 요요 시뮬레이션
+                link: https://www.acmicpc.net/problem/19636
+                organizer: 
+                    name: 백성익
+                    school: 홍익대
+              - problem_name: IF문 좀 대신 써줘
+                link: https://www.acmicpc.net/problem/19637
+                organizer: 
+                    name: 백성익
+                    school: 홍익대
+              - problem_name: 센티와 마법의 뿅망치
+                link: https://www.acmicpc.net/problem/19638
+                organizer: 
+                    name: 백성익
+                    school: 홍익대
+              - problem_name: 화장실의 규칙
+                link: https://www.acmicpc.net/problem/19640
+                organizer: 
+                    name: 백성익
+                    school: 홍익대
+              - problem_name: 중첩 집합 모델
+                link: https://www.acmicpc.net/problem/19641
+                organizer: 
+                    name: 이재열
+                    school: 홍익대
+              - problem_name: TORIE
+                link: https://www.acmicpc.net/problem/19642
+                organizer: 
+                    name: 백성익
+                    school: 홍익대
+              - problem_name: 좀비 떼가 전역 때보다 먼저 오다니
+                link: https://www.acmicpc.net/problem/
+                organizer: 
+                    name: 백성익
+                    school: 홍익대
+              - problem_name: 좀비 떼가 기관총 진지에도 오다니
+                link: https://www.acmicpc.net/problem/19644
+                organizer: 
+                    name: 백성익
+                    school: 홍익대
             awards:
               - prize: 1
                 member: 김태윤
@@ -170,15 +207,48 @@ content:
                 member: 박준성
                 school: 서강대
           - contest_name: 기말고사
-            problem_picker:
-              - name: 백성익
-                school: 홍익대
-              - name: 이국렬
-                school: 연세대
-              - name: 임지환
-                school: 서강대
-              - name: 이준석
-                school: 서강대
+            organizer_type: 출제자
+            problem_list:
+              - problem_name: 센티와 마법의 뿅망치
+                link: https://www.acmicpc.net/problem/19638
+                organizer: 
+                    name: 백성익
+                    school: 홍익대
+              - problem_name: 배틀로얄
+                link: https://www.acmicpc.net/problem/19639
+                organizer: 
+                    name: 이준석
+                    school: 서강대
+              - problem_name: 햄최몇?
+                link: https://www.acmicpc.net/problem/19645
+                organizer: 
+                    name: 임지환
+                    school: 서강대
+              - problem_name: Random Generator
+                link: https://www.acmicpc.net/problem/19646
+                organizer: 
+                    name: 이국렬
+                    school: 연세대
+              - problem_name: Unique Solution
+                link: https://www.acmicpc.net/problem/19647
+                organizer: 
+                    name: 이국렬
+                    school: 연세대
+              - problem_name: 미하일 2마리
+                link: https://www.acmicpc.net/problem/19648
+                organizer: 
+                    name: 이국렬
+                    school: 연세대
+              - problem_name: 미담 전하기
+                link: https://www.acmicpc.net/problem/19649
+                organizer: 
+                    name: 임지환
+                    school: 서강대
+              - problem_name: 개미여행
+                link: https://www.acmicpc.net/problem/19650
+                organizer: 
+                    name: 이준석
+                    school: 서강대
             awards:
               - prize: 1
                 member: 김관우
@@ -191,8 +261,8 @@ content:
                 school: 서강대
       - topic: 고급 알고리즘 스터디
         lecturers:
-          - name: 강사는 없었으나, 전해성(서강대)님이 하드캐리
-            school: ' '
+          - name: 전해성
+            school: 서강대
           
   - year: 2021
     semester: Winter
@@ -205,20 +275,49 @@ content:
           - name: 김기선
             school: 홍익대
         contests:
-          - contest_name: Algorithm Contest
-            problem_picker:
-              - name: 김도은
-                school: 숙명여대
-              - name: 김도현
-                school: 홍익대
-              - name: 백성익
-                school: 홍익대
-              - name: 이국렬
-                school: 연세대
-              - name: 이상원
-                school: 서강대
-              - name: 정기웅
-                school: 연세대
+          - contest_name: 모의고사
+            organizer_type: 출제자
+            problem_list:
+              - problem_name: 영단어 암기는 괴로워
+                link: https://www.acmicpc.net/problem/20920
+                organizer: 
+                    name: 김도은
+                    school: 숙명여대
+              - problem_name: 그렇고 그런 사이
+                link: https://www.acmicpc.net/problem/20921
+                organizer: 
+                    name: 정기웅
+                    school: 연세대
+              - problem_name: 겹치는 건 싫어
+                link: https://www.acmicpc.net/problem/20922
+                organizer: 
+                    name: 김도현
+                    school: 홍익대
+              - problem_name: 숫자 할리갈리 게임
+                link: https://www.acmicpc.net/problem/20923
+                organizer: 
+                    name: 김도은
+                    school: 숙명여대
+              - problem_name: 트리의 기둥과 가지
+                link: https://www.acmicpc.net/problem/20924
+                organizer: 
+                    name: 백성익
+                    school: 홍익대
+              - problem_name: 메이플스토리
+                link: https://www.acmicpc.net/problem/20925
+                organizer: 
+                    name: 이상원
+                    school: 서강대
+              - problem_name: 얼음 미로
+                link: https://www.acmicpc.net/problem/20926
+                organizer: 
+                    name: 백성익
+                    school: 홍익대
+              - problem_name: Degree Bounded Minimum Spanning Tree
+                link: https://www.acmicpc.net/problem/20927
+                organizer: 
+                    name: 이국렬
+                    school: 연세대
             awards:
               - prize: 1
                 member: 강민서
@@ -237,16 +336,54 @@ content:
           - name: 한동규
             school: UNIST
         contests:
-          - contest_name: Algorithm Contest
-            problem_picker:
-              - name: 김주현
-                school: 서강대
-              - name: 이국렬
-                school: 연세대
-              - name: 정기웅
-                school: 연세대
-              - name: 정연두
-                school: 홍익대
+          - contest_name: 모의고사
+            organizer_type: 출제자
+            problem_list:
+              - problem_name: 그렇고 그런 사이
+                link: https://www.acmicpc.net/problem/20921
+                organizer: 
+                    name: 정기웅
+                    school: 연세대
+              - problem_name: 걷는 건 귀찮아
+                link: https://www.acmicpc.net/problem/20928
+                organizer: 
+                    name: 김주현
+                    school: 서강대
+              - problem_name: 중간
+                link: https://www.acmicpc.net/problem/20929
+                organizer: 
+                    name: 이국렬
+                    school: 연세대
+              - problem_name: 우주 정거장
+                link: https://www.acmicpc.net/problem/20930
+                organizer: 
+                    name: 이국렬
+                    school: 연세대
+              - problem_name: 혹 떼러 갔다 혹 붙여 온다
+                link: https://www.acmicpc.net/problem/20931
+                organizer: 
+                    name: 정연두
+                    school: 홍익대
+              - problem_name: 약수 의식
+                link: https://www.acmicpc.net/problem/20932
+                organizer: 
+                    name: 정연두
+                    school: 홍익대
+              - problem_name: 마스크펑크 2077
+                link: https://www.acmicpc.net/problem/20933
+                organizer: 
+                    name: 김주현
+                    school: 서강대
+              - problem_name: 카드 모래성
+                link: https://www.acmicpc.net/problem/20934
+                organizer: 
+                    name: 김주현
+                    school: 서강대
+              - problem_name: Parity Constraint Perfect Matching 
+                link: https://www.acmicpc.net/problem/20935
+                organizer: 
+                    name: 이국렬
+                    school: 연세대
             awards:
               - prize: 1
                 member: 조원빈
@@ -264,7 +401,6 @@ content:
             school: 서강대
           - name: 이국렬
             school: 연세대
-
 
   - year: 2021
     semester: Summer

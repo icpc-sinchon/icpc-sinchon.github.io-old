@@ -99,7 +99,7 @@
 }
 .study--wrap .contest--wrap {
   width: 96%;
-  margin: 4.6rem auto 0 auto;
+  margin: 1.9rem auto 0 auto;
   position: relative;
   min-height: 12rem;
   display: flex;
@@ -135,10 +135,11 @@
 .hide {
   display: none;
 }
-.show {
-  display: block;
+.hof--show {
+  display: flex;
 }
 .season--wrap .study--wrap {
+  width: 26.5rem;
   margin-bottom: 6rem;
 }
 .season--wrap .study--wrap:last-child {
@@ -160,9 +161,6 @@
   }
 }
 @media (max-width: 1137px) {
-  .season--wrap {
-    display: block;
-  }
   .lecturer--wrap {
     display: none !important;
   }
