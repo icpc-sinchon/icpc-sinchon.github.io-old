@@ -267,8 +267,8 @@ content:
                 school: 서강대
       - topic: 고급
         lecturers:
-          - name: 강사는 없었으나, 전해성(서강대)님이 하드캐리
-            school: ' '
+          - name: 전해성
+            school: 서강대
           
   - year: 2021
     semester: Winter
