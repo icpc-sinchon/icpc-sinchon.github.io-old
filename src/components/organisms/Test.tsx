@@ -53,16 +53,34 @@ const WrapCss = css``
 
 const RankingGrid = styled.div`
   display: grid;
+  width: 23rem;
   grid-gap: 1rem;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 3rem;
+  grid-auto-rows: 2rem;
 `
 const ContestName = styled.div`
-  width: 100px;
+  width: 5.2rem;
   grid-row: 1/2;
+  border-bottom: 1px solid #707070;
+  text-align: center;
+  font-size: 1.3rem;
 `
 const RankingElem = styled.div`
   grid-row: 2/3;
+`
+const RankingElemPrize = styled.span`
+  font-size: 0.9rem;
+`
+const RankinNameSchoolWrap = styled.div`
+  display: inline-block;
+  margin-left: 0.5rem;
+
+`
+const RankingElemName = styled.span`
+  font-size: 1.1rem;
+`
+const RankingElemSchool = styled.span`
+  font-size: 0.7rem;
 `
 const ProblemGrid = styled.div`
   display: grid;
@@ -102,9 +120,25 @@ export default function Test(props: TestProps) {
               {contest.awards.map((award: IAward) => {
                 return (
                   <RankingElem className="ranking--elem">
-                    <span>{award.prize}</span>
-                    <span>{award.member}</span>
-                    <span>{award.school}</span>
+                    <RankingElemPrize>
+                      {award.prize === 1 ? (
+                        <>
+                          1<sup>st</sup>
+                        </>
+                      ) : award.prize === 2 ? (
+                        <>
+                          2<sup>nd</sup>
+                        </>
+                      ) : (
+                        <>
+                          3<sup>rd</sup>
+                        </>
+                      )}
+                    </RankingElemPrize>
+                    <RankinNameSchoolWrap>
+                      <RankingElemName>{award.member}</RankingElemName>
+                      <RankingElemSchool>{award.school}</RankingElemSchool>
+                    </RankinNameSchoolWrap>
                   </RankingElem>
                 )
               })}
@@ -119,9 +153,7 @@ export default function Test(props: TestProps) {
                     <td>출제자</td>
                   </tr>
                 </thead>
-                <tbody>
-                  
-                </tbody>
+                <tbody></tbody>
               </table>
             </ProblemGrid>
             {/* <table
