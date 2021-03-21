@@ -60,6 +60,9 @@
   display: flex;
 }
 .season--wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin-top: 7rem;
 }
 .season--wrap .season--name {
@@ -133,7 +136,7 @@
   display: none;
 }
 .show {
-  display: block;
+  display: flex;
 }
 .season--wrap .study--wrap {
   margin-bottom: 6rem;
@@ -157,6 +160,9 @@
   }
 }
 @media (max-width: 1137px) {
+  .season--wrap {
+    display: block;
+  }
   .lecturer--wrap {
     display: none !important;
   }

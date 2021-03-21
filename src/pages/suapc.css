@@ -88,12 +88,6 @@ hr {
 .result--wrapper > div {
   padding: 1.65rem 0;
 }
-.show {
-  display: block;
-}
-.hide {
-  display: none;
-}
 .organizer--table--wrapper {
   display: flex;
 }

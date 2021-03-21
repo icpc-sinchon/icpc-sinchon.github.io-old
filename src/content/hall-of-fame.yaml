@@ -4,7 +4,7 @@ content:
     semester: Winter
     activity_type: study
     studies:
-      - topic: 초급 알고리즘 스터디
+      - topic: 초급
         lecturers:
           - name: 이태한
             school: 서강대
@@ -14,7 +14,8 @@ content:
             school: 홍익대
         contests:
           - contest_name: 중간고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 이태한
                 school: 서강대
               - name: 이재열
@@ -33,7 +34,8 @@ content:
                 school: 서강대
 
           - contest_name: 기말고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 이태한
                 school: 서강대
               - name: 이재열
@@ -54,7 +56,7 @@ content:
                 school: 서강대
 
 
-      - topic: 중급 알고리즘 스터디
+      - topic: 중급
         lecturers:
           - name: 임지환
             school: 서강대
@@ -62,7 +64,8 @@ content:
             school: 서강대
         contests:
           - contest_name: 중간고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 임지환
                 school: 서강대
               - name: 이기현
@@ -78,7 +81,8 @@ content:
                 member: 강승구
                 school: 서강대
           - contest_name: 기말고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 임지환
                 school: 서강대
               - name: 이기현
@@ -94,7 +98,7 @@ content:
                 member: 정재현
                 school: 홍익대
               
-      - topic: 고급 알고리즘 스터디
+      - topic: 고급
         lecturers: 
           - name: 박수현
             school: 서강대
@@ -105,7 +109,7 @@ content:
     semester: Summer
     activity_type: study
     studies:
-      - topic: 초급 알고리즘 스터디
+      - topic: 초급
         lecturers:
           - name: 배철환
             school: 서강대
@@ -113,7 +117,8 @@ content:
             school: 홍익대
         contests:
           - contest_name: 중간고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 이길원
                 school: 서강대
               - name: 전해성
@@ -131,7 +136,8 @@ content:
                 member: 윤이빈
                 school: 숙명여대
           - contest_name: 기말고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 백성익
                 school: 홍익대
               - name: 이재열
@@ -146,7 +152,7 @@ content:
               - prize: 3
                 member: 김경민
                 school: 홍익대
-      - topic: 중급 알고리즘 스터디
+      - topic: 중급
         lecturers:
           - name: 윤인섭
             school: 연세대
@@ -154,7 +160,8 @@ content:
             school: 서강대
         contests:
           - contest_name: 중간고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 이기현
                 school: 서강대
               - name: 최재민
@@ -170,7 +177,8 @@ content:
                 member: 박준성
                 school: 서강대
           - contest_name: 기말고사
-            problem_picker:
+            organizer_type: 문항선정
+            organizer:
               - name: 백성익
                 school: 홍익대
               - name: 이국렬
@@ -189,7 +197,7 @@ content:
               - prize: 3
                 member: 이승은
                 school: 서강대
-      - topic: 고급 알고리즘 스터디
+      - topic: 고급
         lecturers:
           - name: 강사는 없었으나, 전해성(서강대)님이 하드캐리
             school: ' '
@@ -198,15 +206,16 @@ content:
     semester: Winter
     activity_type: study
     studies:
-      - topic: 초급 알고리즘 스터디
+      - topic: 초급
         lecturers:
           - name: 강효규
             school: 서강대
           - name: 김기선
             school: 홍익대
         contests:
-          - contest_name: Algorithm Contest
-            problem_picker:
+          - contest_name: 모의고사
+            organizer_type: 출제자
+            organizer:
               - name: 김도은
                 school: 숙명여대
               - name: 김도현
@@ -230,15 +239,16 @@ content:
                 member: 오재석
                 school: 서강대
 
-      - topic: 중급 알고리즘 스터디
+      - topic: 중급
         lecturers:
           - name: 윤인섭
             school: 연세대
           - name: 한동규
             school: UNIST
         contests:
-          - contest_name: Algorithm Contest
-            problem_picker:
+          - contest_name: 모의고사
+            organizer_type: 출제자
+            organizer:
               - name: 김주현
                 school: 서강대
               - name: 이국렬
@@ -258,7 +268,7 @@ content:
                 member: 남유진
                 school: 연세대
 
-      - topic: 고급 알고리즘 스터디
+      - topic: 고급
         lecturers:
           - name: 전해성
             school: 서강대
