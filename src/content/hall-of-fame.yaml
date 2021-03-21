@@ -213,8 +213,8 @@ content:
           - name: 김기선
             school: 홍익대
         contests:
-          - contest_name: Algorithm Contest
-            organizer_type: 문항출제
+          - contest_name: 모의고사
+            organizer_type: 출제자
             organizer:
               - name: 김도은
                 school: 숙명여대
@@ -246,8 +246,8 @@ content:
           - name: 한동규
             school: UNIST
         contests:
-          - contest_name: Algorithm Contest
-            organizer_type: 문항출제
+          - contest_name: 모의고사
+            organizer_type: 출제자
             organizer:
               - name: 김주현
                 school: 서강대
