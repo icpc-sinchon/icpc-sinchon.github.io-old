@@ -143,19 +143,37 @@ export default function Test(props: TestProps) {
                 )
               })}
             </RankingGrid>
-            <ProblemGrid>
-              <ContestName>기출문제</ContestName>
-              <table>
-                <thead>
-                  <tr>
-                    <td>#</td>
-                    <td>문제</td>
-                    <td>출제자</td>
-                  </tr>
-                </thead>
-                <tbody></tbody>
-              </table>
-            </ProblemGrid>
+            {
+              contest.organizer_type === "출제자" ?
+                <ProblemGrid>
+                <ContestName>기출문제</ContestName>
+                <table>
+                  <thead>
+                    <tr>
+                      <td>#</td>
+                      <td>문제</td>
+                      <td>출제자</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {
+                    contest.problem_list.map((problem:any, idx:number) => {
+                      let index = "ABCDEFGHIJKLMNOP";
+                      return (
+                        <tr>
+                          <td>{index[idx]}</td>
+                          <td><a href={problem.link}>{problem.problem_name}</a></td>
+                          <td>{problem.organizer.name}({problem.organizer.school})</td>
+                        </tr>
+                      )
+                    })}
+                  </tbody>
+                </table>
+              </ProblemGrid>
+              : ""
+            }
+
+
             {/* <table
               className="ProbPicker--wrap"
               css={{ display: "inline-block" }}
