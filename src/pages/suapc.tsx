@@ -1,6 +1,4 @@
-/** @jsx jsx */
 import React from "react"
-import { jsx, css } from "@emotion/core"
 import { Helmet } from "react-helmet"
 import { PageProps, Link, graphql } from "gatsby"
 import Layout from "@components/layout"

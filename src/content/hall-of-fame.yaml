@@ -4,7 +4,7 @@ content:
     semester: Winter
     activity_type: study
     studies:
-      - topic: 초급 알고리즘 스터디
+      - topic: 초급
         lecturers:
           - name: 이태한
             school: 서강대
@@ -54,7 +54,7 @@ content:
                 school: 서강대
 
 
-      - topic: 중급 알고리즘 스터디
+      - topic: 중급
         lecturers:
           - name: 임지환
             school: 서강대
@@ -94,7 +94,7 @@ content:
                 member: 정재현
                 school: 홍익대
               
-      - topic: 고급 알고리즘 스터디
+      - topic: 고급
         lecturers: 
           - name: 박수현
             school: 서강대
@@ -105,7 +105,7 @@ content:
     semester: Summer
     activity_type: study
     studies:
-      - topic: 초급 알고리즘 스터디
+      - topic: 초급
         lecturers:
           - name: 배철환
             school: 서강대
@@ -183,7 +183,7 @@ content:
               - prize: 3
                 member: 김경민
                 school: 홍익대
-      - topic: 중급 알고리즘 스터디
+      - topic: 중급
         lecturers:
           - name: 윤인섭
             school: 연세대
@@ -259,7 +259,7 @@ content:
               - prize: 3
                 member: 이승은
                 school: 서강대
-      - topic: 고급 알고리즘 스터디
+      - topic: 고급
         lecturers:
           - name: 전해성
             school: 서강대
@@ -268,7 +268,7 @@ content:
     semester: Winter
     activity_type: study
     studies:
-      - topic: 초급 알고리즘 스터디
+      - topic: 초급
         lecturers:
           - name: 강효규
             school: 서강대
@@ -329,7 +329,7 @@ content:
                 member: 오재석
                 school: 서강대
 
-      - topic: 중급 알고리즘 스터디
+      - topic: 중급
         lecturers:
           - name: 윤인섭
             school: 연세대
@@ -395,7 +395,7 @@ content:
                 member: 남유진
                 school: 연세대
 
-      - topic: 고급 알고리즘 스터디
+      - topic: 고급
         lecturers:
           - name: 전해성
             school: 서강대

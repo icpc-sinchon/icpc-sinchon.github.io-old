@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-import { jsx, css } from "@emotion/core"
 import { Helmet } from "react-helmet"
 
 // FIXME : gatsby로 빌드 돌릴때는 문제가 없지만 VSCode에서는 빨간줄떠서 해결하긴 해야함.

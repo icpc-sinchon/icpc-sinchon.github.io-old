@@ -1,12 +1,11 @@
-/** @jsx jsx */
 import React from "react"
-import { jsx, css } from "@emotion/core"
+import styled from "styled-components"
 
 type TitleProps = {
   title: string
 }
 
-const hightlightStyle = css`
+const StyledTitleInnerWrap = styled.div`
   margin: 0rem 0rem 0.2rem 0rem;
   padding: 0 0.4rem 0.35rem 0.4rem;
   display:inline-block;
@@ -16,7 +15,7 @@ const hightlightStyle = css`
   font-weight: bold;
   color: #489A02;
 `
-const gamssaStyle = css`
+const StyledTitleOuterWrap = styled.div`
   display: inline-block;
   margin: 0rem 0rem 3rem 2rem;
   padding: 0 2.9rem 0 0.3rem;
@@ -24,8 +23,8 @@ const gamssaStyle = css`
 `
 export default function StyledTitle(props: TitleProps) {
   return (
-    <div css={gamssaStyle}>
-      <div css={hightlightStyle}>{props.title}</div>
-    </div>
+    <StyledTitleOuterWrap>
+      <StyledTitleInnerWrap>{props.title}</StyledTitleInnerWrap>
+    </StyledTitleOuterWrap>
   )
 }

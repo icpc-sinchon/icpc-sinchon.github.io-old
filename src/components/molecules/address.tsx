@@ -1,6 +1,5 @@
-/** @jsx jsx */
 import React from "react"
-import { jsx, css } from "@emotion/core"
+import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faAt, faCommentMedical } from "@fortawesome/free-solid-svg-icons"
@@ -12,45 +11,44 @@ type AddressProps = {
   email: string
 }
 
-const addrStyle = css`
+const AddressWrap = styled.div`
   margin: 0.5rem 0.5rem 0.8rem 0.5rem;
 `
-const addrNameStyle = css`
+const AddressName = styled.div`
   font-size: 0.8rem;
 `
-const addrContentStyle = css`
+const AddressContent = styled.div`
   font-size: 0.7rem;
 `
-const addrIconStyle = css`
-  margin-right: 0.3rem;
+const AddressLink = styled.a`
+  font-size: 0.7rem;
 `
 
 export default function Address(props: AddressProps) {
   return (
-    <div className="footer-content--item" css={addrStyle}>
-      <div css={addrNameStyle} className="footer-content--item-name">
+    <AddressWrap className="footer-content--item">
+      <AddressName className="footer-content--item-name">
         {props.name}
-      </div>
+      </AddressName>
       {props.github && (
-        <a
-          href={props.github}
-          className="footer-content--item-addr"
-          css={addrContentStyle}
-        >
-          <FontAwesomeIcon css={addrIconStyle} icon={faGithub} />
+        <AddressLink href={props.github} className="footer-content--item-addr">
+          <FontAwesomeIcon style={{ marginRight: `0.3rem` }} icon={faGithub} />
           {props.github}
-        </a>
+        </AddressLink>
       )}
-      <div className="footer-content--item-addr" css={addrContentStyle}>
-        <FontAwesomeIcon css={addrIconStyle} icon={faAt} />
+      <AddressContent className="footer-content--item-addr">
+        <FontAwesomeIcon style={{ marginRight: `0.3rem` }} icon={faAt} />
         {props.email}
-      </div>
+      </AddressContent>
       {props.kakao && (
-        <div className="footer-content--item-addr" css={addrContentStyle}>
-          <FontAwesomeIcon css={addrIconStyle} icon={faCommentMedical} />
+        <AddressContent className="footer-content--item-addr">
+          <FontAwesomeIcon
+            style={{ marginRight: `0.3rem` }}
+            icon={faCommentMedical}
+          />
           {props.kakao}
-        </div>
+        </AddressContent>
       )}
-    </div>
+    </AddressWrap>
   )
 }

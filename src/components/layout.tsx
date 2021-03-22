@@ -1,14 +1,5 @@
-/** @jsxFrag React.Fragment */
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-/** @jsx jsx */
 import React, { memo } from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import {jsx,css} from '@emotion/core'
 
 import Header from "./header"
 import Address from "./molecules/address"
@@ -29,7 +20,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     }
   `)
   return (
-    <React.Fragment>
+    <>
       <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <footer >
@@ -52,11 +43,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               </div>
             </div>
           </div>
-          {/* Here is the footer © {new Date().getFullYear()}, Built with
-          {` `} */}
-          {/* <a href="https://www.gatsbyjs.org">Gatsby</a> */}
         </footer>
-      </React.Fragment>
+      </>
   )
 }
 

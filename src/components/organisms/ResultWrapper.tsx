@@ -1,5 +1,3 @@
-import { css } from "@emotion/core"
-
 import React from "react"
 import WinnerTable from "@components/organisms/WinnerTable"
 import OrganizerTable from "@components/organisms/OrganizerTable"

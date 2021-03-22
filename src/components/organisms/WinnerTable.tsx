@@ -1,58 +1,55 @@
-import { css } from "@emotion/core"
-
 import React from "react"
+import styled from "styled-components"
 
 type infoProps = {
   info: Array<any>
 }
 
-const flexStyle = css`
+const WinnerTableWrap = styled.div`
   display: flex;
 `
 
-const description = css`
+const WinnerTableTitle = styled.div`
   width: 5rem;
   padding: calc(0.725rem - 1px) 0;
   font-size: 1.2em;
   font-weight: 600;
 `
 
-const theadBorder = css`
+const BorderedTh = styled.th`
   border-bottom: 1px solid #666;
 `
 
 export default function WinnerTable(props: infoProps) {
   return (
-    <div className="test" css={flexStyle}>
-      <div className="test--title" css={description}>
+    <WinnerTableWrap className="test">
+      <WinnerTableTitle className="test--title">
         {props.info.div ? <p>Div. {props.info.div}</p> : "결과"}
-      </div>
+      </WinnerTableTitle>
       <table className="rank">
         <thead>
-            <tr>
-                <th css={theadBorder}>순위</th>
-                <th css={theadBorder}>푼 문제 수</th>
-                <th css={theadBorder}>팀명</th>
-                <th css={theadBorder}>구성원</th>
-                <th css={theadBorder}>소속</th>
-            </tr>
+          <tr>
+            <BorderedTh>순위</BorderedTh>
+            <BorderedTh>푼 문제 수</BorderedTh>
+            <BorderedTh>팀명</BorderedTh>
+            <BorderedTh>구성원</BorderedTh>
+            <BorderedTh>소속</BorderedTh>
+          </tr>
         </thead>
         <tbody>
-            {
-                props.info.winner.map((data) => {
-                    return (
-                        <tr>
-                            <td>{data["prize"]}</td>
-                            <td>{data["solved"]}</td>
-                            <td css={{width: "26rem"}}>{data["team"]}</td>
-                            <td>{data["member"]}</td>
-                            <td>{data["school"]}</td>
-                        </tr>
-                    )
-                })
-            }
+          {props.info.winner.map(data => {
+            return (
+              <tr>
+                <td>{data["prize"]}</td>
+                <td>{data["solved"]}</td>
+                <td css={{ width: "26rem" }}>{data["team"]}</td>
+                <td>{data["member"]}</td>
+                <td>{data["school"]}</td>
+              </tr>
+            )
+          })}
         </tbody>
       </table>
-    </div>
+    </WinnerTableWrap>
   )
 }

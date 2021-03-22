@@ -1,56 +1,10 @@
-import { css } from "@emotion/core"
-import React, { Fragment } from "react"
+import React from "react"
 import { IAward, IContest } from "@models/contest.d.ts"
 import styled from "styled-components"
 
 type TestProps = {
   contests: Array<any>
 }
-const RankCss = css`
-  width: 11rem;
-  display: inline-block;
-  /* 어렵다... */
-  float: left;
-`
-const TitleCss = css`
-  font-size: 1.5rem;
-  font-family: "appleNeoR";
-  margin-bottom: 0.7rem;
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.12);
-  padding-bottom: 0.6rem;
-  padding-left: 0.4rem;
-  text-align: left;
-`
-const TitleProbPickCss = css`
-  font-size: 1.5rem;
-  font-family: "appleNeoR";
-  margin-bottom: 0.7rem;
-  width: 6.3rem;
-  padding-bottom: 0.6rem;
-  padding-left: 0.4rem;
-  text-align: left;
-`
-const SunweeCss = css`
-  font-size: 1.1rem;
-  padding-right: 0;
-  padding-bottom: 0;
-`
-const NameCss = css`
-  font-family: "appleNeoM";
-  font-size: 1.3rem;
-  text-align: left;
-  padding-bottom: 0;
-`
-const ProbPickCss = css`
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-top: 0;
-`
-const StCss = css`
-  font-size: 0.7rem;
-`
-const WrapCss = css``
-
 const RankingGrid = styled.div`
   margin-bottom: 1.9rem;
   display: grid;

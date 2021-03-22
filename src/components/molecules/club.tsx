@@ -1,6 +1,5 @@
-/** @jsx jsx */
 import React from "react"
-import { jsx, css } from "@emotion/core"
+import styled from "styled-components"
 
 type ClubProps = {
   id: string
@@ -9,22 +8,22 @@ type ClubProps = {
   content?: string
 }
 
-const nameStyle = css`
+const ClubText = styled.div`
   font-size: 0.9rem;
   font-weight: 900;
   width: 100%;
   text-align: center;
 `
-const imgStyle = css`
+const ClubImg = styled.img`
   width: 100%;
   height: 100%;
 `
-const schoolStyle = css`
+const ClubTextWrap = styled.div`
   position: absolute;
   bottom: 0;
   right: 0;
 `
-const pStyle = css`
+const SchoolName = styled.p`
   text-align: right;
   width: 12rem;
   font-size: 0.94rem;
@@ -33,19 +32,18 @@ export default function Club(props: ClubProps) {
   return (
     <div className="club">
       <div className="club--img">
-        <img css={imgStyle} alt={props.name} src={props.image} draggable={false} />
+        <ClubImg alt={props.name} src={props.image} draggable={false} />
       </div>
-      <div className="school--text" css={schoolStyle}>
+      <ClubTextWrap className="school--text">
         <h1>
-          <div
-            css={nameStyle}
+          <ClubText
             dangerouslySetInnerHTML={{
               __html: props.name.replace(new RegExp("\n", "g"), "<br/>"),
             }}
           />
         </h1>
-        <p css={pStyle}>{props.content}</p>
-      </div>
+        <SchoolName>{props.content}</SchoolName>
+      </ClubTextWrap>
     </div>
   )
 }
