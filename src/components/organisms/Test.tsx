@@ -42,6 +42,12 @@ const ProblemGrid = styled.div`
   display: grid;
   grid-gap: 0.7rem;
 `
+const TheadProblem = styled.td`
+  width: 13rem;
+  @media (max-width: 768px) {
+    width: 11rem;
+  }
+`
 export default function Test(props: TestProps) {
   return (
     <div className="test">
@@ -83,7 +89,9 @@ export default function Test(props: TestProps) {
                   <thead>
                     <tr>
                       <td>#</td>
-                      <td style={{ width: `15rem` }}>문제</td>
+                      <TheadProblem>
+                        문제
+                      </TheadProblem>
                       <td>출제자</td>
                     </tr>
                   </thead>
