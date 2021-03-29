@@ -155,6 +155,9 @@
   font-family: "appleneoR";
   margin-bottom: 17rem;
 }
+.test {
+  width: 100%;
+}
 @media (max-width: 1568px) {
   .hof--season {
     font-size: 1.5rem;
